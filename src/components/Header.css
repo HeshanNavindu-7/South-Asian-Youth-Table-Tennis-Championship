@@ -1,17 +1,4 @@
-.title{
-    width: 350px;
-    height: 120px;
-    background-color: rgb(215, 46, 46);
-    position: absolute;
-    padding: 10px 15px;
-    left: -12px;
-    top: 0px;
-    z-index: 1000;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.title img{
-    margin-left: 80px;
-}
+
 .list{
     position: relative;
     top: 70px;
