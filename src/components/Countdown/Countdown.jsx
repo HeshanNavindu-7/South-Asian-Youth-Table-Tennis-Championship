@@ -1,7 +1,7 @@
 // CountdownComponent.jsx
 import React from 'react';
 import Countdown from 'react-countdown-now';
-
+import './CountdownComponent.css'; 
 const CountdownComponent = () => {
   // Set the target date for the countdown (replace with your actual date)
   const targetDate = new Date('2024-02-14T23:59:59').getTime();
