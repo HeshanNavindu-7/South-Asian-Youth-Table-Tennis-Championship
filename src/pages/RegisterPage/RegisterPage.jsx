@@ -1,6 +1,6 @@
 // src/pages/RegisterPage.jsx
 import React from 'react';
-import Header from '../../components/Header';
+import Header from '../../components/Navbar/Header';
 import RegisterForm from './components/RegisterForm';
 
 

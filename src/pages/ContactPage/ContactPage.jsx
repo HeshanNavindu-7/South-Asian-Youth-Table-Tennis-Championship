@@ -1,6 +1,6 @@
 // src/pages/ContactPage.jsx
 import React from 'react';
-import Header from '../../components/Header';
+import Header from '../../components/Navbar/Header';
 
 
 const ContactPage = () => {

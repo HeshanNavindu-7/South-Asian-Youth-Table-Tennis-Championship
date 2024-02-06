@@ -13,36 +13,13 @@ const Header = () => {
 
   return (
     <>
-      <nav className="p-0 flex h-50 w-full relative overflow-hidden header">
-        <div className="basis-1/3 transform -skew-x-12 title">
-          <h2 className="text-6xl">tennise</h2>
+      <nav className="p-0 flex bg-slate-200 h-20 w-full relative overflow-hidden header">
+        <div className="logo bg-red-500 basis-1/4 transform -skew-x-12 -ml-2 ">
+          <img className='w-24 m-3 ml-24' src="./public/images/logo.png" alt="logo not work" />
         </div>
 
-        <div className="contacts">
-          <div className="flex space-x-24 items-center details">
-            <div className="flex items-center space-x-2">
-              <div className="dis">
-                <h2 className="text-base">Email</h2>
-                <p className="text-sm">dfs@example.com</p>
-              </div>
-              <Mail className="h-8 w-8 text-blue-500 icon" />
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="dis">
-                <h2 className="text-base">Email</h2>
-                <p className="text-sm">dfs@example.com</p>
-              </div>
-              <Inbox className="h-8 w-8 text-blue-500 icon" />
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="dis">
-                <h2 className="text-base">Email</h2>
-                <p className="text-sm">dfs@example.com</p>
-              </div>
-              <User className="h-8 w-8 text-blue-500 icon" />
-            </div>
-          </div>
-          <ul className="flex lg:space-x-20 md:space-x-2 text-2xl list ">
+        <div className="contacts ml-48"> {/* Use ml-auto to move the contacts to the right */}
+          <ul className="flex m-6 gap-24 text-lg font-semibold ">
             <li>
               <Link to="/" className={location.pathname === '/' ? 'active-link' : ''}>
                 Home
@@ -59,11 +36,11 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to="/register" className={location.pathname === '/register' ? 'active-link' : ''}>
-                Register
+              <Link to="/Matches" className={location.pathname === '/matches' ? 'active-link' : ''}>
+                Matches
               </Link>
             </li>
-            <li>
+            <li className='bg-red-500 px-4 py-2 -m-3 rounded  '>
               <Link to="/register" className={location.pathname === '/register' ? 'active-link' : ''}>
                 Register
               </Link>
@@ -80,7 +57,7 @@ const Header = () => {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/contact">Contact</Link></li>
-        <li><Link to="/register">Register</Link></li>
+        <li><Link to="/matches">Matches</Link></li>
         <li><Link to="/register">Register</Link></li>
         
       </ul>
