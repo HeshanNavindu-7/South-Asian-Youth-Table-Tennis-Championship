@@ -41,7 +41,7 @@ const Header = () => {
               </Link>
             </li>
             <li className='bg-red-500 px-4 py-2 -m-3 rounded  '>
-              <Link to="/register" className={location.pathname === '/register' ? 'active-link' : ''}>
+              <Link to="/register" className={location.pathname === '/register' ? 'active-lin' : ''}>
                 Register
               </Link>
             </li>
