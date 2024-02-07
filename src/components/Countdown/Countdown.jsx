@@ -19,7 +19,7 @@ const CountdownComponent = () => {
              <div className="bg-slide bg1"></div>
             <div className="bg-slide bg2"></div>
              <div className="bg-slide bg3"></div>
-          <div className=" bg-slate-900/75 px-6 md:px-12 py-32 rounded">
+          <div className=" bg-slate-900/75 px-6 md:px-12 py-28 rounded">
             <h2 className="text-4xl md:text-6xl text-center font-semibold -mt-16 mb-6">
               SOUTH ASIAN YOUTH TABLE TENNIS <br></br> CHAMPIONSHIPS-2024
             </h2>
@@ -41,8 +41,8 @@ const CountdownComponent = () => {
                 <span className="countdown-label">Seconds</span>
               </div>
             </div>
-            <div className='-mt-10 text-center'>
-            <button className='btn1 rounded'>Register Now</button>
+            <div className='mt-10  text-center'>
+            <button className='btn1 p-3 rounded'>Register Now</button>
             </div>
             
           </div>

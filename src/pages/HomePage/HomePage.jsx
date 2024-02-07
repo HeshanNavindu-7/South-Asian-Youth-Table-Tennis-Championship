@@ -1,19 +1,17 @@
 // src/pages/HomePage.jsx
 import React from 'react';
 
-import Slideshow from './components/slideshow';
-import Timecounter from './components/Timecounter';
-import Updates from './components/Updates';
-import Carosel from './components/Carosel';
-import Teams from './components/Teams';
 import CountdownComponent from '../../components/Countdown/Countdown';
-
+import Participant from './components/Participant/Participant';
+import Card from '../../components/Card/Card';
 
 const HomePage = () => {
   return (
     <div>
       
      <CountdownComponent/>
+    <Participant/>
+    <Card/>
     </div>
   );
 };

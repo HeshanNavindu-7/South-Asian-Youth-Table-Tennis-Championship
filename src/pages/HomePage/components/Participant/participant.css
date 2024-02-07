@@ -1,0 +1,40 @@
+/* Participant.css */
+@keyframes moveHorizontal {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .horizontal-list {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    white-space:nowrap;
+    animation: moveHorizontal 10s linear infinite; /* Adjust the duration as needed */
+  }
+  
+  .horizontal-list li {
+    display: inline-block;
+    margin-inline: 20px; /* Adjust the spacing between items */
+  }
+  
+  .horizontal-list li img {
+    height: 100px; /* Adjust the image size as needed */
+  }
+  .offical {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .offical li {
+    margin-inline: 40px; /* Adjust the desired margin value */
+  }
+  
+  .offical li img {
+    height: 100px;
+  }
+  

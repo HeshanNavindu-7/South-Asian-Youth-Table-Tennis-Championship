@@ -1,0 +1,43 @@
+.card {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-header {
+    height: 25%;
+    font-size: 3em;
+    font-weight: bold;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+  }
+  
+  .blue-square,
+  .red-square {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+  }
+  
+  .red-square {
+    background-color: red;
+  }
+  
+  .vs-sign {
+    font-size: 3em;
+    font-weight: bold;
+  }
+  
