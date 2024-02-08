@@ -1,0 +1,105 @@
+.contact-us {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+   padding: 10px 0;
+
+	.contact-card {
+		background-color: #2a132a;
+		border-radius: 25px;
+		color: white;
+		cursor: pointer;
+		border: 2px solid white;
+		position: relative;
+      padding: 0 10px;
+      min-width: 300px;
+      overflow: visible;
+	  margin-top: 20px;
+
+		.profile-icon {
+			margin-top: 45px;
+
+			img {
+				margin: auto;
+				border: 5px solid white;
+				border-radius: 50%;
+				transition: 0.5s;
+				max-width: 160px;
+			}
+		}
+
+		.position {
+			margin-top: 30px;
+
+			* {
+				text-align: center;
+			}
+
+			h1 {
+				font-weight: bold;
+				font-size: 24px;
+			}
+		}
+
+		.social-media {
+			display: flex;
+			justify-content: space-evenly;
+			margin-top: 20px;
+
+			div {
+				display: flex;
+				align-items: center;
+
+				img {
+					width: 15px;
+					margin: 0 5px;
+				}
+			}
+
+         span {
+            font-size: 14px;
+         }
+		}
+
+		.email {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-top: 10px;
+			margin-bottom: 45px;
+
+			img {
+				width: 22px;
+				margin: 0 5px;
+			}
+         
+         span {
+            font-size: 14px;
+         }
+		}
+
+		.back {
+			position: absolute;
+			width: 80%;
+			height: 50px;
+			background: white;
+			z-index: -1;
+			bottom: -10px;
+			left: 50%;
+			transform: translate(-50%, 0);
+			border-radius: 20px;
+			transition: 0.5s;
+		}
+	}
+
+	.contact-card:hover {
+		.profile-icon img {
+			border: 5px solid #de0ed7;
+		}
+
+		.back {
+			background-color: #de0ed7;
+		}
+	}
+}
