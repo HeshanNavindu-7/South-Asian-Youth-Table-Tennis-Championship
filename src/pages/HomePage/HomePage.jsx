@@ -9,20 +9,22 @@ import Teams from './components/Teams';
 import Partisipant from './components/partisipant/Partisipant';
 import Partners from './components/partners/Partners';
 import MyFooter from '../../components/Footer/footer';
-//<Updates/>
-//<Teams/>
-//<Carosel/>
 
 const HomePage = () => {
   return (
     <div>
       
+
       <Slideshow/>
       <Timecounter/>
       <Partisipant/>
       <Partners/>
       <MyFooter/>
      
+   <Moscot/>
+   <Contact/>
+
+
     </div>
   );
 };
