@@ -1,4 +1,19 @@
-
+.title{
+    width: 550px;
+    height: 130px;
+    background-color: rgb(186, 34, 34);
+    position: absolute;
+    padding: 10px 15px;
+    left: -12px;
+    top: 0px;
+    z-index: 1000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.title h2{
+    position: relative;
+    left: 150px;
+    top: 18px;
+}
 .list{
     position: relative;
     top: 70px;
@@ -42,7 +57,9 @@
     position: fixed;
     top: 0px;
     z-index: 10000;
+    
 }
+
 .active-link{
     color: red;
 }
@@ -69,7 +86,7 @@
         color: aliceblue;
     }
     .box1 li{
-        line-height: 5em;
+        line-height: 3.2em;
     }
 }
 @media (max-width:700px){

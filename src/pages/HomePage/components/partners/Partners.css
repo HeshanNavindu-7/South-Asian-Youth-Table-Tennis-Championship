@@ -1,0 +1,31 @@
+.partners h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.partners img{
+    margin: auto;
+    animation: anim2 5s linear infinite;
+    
+}
+.partners{
+    margin-top: 100px;
+}
+@keyframes anim2{
+    0%{
+        transform: rotatey(0);
+
+    }
+    50%{
+        transform: rotatey(0);
+    }
+    70%{
+        transform: rotatey(0);
+
+    }
+    100%{
+        transform: rotatey(360deg);
+
+    }
+}

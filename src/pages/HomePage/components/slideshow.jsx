@@ -3,9 +3,11 @@ import React, { useState, useEffect } from 'react';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 import './slideshow.css';
 const images = [
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Mondial_Ping_-_Men%27s_Singles_-_Round_4_-_Kenta_Matsudaira-Vladimir_Samsonov_-_57.jpg/1280px-Mondial_Ping_-_Men%27s_Singles_-_Round_4_-_Kenta_Matsudaira-Vladimir_Samsonov_-_57.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Mondial_Ping_-_Men%27s_Singles_-_Round_4_-_Kenta_Matsudaira-Vladimir_Samsonov_-_57.jpg/1280px-Mondial_Ping_-_Men%27s_Singles_-_Round_4_-_Kenta_Matsudaira-Vladimir_Samsonov_-_57.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Mondial_Ping_-_Men%27s_Singles_-_Round_4_-_Kenta_Matsudaira-Vladimir_Samsonov_-_57.jpg/1280px-Mondial_Ping_-_Men%27s_Singles_-_Round_4_-_Kenta_Matsudaira-Vladimir_Samsonov_-_57.jpg',
+  '../../Public/images/Untitled-5.png',
+  '../../Public/images/Untitled-1.png',
+  '../../Public/images/Untitled-2.png',
+  '../../Public/images/Untitled-3.png',
+  '../../Public/images/Untitled-4.png',
   // Add more image URLs as needed
 ];
 
@@ -15,7 +17,7 @@ const Slideshow = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
-    }, 4000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);

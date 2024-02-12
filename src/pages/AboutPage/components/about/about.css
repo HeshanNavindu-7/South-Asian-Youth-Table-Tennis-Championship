@@ -1,0 +1,41 @@
+.about1{
+    width: auto;
+    margin: 0px auto;
+    overflow: hidden;
+    background: linear-gradient(to left,black,rgba(255, 255, 255, 0.056)),url(https://www.tenniscanada.com/wp-content/uploads/2020/03/iStock_000051214800_Full.jpg);
+    background-position:top -200px left 0px;
+    background-size: cover ;
+    
+    
+    
+}
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    color: white;
+    font-size: 2em;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 100%;
+    height: 70px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Change to your preferred background color */
+  }
+  
+  /* Scrollbar Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Change to your preferred handle color */
+    border-radius: 10px; /* Change the radius if desired */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Change to your preferred handle color on hover */
+  }
