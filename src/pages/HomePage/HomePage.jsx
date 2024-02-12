@@ -9,6 +9,8 @@ import Teams from './components/Teams';
 import Partisipant from './components/partisipant/Partisipant';
 import Partners from './components/partners/Partners';
 import MyFooter from '../../components/Footer/footer';
+import Moscot from '../../components/Moscot/Moscot';
+import Contact from '../../components/ContactUs/Contact';
 
 const HomePage = () => {
   return (
@@ -19,10 +21,10 @@ const HomePage = () => {
       <Timecounter/>
       <Partisipant/>
       <Partners/>
+      <Moscot/>
+      
       <MyFooter/>
-     
-   <Moscot/>
-   <Contact/>
+
 
 
     </div>
