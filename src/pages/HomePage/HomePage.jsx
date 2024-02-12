@@ -22,7 +22,7 @@ const HomePage = () => {
       <Partisipant/>
       <Partners/>
       <Moscot/>
-      
+      <Contact/>
       <MyFooter/>
 
 
