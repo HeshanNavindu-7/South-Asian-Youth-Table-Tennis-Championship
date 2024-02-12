@@ -1,19 +1,28 @@
 // src/pages/HomePage.jsx
 import React from 'react';
 
-import CountdownComponent from '../../components/Countdown/Countdown';
-import Participant from './components/Participant/Participant';
-import Card from '../../components/Card/Card';
-import Contact from '../../components/ContactUs/Contact';
+import Slideshow from './components/slideshow';
+import Timecounter from './components/TimeCounter/Timecounter';;
+import Updates from './components/Updates';
+import Carosel from './components/Carosel';
+import Teams from './components/Teams';
+import Partisipant from './components/partisipant/Partisipant';
+import Partners from './components/partners/Partners';
+import MyFooter from '../../components/Footer/footer';
+//<Updates/>
+//<Teams/>
+//<Carosel/>
 
 const HomePage = () => {
   return (
     <div>
       
-     <CountdownComponent/>
-    <Participant/>
-    <Card/>
-    <Contact/>
+      <Slideshow/>
+      <Timecounter/>
+      <Partisipant/>
+      <Partners/>
+      <MyFooter/>
+     
     </div>
   );
 };

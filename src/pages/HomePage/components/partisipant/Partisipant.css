@@ -1,0 +1,31 @@
+.participant{
+    height: 60vh;
+    overflow: hidden;
+    margin-top: -90px;
+}
+.participant h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.participant img{
+    margin: 0px 15px;
+}
+.participant .box{
+    margin-top:120px;
+    animation: anim1 12s linear infinite;
+    position: relative;
+    
+    
+}
+@keyframes anim1{
+    0%{
+        left: 100%;
+
+    }
+    100%{
+        left: -100%;
+
+    }
+}

@@ -1,7 +1,7 @@
 // src/pages/AboutPage.jsx
 import React from 'react';
-import Header from '../../components/Navbar/Header';
-import About from './components/about';
+import About from './components/about/about';
+import PDF from './components/PDF/PDF';
 
 
 const AboutPage = () => {
@@ -9,6 +9,7 @@ const AboutPage = () => {
     <div>
       
       <About/>
+      <PDF/>
     </div>
   );
 };
