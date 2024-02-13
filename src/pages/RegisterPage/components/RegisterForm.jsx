@@ -85,7 +85,7 @@ const RegisterForm = () => {
     try {
       // Upload profile image to Firebase Storage
       const storage = getStorage();
-      const storageRef = ref(storage, `profile_images/${nicNumber}`);
+      const storageRef = ref(storage, `profile_image/${nicNumber}`);
       await uploadBytes(storageRef, profileImage);
 
       // Get the download URL of the uploaded image

@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import './contact.scss'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Contact = () => {
+	useEffect(() => {
+		AOS.init();
+	      }, []);
   return (
     <div>
        <div className='text-black m-5 text-center overflow-hidden'>
     <h1 className='text-4xl font-bold mt-12 text-center overflow-hidden'>CONTACT US</h1>
-		<div className="contact-us ">
+		<div className="contact-us " data-aos="zoom-in"  data-aos-offset="100"
+   >
      
 			<div className="contact-card">
 				<div className="profile-icon">

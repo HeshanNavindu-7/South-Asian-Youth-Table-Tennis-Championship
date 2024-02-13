@@ -10,7 +10,7 @@
 		border-radius: 25px;
 		color: white;
 		cursor: pointer;
-		border: 2px solid white;
+		border: 2px solid rgb(22, 22, 22);
 		position: relative;
       padding: 0 10px;
       min-width: 300px;
@@ -22,7 +22,7 @@
 
 			img {
 				margin: auto;
-				border: 5px solid white;
+				border: 5px solid rgb(26, 26, 26);
 				border-radius: 50%;
 				transition: 0.5s;
 				max-width: 160px;
@@ -83,7 +83,7 @@
 			position: absolute;
 			width: 80%;
 			height: 50px;
-			background: white;
+			background: rgb(30, 30, 30);
 			z-index: -1;
 			bottom: -10px;
 			left: 50%;

@@ -37,8 +37,8 @@ const Timecounter = () => {
   return (
     <div className="boxa">
       <div className="boxa1">
-        <h2>May 30, 2024 / 8:00 pm / New York</h2>
-        <h1>National leagues 2024 session begins</h1>
+        
+        <h1>SOUTH ASIAN YOUTH TABLE TENNIS CHAMPIONSHIPS-2024</h1>
         <div className="boxa2">
           <div className="t1">
             <span>{countdown.days}</span>
