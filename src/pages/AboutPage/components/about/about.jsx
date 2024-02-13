@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './about.css';
 import { BsPlayFill } from 'react-icons/bs';
+import PDF from '../PDF/PDF';
 
 const About = () => {
   const [isVideoPlaying, setVideoPlaying] = useState(false);
@@ -28,6 +29,7 @@ const About = () => {
             <BsPlayFill className=" text-red-500"/>
           </button>
         )}
+        <PDF/>
         <video
           id="videoPlayer"
           controls
@@ -35,7 +37,7 @@ const About = () => {
           height="auto"
           onPlay={() => setVideoPlaying(true)}
           onPause={() => setVideoPlaying(false)}
-          className="m-auto"
+          className="m-auto mt-28"
         >
           <source src="https://v1.cdnpk.net/videvo_files/video/free/video0542/large_preview/_import_6319998d0f7554.88000426.mp4" type="video/mp4" />
           Your browser does not support the video tag.

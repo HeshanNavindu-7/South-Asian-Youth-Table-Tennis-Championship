@@ -9,7 +9,7 @@ const AboutPage = () => {
     <div>
       
       <About/>
-      <PDF/>
+  
     </div>
   );
 };

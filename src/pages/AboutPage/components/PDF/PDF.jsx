@@ -4,8 +4,8 @@ import React from 'react';
 
 const PDF = () => {
   return (
-    <div className="mx-auto py-8 mt-40">
-      <h1 className="text-3xl font-bold mb-4 ml-52">About Us</h1>
+    <div className="mx-auto py-8 mt-20">
+      <h1 className="text-3xl font-bold mb-4  text-center">Guideline Book</h1>
       
       {/* Embedded PDF */}
       <div className="relative m-auto w-10/12" style={{ paddingBottom: "56.25%" }}>
@@ -18,7 +18,7 @@ const PDF = () => {
       {/* Button for downloading the PDF */}
       <a
         href="../../Public/TTASL Prospectus 2024 South Asian Youth Championships_SLR.pdf"
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-block mt-4 absolute right-40"
+        className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded inline-block mt-4 absolute right-40"
         download
         style={{ marginTop: "2rem" }}
       >

@@ -1,13 +1,11 @@
 import React from 'react';
-import './moscot.css'
+import './moscot.css';
+
 const Moscot = () => {
   return (
-    <div className='moscotback  overflow-hidden flex flex-col lg:flex-row text-white justify-center mt-12'>
-      <div className='w-full lg:w-1/2 my-8 lg:my-16'>
-        <img src='./public/images/moscot.png' alt='Moscot Logo' className='w-full' />
-      </div>
-      <div className='my-3 lg:ml-0 mt-24'>
-        <h1 className='lg:text-5xl text-3xl font-bold mb-4'> About Us </h1>
+    <div className='moscotback overflow-hidden flex flex-col lg:flex-row text-white justify-center mt-12'>
+      <div className='my-3 text-center lg:ml-0 mt-12 lg:mt-24 lg:text-left'>
+        <h1 className='lg:text-5xl text-4xl  font-bold mb-4'> About Us </h1>
         <p>
           The South Asian Youth Table Tennis Championships 2024<br/> will be organized by Table Tennis
           Association under auspices <br/>and authority of the Asian Table Tennis Union.
@@ -23,6 +21,9 @@ const Moscot = () => {
             Download Guideline Booklet
           </button>
         </div>
+      </div>
+      <div className='w-full lg:w-1/2 my-8 lg:my-16'>
+        <img src='./public/images/moscot.png' alt='Moscot Logo' className='w-full' />
       </div>
     </div>
   );
