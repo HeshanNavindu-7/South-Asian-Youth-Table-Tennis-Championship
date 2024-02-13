@@ -2,9 +2,7 @@
 .slider {
     display: flex;
     
-
   }
-  
   .slide {
     min-width: 100%;
     overflow: hidden;
@@ -49,7 +47,43 @@
   
   .active {
     opacity: 1;
-    z-index: 1; /* Bring the active slide to the front */
-     /* Add a transition for a smoother effect */
+    z-index: 1;
+
+  }
+
+  @media (max-width:415px){
+    .slide{
+      width: 100%;
+      overflow: hidden;
+    }
+    .slide img{
+      transform: scale(1.5);
+      position: relative;
+      top: 70px;
+    }
+    .left-arrow{
+      
+      top: 200px;
+    }
+    .right-arrow{
+      
+      top: 200px;
+    }
+
+  }
+
+  @media (max-width:431px){
+    .slide{
+      width: 100%;
+      overflow: hidden;
+    }
+    .slide img{
+      transform: scale(1.5);
+      position: relative;
+      top: 70px;
+    }
+
+    
+    
   }
   

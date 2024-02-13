@@ -1,4 +1,5 @@
 .title{
+
     width: 550px;
     height: 130px;
     background-color: rgb(186, 34, 34);
@@ -19,7 +20,7 @@
     top: 70px;
     font-size: 20px;
     background-color: #414141;
-    padding: 10px 200px;
+    padding: 10px 209px;
     left: 440px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
@@ -48,6 +49,7 @@
     position: relative;
     z-index: 100000;
     visibility: hidden;
+    
 }
 .icon1{
     color: aliceblue;
@@ -61,8 +63,10 @@
 }
 
 .active-link{
+
     color: red;
 }
+
 @media (max-width:912px){
     .title{
         width: 500px;
@@ -93,7 +97,7 @@
     
     .btn{
         visibility: visible;
-        left: -100px;
+        left: -180px;
 
     }
 }
@@ -101,7 +105,7 @@
     
     .btn{
         visibility: visible;
-        left: -200px;
+        left: -280px;
 
     }
 }
@@ -109,7 +113,7 @@
     
     .btn{
         visibility: visible;
-        left: -250px;
+        left: -290px;
 
     }
 }

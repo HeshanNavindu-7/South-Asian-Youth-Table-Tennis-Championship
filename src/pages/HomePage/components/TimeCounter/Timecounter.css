@@ -141,6 +141,10 @@
         transform: scale(0.5);
         top: -50px;
     }
+    .boxa{
+        position: relative;
+        top: 80px;
+    }
 }
 @media (max-width:415px){
     .boxa2{
@@ -161,6 +165,10 @@
         transform: scale(0.5);
         top: -50px;
     }
+    .boxa{
+        position: relative;
+        top: 80px;
+    }
 }
 @media (max-width:435px){
     .boxa2{
@@ -180,5 +188,9 @@
     .btn1{
         transform: scale(0.5);
         top: -50px;
+    }
+    .boxa{
+        position: relative;
+        top: 80px;
     }
 }

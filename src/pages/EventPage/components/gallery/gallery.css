@@ -1,0 +1,8 @@
+
+.cards .box{
+    margin: 0px 30px;
+}
+.custom-shape{
+    clip-path: polygon(14% 0, 75% 0%, 100% 0, 100% 99%, 0 100%, 0 15%);
+
+}

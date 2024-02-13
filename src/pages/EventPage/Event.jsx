@@ -1,11 +1,12 @@
 
 import React from 'react';
+import Gallery from './components/gallery/gallery';
 
 const Event = () => {
   return (
     <div>
       
-      <h2>events</h2>
+      <Gallery/>
      
     </div>
   );
