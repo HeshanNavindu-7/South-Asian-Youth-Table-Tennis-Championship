@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function MyFooter() {
   return (
     <footer
-      className="bg-neutral-500 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left mt-96 footer">
+      className="bg-neutral-500 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left mt-34 footer">
       <div
         className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
         <div className="mr-12 hidden lg:block space-x-12 ">
