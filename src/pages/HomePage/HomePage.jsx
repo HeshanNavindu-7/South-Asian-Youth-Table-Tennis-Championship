@@ -20,8 +20,9 @@ const HomePage = () => {
       <Slideshow/>
       <Timecounter/>
       <Partisipant/>
-      <Partners/>
+     
       <Moscot/>
+      <Partners/>
       <Contact/>
       <MyFooter/>
 

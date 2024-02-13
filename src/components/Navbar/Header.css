@@ -18,9 +18,9 @@
     position: relative;
     top: 70px;
     font-size: 20px;
-    background-color: rgb(65, 65, 65);
-    padding: 12px 200px;
-    left: 480px;
+    background-color: #414141;
+    padding: 10px 200px;
+    left: 440px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
 }
@@ -36,7 +36,7 @@
     height: 100px;
     position: absolute;
     top: -15px;
-    left: 400px;
+    left: 350px;
 }
 .details .icon{
     color: rgb(165, 17, 17);

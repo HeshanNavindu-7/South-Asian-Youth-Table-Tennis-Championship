@@ -6,7 +6,7 @@
    padding: 10px 0;
 
 	.contact-card {
-		background-color: #2a132a;
+		background-color: #414141;
 		border-radius: 25px;
 		color: white;
 		cursor: pointer;
@@ -95,11 +95,11 @@
 
 	.contact-card:hover {
 		.profile-icon img {
-			border: 5px solid #de0ed7;
+			border: 5px solid rgb(239 68 68);
 		}
 
 		.back {
-			background-color: #de0ed7;
+			background-color: rgb(239 68 68);
 		}
 	}
 }

@@ -5,9 +5,9 @@ import './Partisipant.css';
 
 const Partisipant = () => {
   return (
-    <div className="relative top-96 participant">
+    <div className="mt-56 participant">
 
-        <h2 className="text-6xl"><BsFillLightningFill className='text-red-500 m-5'/>Participant</h2>
+        <h2 className="lg:text-5xl text-3xl font-bold"><BsFillLightningFill className='text-red-500 m-5'/>Participant</h2>
         <div className="box flex">
             <img src="../../Public/images/bd.png" width="220px" alt="" />
             <img src="../../Public/images/original-bhutan_flag.jpg" width="220px" alt="" />

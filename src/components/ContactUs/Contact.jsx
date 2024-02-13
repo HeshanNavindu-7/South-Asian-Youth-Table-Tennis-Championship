@@ -29,6 +29,27 @@ const Contact = () => {
 				<div className="back"></div>
 			</div>
 			<div className="contact-card">
+				<div className="profile-icon">
+					<img src="./public/images/chandana.jpeg" alt="" />
+				</div>
+				<div className="position">
+					<h1>Mr. CHANDANA PERERA</h1>
+					<p> Chairman Organising Committee</p>
+				</div>
+				<div className="social-media">
+					<div>
+					<p> Phone No : </p>
+						<span> +94 777751345</span>
+					</div>
+					
+				</div>
+				<div className="email">
+				<p> Email : </p>
+					<span>chandanaperera64@gmail.com</span>
+				</div>
+				<div className="back"></div>
+			</div>
+			<div className="contact-card">
 				<div className="profile-icon ">
 					<img  src="./public/images/prw.jpeg" alt="" />
 				</div>

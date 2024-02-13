@@ -5,11 +5,13 @@ import './Partners.css';
 
 const Partners = () => {
   return (
-    <div className="relative top-96 partners">
+    <div className="  partners">
 
-        <h2 className="text-6xl flex"><BsFillLightningFill className='text-red-500 m-1'/>Official Equipment Partner</h2>
+        <h2 className="text-5xl  font-bold"> Partners</h2>
         <div className="box flex">
-            <img src= "../../Public/images/1.jpeg" alt="" width="400px"/>
+            <img src= "../../Public/images/111.jpeg" alt="" width="150px"/>
+            <img src= "../../Public/images/attu (1).jpeg" alt="" width="250px"/>
+            <img src= "../../Public/images/1.jpeg" alt="" width="150px"/>
            
         </div>
        

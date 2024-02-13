@@ -15,37 +15,37 @@ const Header = () => {
   return (
     <>
       <nav className="p-0 flex h-50 w-full relative overflow-hidden header">
-        <div className="basis-1/3 transform -skew-x-12 title">
-          <h2 className="text-6xl"><img src="../../Public/images/logo.png" width="220px" className="-mt-8" alt="" /></h2>
+        <div className="lg:basis-2/5 transform -skew-x-12 title">
+          <h2 className="text-3xl"><img src="../../Public/images/logo.png"  className="-mt-3 lg:w-44 w-36" alt="" /></h2>
         </div>
 
         <div className="contacts">
-          <div className="flex space-x-24 items-center details">
+          <div className="flex space-x-20 items-center details">
             <div className="flex items-center space-x-2">
               <div className="dis">
-                <h2 className="text-base">Email</h2>
-                <p className="text-sm">dfs@example.com</p>
+                <h2 className="text-sm">Email</h2>
+                <p className="text-xs">dfs@example.com</p>
               </div>
               <Mail className="h-8 w-8 text-blue-500 icon" />
             </div>
             <div className="flex items-center space-x-2">
               <div className="dis">
-                <h2 className="text-base">Contact</h2>
-                <p className="text-sm">6595971299 </p>
+                <h2 className="text-sm">Contact</h2>
+                <p className="text-xs">6595971299 </p>
               </div>
               <BsChatLeftText className="h-8 w-8 text-blue-500 icon" />
             </div>
             <div className="flex items-center space-x-2">
        <div className="dis">
-          <h2 className="text-base">Follow us on</h2>
-          <p className="text-sm">www.facebook.com</p>
+          <h2 className=" text-sm">Follow us on</h2>
+          <p className="text-xs">www.facebook.com</p>
        </div>
         <a href="https://www.facebook.com/TTASL?mibextid=2JQ9oc" target="_blank" rel="noopener noreferrer">
         <BsFacebook className="text-red-500 h-8 w-8 icon"/>
        </a>
       </div>
           </div>
-          <ul className="flex lg:space-x-14 md:space-x-2 text-2xl list ">
+          <ul className="flex lg:space-x-14 md:space-x-2 text-xl list ">
             <li>
               <Link to="/" className={location.pathname === '/' ? 'active-link' : ''}>
                 Home
