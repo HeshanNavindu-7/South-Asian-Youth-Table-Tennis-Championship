@@ -10,6 +10,7 @@ import Kandy from './pages/Kandypage/Kandy';
 import Event from './pages/EventPage/Event';
 import './App.css';
 import Header from './components/Navbar/Header';
+import NewsPage from './pages/NewsPage/NewsPage';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/register" element={<Register />} />
         <Route path="/kandy" element={<Kandy />} />
+        <Route path="/NewsPage" element={<NewsPage />} />
         <Route path="/event" element={<Event/>} />
       </Routes>
     </Router>

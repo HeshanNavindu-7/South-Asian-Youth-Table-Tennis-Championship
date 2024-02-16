@@ -21,7 +21,7 @@ const Header = () => {
 
         <div className="contacts">
           <div className="flex space-x-20 items-center details">
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2 ml-36">
               <div className="dis">
                 <h2 className="text-sm">Email</h2>
                 <p className="text-xs">dfs@example.com</p>
@@ -45,7 +45,7 @@ const Header = () => {
        </a>
       </div>
           </div>
-          <ul className="flex lg:space-x-14 md:space-x-2 text-xl list ">
+          <ul className="flex lg:space-x-14 md:space-x-2 text-xl list">
             <li>
               <Link to="/" className={location.pathname === '/' ? 'active-link' : ''}>
                 Home
@@ -70,6 +70,11 @@ const Header = () => {
             <li>
               <Link to="/kandy" className={location.pathname === '/kandy' ? 'active-link' : ''}>
                 Kandy
+              </Link>
+            </li>
+            <li>
+              <Link to="/NewsPage" className={location.pathname === '/NewsPage' ? 'active-link' : ''}>
+                News
               </Link>
             </li>
             <li>
