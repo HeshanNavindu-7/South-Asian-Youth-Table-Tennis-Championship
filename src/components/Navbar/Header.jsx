@@ -16,12 +16,12 @@ const Header = () => {
     <>
       <nav className="p-0 flex h-50 w-full relative overflow-hidden header">
         <div className="lg:basis-2/5 transform -skew-x-12 title">
-          <h2 className="text-3xl"><img src="../../Public/images/logo.png"  className="-mt-3 lg:w-44 w-36" alt="" /></h2>
+          <h2 className="text-3xl"><img src="../../Public/images/SACJTT Championship 2024 - Kandy_ logos-01.png"  className="-mt-3 lg:w-44 w-36" alt="" /></h2>
         </div>
 
         <div className="contacts">
           <div className="flex space-x-20 items-center details">
-            <div className="flex items-center space-x-2 ml-36">
+            <div className="flex items-center space-x-2 ml-3">
               <div className="dis">
                 <h2 className="text-sm">Email</h2>
                 <p className="text-xs">dfs@example.com</p>
@@ -45,7 +45,7 @@ const Header = () => {
        </a>
       </div>
           </div>
-          <ul className="flex lg:space-x-14 md:space-x-2 text-xl list">
+          <ul className="flex lg:space-x-14 md:space-x-2 text-xl list -ml-24">
             <li>
               <Link to="/" className={location.pathname === '/' ? 'active-link' : ''}>
                 Home
@@ -89,7 +89,7 @@ const Header = () => {
         </button>
       </nav>
       {isMobileMenuOpen && (
-        <ul className="lg:space-x-20 md:space-x-2 text-3xl box1">
+        <ul className="lg:space-x-20 md:space-x-2 text-2xl box1">
         
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
