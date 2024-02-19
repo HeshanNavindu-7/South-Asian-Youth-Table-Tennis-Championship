@@ -1,14 +1,15 @@
 // src/pages/HomePage.jsx
 import React from 'react';
 import Gallery from './components/gallery';
+import Gallery1 from './components/gallery1';
 
 
 const Kandy = () => {
   return (
     <div>
       
-      <h2>kandy</h2>
-      <Gallery/>
+    
+      <Gallery1/>
      
     </div>
   );
