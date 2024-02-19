@@ -1,0 +1,157 @@
+.boxg1{
+    background:linear-gradient(to left,rgba(255, 255, 255, 0.148),rgba(0, 0, 0, 0.734),black), url(https://whc.unesco.org/uploads/thumbs/site_0450_0020-1200-630-20151105154018.jpg);
+    background-size: cover;
+    height: 85vh;
+    width: 100%;
+    overflow: hidden;
+    
+   
+}
+.boxg1 .dis{
+    animation: anim1 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    opacity: 0;
+    position: relative;
+    top: -50px;
+}
+@keyframes anim1{
+    0%{
+        opacity: 0;
+        top: 50px;
+
+
+    }
+    100%{
+        top: 10px;
+        opacity: 1;
+
+    }
+}
+.boxg1 h2{
+    color: white;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 700px;
+    margin-left: 20px;
+    margin-top: 180px;
+}
+.boxg1 h1{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    top: 100px;
+    left: 20px;
+    font-size: 80px;
+}
+
+.boxg2{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(100, 100, 100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.boxg2 img {
+    transform: scale(0.7);
+    background-color: antiquewhite;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px black;
+    
+   
+}
+
+.boxg2 h2{
+    color: white;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 700px;
+    
+}
+.boxg2 h1{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    font-size: 80px;
+}
+.boxg3{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background:linear-gradient(to left,rgba(255, 255, 255, 0.148),rgba(0, 0, 0, 0.734),black), url(https://www.andbeyond.com/wp-content/uploads/sites/5/kandy-3.jpg);
+
+}
+.boxg3 .slider{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 180px;
+}
+.boxg3 .slider .dis{
+    margin: 10px 20px;
+}
+.boxg3 .slider h2{
+    color: white;
+
+}
+.boxg3 .slider h1{
+    color: white;
+    font-size: 50px;
+    
+}
+.boxg4{
+    background:linear-gradient(to left,rgba(255, 255, 255, 0.148),rgba(0, 0, 0, 0.734),black), url(https://i0.wp.com/www.bonjoursunset.com/wp-content/uploads/2019/07/IMG_1106-1.jpg?fit=1000%2C667&ssl=1);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    
+   
+}
+.boxg4 .dis{
+    
+    position: relative;
+    top: -50px;
+}
+
+.boxg4 h2{
+    color: white;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 700px;
+    margin-left: 20px;
+    margin-top: 250px;
+}
+.boxg4 h1{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    top: 150px;
+    left: 20px;
+    font-size: 80px;
+}
+@media (max-width:450px) {
+    .boxg1 h2{
+        width: 380px;
+        font-size: 15px;
+    }
+    .boxg1{
+        height: 85vh;
+    }
+    .boxg2 h2{
+        font-size: 10px;
+    }
+    
+}
+@media (max-width:720px) {
+    .boxg2 h2{
+        width: 380px;
+        font-size: 15px;
+    }
+    
+    
+}

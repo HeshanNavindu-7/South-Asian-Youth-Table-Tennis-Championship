@@ -2,7 +2,11 @@
 
     width: 550px;
     height: 130px;
+<<<<<<< HEAD
+    background:linear-gradient(to left,red,black);
+=======
     background-color: rgb(255, 231, 231);
+>>>>>>> 32c2a517d44372bb17fbeb0ae564787e7b19c5dd
     position: absolute;
     padding: 10px 15px;
     left: -12px;
