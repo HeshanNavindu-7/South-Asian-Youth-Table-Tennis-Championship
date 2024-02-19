@@ -49,13 +49,13 @@ const Gallery1 = () => {
 
   return (
     <>
-      <div className='boxg1'>
-        <div className="dis">
-          <h1>Kandy</h1>
-          <h2>Kandy is a historically significant city located in the central hills of Sri Lanka. It is the second-largest city in the country and holds great cultural, religious, and political importance. Here's a comprehensive note about Kandy covering its history, culture, attractions, and significance.</h2>
+      <div className='boxg1 text-center'>
+        <div className="dis text-center">
+          <h1 >Kandy</h1>
+          <h2 className='mt-36 mx-24'>Kandy is a historically significant city located in the central hills of Sri Lanka. It is the second-largest city in the country and holds great cultural, religious, and political importance. Here's a comprehensive note about Kandy covering its history, culture, attractions, and significance.</h2>
         </div>
       </div>
-      <div className="boxg2">
+      <div className="boxg2 ml-5">
         <img className="" src="https://kandycity.lk/wp-content/uploads/2014/07/BG0FKF-e1589657377551-1024x632.jpg" alt="" />
         <div className="dis1 ">
           <h1>History</h1>
@@ -72,9 +72,9 @@ const Gallery1 = () => {
         </div>
       </div>
       <div className='boxg4'>
-        <div className="dis">
+        <div className="dis text-center">
           <h1>Modern Kandy</h1>
-          <h2>Today, Kandy is a bustling city with a blend of historical charm and modern amenities. It serves as a major hub for trade, tourism, and education in central Sri Lanka. The city offers a range of accommodations, restaurants, and shops catering to the needs of visitors from around the world.</h2>
+          <h2 className='mt-56 mx-36'>Today, Kandy is a bustling city with a blend of historical charm and modern amenities. It serves as a major hub for trade, tourism, and education in central Sri Lanka. The city offers a range of accommodations, restaurants, and shops catering to the needs of visitors from around the world.</h2>
         </div>
       </div>
 

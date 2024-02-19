@@ -1,31 +1,27 @@
-.participant{
-    height: 60vh;
-    overflow: hidden;
+.participant {
     margin-top: -90px;
 }
-.participant h2{
+
+.participant h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
-.participant img{
-    margin: 0px 15px;
-}
-.participant .box{
-    margin-top:100px;
-    animation: anim1 12s linear infinite;
-    position: relative;
-    
-    
-}
-@keyframes anim1{
-    0%{
-        left: 100%;
 
+.participant .flex {
+    overflow: hidden;
+}
+
+.participant .images {
+    margin: 0px 25px; /* Adjust the margin as needed */
+    animation: moveLeftToRight 5s linear infinite;
+}
+
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(100%);
     }
-    100%{
-        left: -100%;
-
+    100% {
+        transform: translateX(-150%);
     }
 }

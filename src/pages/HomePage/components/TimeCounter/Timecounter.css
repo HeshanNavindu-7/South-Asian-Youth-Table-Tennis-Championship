@@ -1,5 +1,6 @@
 .boxa1{
     background:linear-gradient(to left,rgba(0, 0, 0, 0.668),rgba(38, 36, 36, 0.334));
+    border-radius: 20px;
     width: 70%;
     height: 500px;
     position: relative;
@@ -52,6 +53,7 @@
 }
 .btn1{
     background-color: rgb(213, 16, 16);
+    border-radius: 10px;
     padding: 15px 30px;
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

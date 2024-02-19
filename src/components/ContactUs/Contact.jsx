@@ -7,7 +7,7 @@ const Contact = () => {
 		AOS.init();
 	      }, []);
   return (
-    <div>
+    <div id='contact'>
        <div className='text-black m-5 text-center overflow-hidden'>
     <h1 className='text-4xl font-bold mt-12 text-center overflow-hidden'>CONTACT US</h1>
 		<div className="contact-us " data-aos="zoom-in"  data-aos-offset="100"

@@ -7,7 +7,7 @@ const Teams = () => {
   return (
     <div className="container mx-auto p-8 relative top-80">
       <div className="container4">
-      <h2 className="text-6xl mb-4 flex items-center flex justify-center">
+      <h2 className="text-6xl mb-4 flex items-center  justify-center">
         <BsFillLightningFill className="mr-2 text-red-500" />
         TEAMS
       </h2>

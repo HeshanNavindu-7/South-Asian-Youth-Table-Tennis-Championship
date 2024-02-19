@@ -5,7 +5,7 @@ import React from 'react';
 const PDF = () => {
   return (
     <div className="mx-auto py-8 mt-20">
-      <h1 className="text-3xl font-bold mb-4  text-center">Guideline Book</h1>
+      <h1 className="text-3xl font-bold mb-4  text-center">PROSPECTUS</h1>
       
       {/* Embedded PDF */}
       <div className="relative m-auto w-10/12" style={{ paddingBottom: "56.25%" }}>

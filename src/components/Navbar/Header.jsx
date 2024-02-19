@@ -16,7 +16,7 @@ const Header = () => {
     <>
       <nav className="p-0 flex h-50 w-full relative overflow-hidden header">
         <div className="lg:basis-2/5 transform -skew-x-12 title">
-          <h2 className="text-3xl"><img src="../../Public/images/SACJTT Championship 2024 - Kandy_ logos-01.png"  className="-mt-3 lg:w-44 w-36" alt="" /></h2>
+          <h2 className="text-3xl"><img src="./public/images/logo.png"  className="-mt-3 lg:w-44 w-36" alt="" /></h2>
         </div>
 
         <div className="contacts">
@@ -24,14 +24,14 @@ const Header = () => {
             <div className="flex items-center space-x-2 ml-3">
               <div className="dis">
                 <h2 className="text-sm">Email</h2>
-                <p className="text-xs">dfs@example.com</p>
+                <p className="text-xs">info.ttasl@gmail.com</p>
               </div>
               <Mail className="h-8 w-8 text-blue-500 icon" />
             </div>
             <div className="flex items-center space-x-2">
               <div className="dis">
                 <h2 className="text-sm">Contact</h2>
-                <p className="text-xs">6595971299 </p>
+                <p className="text-xs">+94777751345</p>
               </div>
               <BsChatLeftText className="h-8 w-8 text-blue-500 icon" />
             </div>
@@ -57,14 +57,10 @@ const Header = () => {
               </Link>
             </li>
             
+           
             <li>
-              <Link to="/register" className={location.pathname === '/register' ? 'active-link' : ''}>
-                Register
-              </Link>
-            </li>
-            <li>
-              <Link to="/event" className={location.pathname === '/event' ? 'active-link' : ''}>
-                Event
+              <Link to="/gallery" className={location.pathname === '/event' ? 'active-link' : ''}>
+                Gallery
               </Link>
             </li>
             <li>
@@ -78,8 +74,13 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to="/contact" className={location.pathname === '/contact' ? 'active-link' : ''}>
+              <Link to="/#contact" className={location.pathname === '/#contact' ? 'active-link' : ''}>
                 Contact
+              </Link>
+            </li>
+            <li >
+              <Link to="/register" className={location.pathname === '/register' ? 'active-link' : ''}>
+               <p className='-ml-4 -mt-2 text-xl bg-red-600 px-2 py-2 rounded'>  Register</p>
               </Link>
             </li>
           </ul>
@@ -94,10 +95,10 @@ const Header = () => {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/contact">Contact</Link></li>
-        <li><Link to="/register">Register</Link></li>
-        <li><Link to="/event">Event</Link></li>
-        <li><Link to="/event">Kandy</Link></li>
+        <li><Link to="/event">Gallery</Link></li>
+        <li><Link to="/kandy">Kandy</Link></li>
         <li><Link to="/contact">Contact</Link></li>
+        <li className='bg-red-600' ><Link to="/register">Register</Link></li>
         
       </ul>
         
