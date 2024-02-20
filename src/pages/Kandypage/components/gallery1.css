@@ -53,6 +53,9 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    position: relative;
+    left: -20px;
+    
 }
 
 .boxg2 img {

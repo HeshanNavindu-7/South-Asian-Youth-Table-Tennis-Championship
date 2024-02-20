@@ -28,9 +28,11 @@
     left: 440px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
+    
 }
 .list li{
     margin-top: 5px;
+    z-index: 1000;
 }
 .header{
     width: 100%;

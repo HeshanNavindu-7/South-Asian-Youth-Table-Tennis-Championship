@@ -2,7 +2,7 @@
     width: auto;
     margin: 0px auto;
     overflow: hidden;
-    background: linear-gradient(to left,black,rgba(255, 255, 255, 0.056)),url(./public/images/Untitled-5.png);
+    background: linear-gradient(to left,black,rgba(255, 255, 255, 0.056)),url(/images/Untitled-5.png);
     background-position:top -200px left 0px;
     background-size: cover ;
     

@@ -3,11 +3,11 @@ import React, { useState, useEffect } from 'react';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 import './slideshow.css';
 const images = [
-  '../../Public/images/Untitled-5.png',
-  '../../Public/images/Untitled-1.png',
-  '../../Public/images/Untitled-2.png',
-  '../../Public/images/Untitled-3.png',
-  '../../Public/images/Untitled-4.png',
+  '/images/Untitled-5.png',
+  '/images/Untitled-1.png',
+  '/images/Untitled-2.png',
+  '/images/Untitled-3.png',
+  '/images/Untitled-4.png',
   // Add more image URLs as needed
 ];
 

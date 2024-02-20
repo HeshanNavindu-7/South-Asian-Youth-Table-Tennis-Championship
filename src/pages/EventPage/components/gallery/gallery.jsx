@@ -16,11 +16,11 @@ const Gallery = () => {
       
       <div className="cards flex justify-center flex-wrap mt-10">
         <div className="box">
-            <img src="../../public/images/Untitled-1.png" width="500px" className="custom-shape" alt="" />
+            <img src="/images/Untitled-1.png" width="500px" className="custom-shape" alt="" />
             <h3>event name</h3>
         </div>
         <div className="box">
-            <img src="../../public/images/Untitled-1.png" width="500px" className="custom-shape"  alt="" />
+            <img src="/images/Untitled-1.png" width="500px" className="custom-shape"  alt="" />
             <h3>event name</h3>
         </div>
       </div>

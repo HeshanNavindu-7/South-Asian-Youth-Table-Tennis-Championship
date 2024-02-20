@@ -9,13 +9,13 @@ const Partisipant = () => {
         <BsFillLightningFill className='text-red-500 '/>Participant
       </h2>
       <div className="flex mt-12 images-container space-x-4">
-        <img src="../../Public/images/bd.png" width="220px" alt="" style={{ animation: 'moveLeftToRight 15s linear infinite' }} />
-        <img src="../../Public/images/original-bhutan_flag.jpg" width="220px" alt="" style={{ animation: 'moveLeftToRight 15s linear infinite' }} />
-        <img src="../../Public/images/images (1).png" width="220px" alt="" style={{ animation: 'moveLeftToRight 15s linear infinite' }} />
-        <img src="../../Public/images/images (2).png" width="220px" alt="" style={{ animation: 'moveLeftToRight 15s linear infinite' }} />
-        <img src="../../Public/images/1f1f3-1f1f5.jpg" width="220px" alt="" style={{ animation: 'moveLeftToRight 15s linear infinite' }} />
-        <img src="../../Public/images/images.png" width="220px" alt="" style={{ animation: 'moveLeftToRight 15s linear infinite' }} />
-        <img src="../../Public/images/Flag_of_Sri_Lanka.svg.png" width="220px" alt="" style={{ animation: 'moveLeftToRight 15s linear infinite' }} />
+        <img src="/images/bd.png" width="220px" alt="" style={{ animation: 'moveLeftToRight 15s linear infinite' }} />
+        <img src="/images/original-bhutan_flag.jpg" width="220px" alt="" style={{ animation: 'moveLeftToRight 15s linear infinite' }} />
+        <img src="/images/images (1).png" width="220px" alt="" style={{ animation: 'moveLeftToRight 15s linear infinite' }} />
+        <img src="/images/images (2).png" width="220px" alt="" style={{ animation: 'moveLeftToRight 15s linear infinite' }} />
+        <img src="/images/1f1f3-1f1f5.jpg" width="220px" alt="" style={{ animation: 'moveLeftToRight 15s linear infinite' }} />
+        <img src="/images/images.png" width="220px" alt="" style={{ animation: 'moveLeftToRight 15s linear infinite' }} />
+        <img src="/images/Flag_of_Sri_Lanka.svg.png" width="220px" alt="" style={{ animation: 'moveLeftToRight 15s linear infinite' }} />
       </div>
     </div>
   );

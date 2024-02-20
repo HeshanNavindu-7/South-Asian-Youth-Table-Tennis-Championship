@@ -15,7 +15,7 @@ const Contact = () => {
      
 			<div className="contact-card">
 				<div className="profile-icon">
-					<img src="./public/images/r.jpeg" alt="" />
+					<img src="/images/r.jpeg" alt="" />
 				</div>
 				<div className="position">
 					<h1>Mr Nusair Samsudeen</h1>
@@ -36,7 +36,7 @@ const Contact = () => {
 			</div>
 			<div className="contact-card">
 				<div className="profile-icon">
-					<img src="./public/images/chandana.jpeg" alt="" />
+					<img src="/images/chandana.jpeg" alt="" />
 				</div>
 				<div className="position">
 					<h1>Mr. CHANDANA PERERA</h1>
@@ -57,7 +57,7 @@ const Contact = () => {
 			</div>
 			<div className="contact-card">
 				<div className="profile-icon ">
-					<img  src="./public/images/prw.jpeg" alt="" />
+					<img  src="/images/prw.jpeg" alt="" />
 				</div>
 				<div className="position">
 					<h1>Mr. Prabath Priyantha</h1>
@@ -78,7 +78,7 @@ const Contact = () => {
 			</div>
 			<div className="contact-card">
 				<div className="profile-icon">
-				<img src="./public/images/we.jpeg" alt="" />
+				<img src="/images/we.jpeg" alt="" />
 				</div>
 				<div className="position">
 					<h1>Mr. Pradeep Nishantha</h1>

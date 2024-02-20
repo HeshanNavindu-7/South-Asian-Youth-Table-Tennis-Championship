@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Timecounter.css';
+import { Link } from 'react-router-dom';
 
 const Timecounter = () => {
   const [countdown, setCountdown] = useState(calculateCountdown());
@@ -61,7 +62,11 @@ const Timecounter = () => {
           </div>
         </div>
 
+        <Link to="register">
         <button className='btn1'>Register Now</button>
+        </Link>
+
+        
       </div>
     </div>
   );
