@@ -17,37 +17,13 @@ const About = () => {
         <h2 className="text-center text-6xl relative top-20 text-white">About</h2>
       </div>
       <div className="dis w-full mt-10">
-        <h2 className="text-center w-1/2 m-auto text-3xl">Tennis is a racket sport that is played either individually or between two teams of two players each. Each player uses a tennis racket that is strung with cord to strike a hollow rubber ball covered with felt over or around a net and into the opponent's court. </h2>
+        <h2 className="text-center lg:mx-24 mx-7 m-auto text-3xl">Table Tennis, also known as ping-pong, is a fast-paced indoor sport that has gained immense popularity worldwide due to its accessibility, simplicity, and exhilarating gameplay. It is played both recreationally and competitively, with millions of enthusiasts participating in clubs, leagues, and international tournaments.</h2>
       </div>
 
       <PDF/>
 
       
-      <div className="video w-full mt-10 relative">
-        {!isVideoPlaying && (
-          <button
-            className="play-btn cursor-pointer"
-            onClick={handlePlayButtonClick}
-            aria-label="Play Video"
-          >
-            <BsPlayFill className=" text-red-500"/>
-          </button>
-        )}
-
-        
-        <video
-          id="videoPlayer"
-          controls
-          width="85%"
-          height="auto"
-          onPlay={() => setVideoPlaying(true)}
-          onPause={() => setVideoPlaying(false)}
-          className="m-auto mt-28"
-        >
-          <source src="https://v1.cdnpk.net/videvo_files/video/free/video0542/large_preview/_import_6319998d0f7554.88000426.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
+      
     </div>
   );
 };

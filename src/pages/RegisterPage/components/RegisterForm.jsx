@@ -176,11 +176,15 @@ const RegisterForm = () => {
           }`}
         >
           <option value="">Select country</option>
-          <option value="Madagascar">Madagascar</option>
-          <option value="Malawi">Malawi</option>
-          <option value="Malaysia">Malaysia</option>
-          <option value="Maldives">Maldives</option>
-          <option value="Mali">Mali</option>
+          <option value="Madagascar"> Bangladesh</option>
+          <option value="Madagascar"> Bhutan</option>
+         
+          <option value="Malawi">Pakistan</option>
+          <option value="Malaysia"> India</option>
+          <option value="Maldives">Sri Lanka</option>
+          <option value="Mali">Nepal</option>
+          <option value="Mali"> Maldives</option>
+         
           {/* Add more countries as needed */}
         </select>
         {CountryError && <p className="text-red-500 text-xs">{CountryError}</p>}
@@ -219,10 +223,12 @@ const RegisterForm = () => {
           }`}
         >
           <option value="">Select Team position</option>
-          <option value="Athlate">Athlete</option>
-          <option value="Coach">Coach</option>
-          <option value="Manager">Manager</option>
-          <option value="Physio">Physio</option>
+          <option value="Athlate">Official</option>
+          <option value="Coach">Referee</option>
+          <option value="Manager">Assistant Referee</option>
+          <option value="Physio">Umpire</option> 
+          <option value="Physio">Media</option> 
+          <option value="Physio">TTASL Official</option> 
           {/* Add more positions as needed */}
         </select>
         {teamError && <p className="text-red-500 text-xs">{teamError}</p>}
