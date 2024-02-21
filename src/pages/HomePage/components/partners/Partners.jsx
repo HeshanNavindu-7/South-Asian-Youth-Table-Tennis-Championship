@@ -6,8 +6,8 @@ import './Partners.css';
 
 const Partners = () => {
   return (
-    <div className="partners mt-0 text-center">
-      <div className='inline-flex flex-col items-center '>
+    <div className="partners mt-0 text-center flex flex-wrap">
+      <div className='inline-flex flex-col items-center partners1 '>
         <h2 className="text-3xl font-bold text-center -ml-24">Partners</h2>
         <div className="box flex space-x-8 -ml-36 lg:flex-row flex-col ">
          
@@ -16,7 +16,7 @@ const Partners = () => {
          
         </div>
       </div>
-      <div className='inline-flex flex-col items-center'>
+      <div className='inline-flex flex-col items-center partners2'>
         <h2 className="text-3xl font-bold ml-36 text-center">Equipment Partners</h2>
         <div className='ml-36 mt-4' >
         <img src="/images/1.jpeg" alt="" className="w-32 lg:w-48  " />

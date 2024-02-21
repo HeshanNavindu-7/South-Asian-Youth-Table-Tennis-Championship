@@ -11,6 +11,9 @@ const Header = () => {
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
+  const hideMobileMenu = () => {
+    setMobileMenuOpen(false);
+  };
 
   return (
     <>
@@ -45,9 +48,9 @@ const Header = () => {
        </a>
       </div>
           </div>
-          <ul className="flex lg:space-x-14 md:space-x-2 text-xl list -ml-24 z-50000">
+          <ul className="flex lg:space-x-14 md:space-x-2 text-xl list -ml-24">
             <li>
-              <Link to="/" className={location.pathname === '/' ? 'active-link' : ''}>
+              <Link to="/"  className={location.pathname === '/' ? 'active-link' : ''}>
                 Home
               </Link>
             </li>
@@ -59,7 +62,7 @@ const Header = () => {
             
            
             <li>
-              <Link to="/gallery" className={location.pathname === '/event' ? 'active-link' : ''}>
+              <Link to="/gallery" className={location.pathname === '/gallery' ? 'active-link' : ''}>
                 Gallery
               </Link>
             </li>
@@ -74,7 +77,12 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to="/#contact" className={location.pathname === '/#contact' ? 'active-link' : ''}>
+              <Link to="/matches" className={location.pathname === '/matches' ? 'active-link' : ''}>
+                Matches
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className={location.pathname === '/contact' ? 'active-link' : ''}>
                 Contact
               </Link>
             </li>
@@ -92,13 +100,14 @@ const Header = () => {
       {isMobileMenuOpen && (
         <ul className="lg:space-x-20 md:space-x-2 text-2xl box1">
         
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-        <li><Link to="/event">Gallery</Link></li>
-        <li><Link to="/kandy">Kandy</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-        <li className='bg-red-600' ><Link to="/register">Register</Link></li>
+        <li><Link onClick={hideMobileMenu} to="/" className={location.pathname=='/'?'active-link':''}>Home</Link></li>
+        <li><Link onClick={hideMobileMenu}  to="/about" className={location.pathname=='/about'?'active-link':''}>About</Link></li>
+        <li><Link onClick={hideMobileMenu}  to="/gallery" className={location.pathname=='/gallery'?'active-link':''}>Gallery</Link></li>
+        <li><Link onClick={hideMobileMenu}  to="/kandy" className={location.pathname=='/kandy'?'active-link':''}>Kandy</Link></li>
+        <li><Link onClick={hideMobileMenu}  to="/NewsPage" className={location.pathname=='/NewsPages'?'active-link':''}>News</Link></li>
+        <li><Link onClick={hideMobileMenu}  to="/matches" className={location.pathname=='/matches'?'active-link':''}>Matches</Link></li>
+        <li><Link onClick={hideMobileMenu}  to="/contact" className={location.pathname=='/contact'?'active-link':''}>Contact</Link></li>
+        <li className='bg-red-600' ><Link onClick={hideMobileMenu}  to="/register">Register</Link></li>
         
       </ul>
         

@@ -70,6 +70,11 @@
     z-index: 10000;
     
 }
+.box1 li{
+    position: relative;
+    top: 70px;
+    
+}
 
 .active-link{
 
@@ -122,7 +127,7 @@
     
     .btn{
         visibility: visible;
-        left: -290px;
+        left: -420px;
 
     }
 }
@@ -189,7 +194,8 @@
     }
     .title h2{
         position: relative;
-        left: 12px;
+        left: 55px;
+        transform: scale(1.4);
     }
     .list{
         margin-left: -90px;
@@ -199,5 +205,10 @@
     .details{
         display: none;
         visibility: hidden;
+    }
+    .btn{
+        
+        left: -390px;
+
     }
 }

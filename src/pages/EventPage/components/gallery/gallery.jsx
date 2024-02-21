@@ -20,9 +20,30 @@ const Gallery = () => {
             <h3>event name</h3>
         </div>
         <div className="box">
-            <img src="/images/Untitled-1.png" width="500px" className="custom-shape"  alt="" />
+            <img src="/images/Untitled-2.png" width="500px" className="custom-shape"  alt="" />
             <h3>event name</h3>
         </div>
+        <div className="box">
+            <img src="/images/Untitled-3.png" width="500px" className="custom-shape" alt="" />
+            <h3>event name</h3>
+        </div>
+        <div className="box">
+            <img src="/images/Untitled-4.png" width="500px" className="custom-shape"  alt="" />
+            <h3>event name</h3>
+        </div>
+        <div className="box">
+            <img src="/images/img1.jpg" width="500px" className="custom-shape"  alt="" />
+            <h3>event name</h3>
+        </div>
+        <div className="box">
+            <img src="/images/img2.jpg" width="500px" className="custom-shape"  alt="" />
+            <h3>event name</h3>
+        </div>
+        <div className="box">
+            <img src="/images/img4.jpg" width="500px" className="custom-shape"  alt="" />
+            <h3>event name</h3>
+        </div>
+       
       </div>
     </div>
   );

@@ -11,6 +11,9 @@
 }
 .partners{
     margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 @keyframes anim2{
     0%{
@@ -27,5 +30,13 @@
     100%{
         transform: rotatey(360deg);
 
+    }
+}
+@media (max-width:431px){
+    .partners1{
+        margin-left:150px;
+    }
+    .partners2{
+        margin-left:-150px;
     }
 }
