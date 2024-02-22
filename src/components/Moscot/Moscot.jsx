@@ -38,7 +38,7 @@ const Moscot = () => {
      
       <div className='w-full lg:w-1/2 mt-6 -my-12 ' data-aos="fade-left"  data-aos-offset="300"
      data-aos-easing="ease-in-sine">
-       <Link to="/leader">
+       <Link to="/MoscotPage">
        <img src='/images/SACJTT_2024  mascot-01.png' alt='Moscot Logo' className='w-full' />
        
        </Link>

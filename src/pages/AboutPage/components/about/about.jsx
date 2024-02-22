@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './about.css';
 import { BsPlayFill } from 'react-icons/bs';
 import PDF from '../PDF/PDF';
+import LEADER from '../../../../components/leaderBoard/leader';
 
 const About = () => {
   const [isVideoPlaying, setVideoPlaying] = useState(false);
@@ -21,6 +22,7 @@ const About = () => {
       </div>
 
       <PDF/>
+      <LEADER/>
 
       
       

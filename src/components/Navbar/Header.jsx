@@ -77,12 +77,12 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to="/" className={location.pathname === '/matches' ? 'active-link' : ''}>
+              <Link to="/matches" className={location.pathname === '/matches' ? 'active-link' : ''}>
                 Matches
               </Link>
             </li>
             <li>
-              <Link to="/#contact" className={location.pathname === '/contact' ? 'active-link' : ''}>
+              <Link to="/contact" className={location.pathname === '/contact' ? 'active-link' : ''}>
                 Contact
               </Link>
             </li>

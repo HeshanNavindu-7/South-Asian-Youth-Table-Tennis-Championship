@@ -13,6 +13,8 @@ import Header from './components/Navbar/Header';
 import NewsPage from './pages/NewsPage/NewsPage';
 import LEADER from './components/leaderBoard/leader';
 import Matches from './pages/Matches/matches';
+import Moscot from './components/Moscot/Moscot';
+import MoscotPage from './components/MoscotPage/MoscotPage';
 
 const App = () => {
   return (
@@ -28,6 +30,7 @@ const App = () => {
         <Route path="/gallery" element={<Event/>} />
         <Route path="/matches" element={<Matches/>} />
         <Route path="/leader" element={<LEADER/>} />
+        <Route path="/MoscotPage" element={<MoscotPage/>} />
       </Routes>
     </Router>
   );
