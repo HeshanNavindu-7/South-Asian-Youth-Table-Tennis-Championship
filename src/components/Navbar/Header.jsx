@@ -105,8 +105,8 @@ const Header = () => {
         <li><Link onClick={hideMobileMenu}  to="/gallery" className={location.pathname=='/gallery'?'active-link':''}>Gallery</Link></li>
         <li><Link onClick={hideMobileMenu}  to="/kandy" className={location.pathname=='/kandy'?'active-link':''}>Kandy</Link></li>
         <li><Link onClick={hideMobileMenu}  to="/NewsPage" className={location.pathname=='/NewsPages'?'active-link':''}>News</Link></li>
-        <li><Link onClick={hideMobileMenu}  to="/matches" className={location.pathname=='/matches'?'active-link':''}>Matches</Link></li>
-        <li><Link onClick={hideMobileMenu}  to="/contact" className={location.pathname=='/#contact'?'active-link':''}>Contact</Link></li>
+        <li><Link onClick={hideMobileMenu}  to="/" className={location.pathname=='/matches'?'active-link':''}>Matches</Link></li>
+        <li><Link onClick={hideMobileMenu}  to="/" className={location.pathname=='/#contact'?'active-link':''}>Contact</Link></li>
         <li className='bg-red-600' ><Link onClick={hideMobileMenu}  to="/register">Register</Link></li>
         
       </ul>
