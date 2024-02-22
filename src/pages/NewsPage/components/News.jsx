@@ -36,6 +36,7 @@ const News = () => {
             <p>University of Colombo</p>
           </div>
         </div>
+        
       </div>
     </div>
   );

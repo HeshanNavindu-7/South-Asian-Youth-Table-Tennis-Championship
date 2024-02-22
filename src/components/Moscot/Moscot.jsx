@@ -29,7 +29,7 @@ const Moscot = () => {
         <div className='mt-4'>
           <a href="/TTASL.pdf" download>
            <button className='bg-red-500 text-white py-2 px-4 rounded-md shadow-md'>
-             Download Guideline Booklet
+             Download Prospectus Booklet
            </button>
           </a>
 
