@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Timecounter.css';
 import { Link } from 'react-router-dom';
+import moment from 'moment-timezone';
 
 const Timecounter = () => {
   const [countdown, setCountdown] = useState(calculateCountdown());
@@ -14,21 +15,22 @@ const Timecounter = () => {
   }, []);
 
   function calculateCountdown() {
-    const targetDate = new Date('2024-05-30T20:00:00Z'); // Set your target date and time
-    const now = new Date();
-    const difference = targetDate - now;
+    const targetDate = moment.tz('2024-05-26T00:00:00', 'Asia/Colombo');
+    const now = moment().tz('Asia/Colombo');
+
+    const difference = targetDate.diff(now);
 
     if (difference < 0) {
-      // Target date has passed
       return { days: '00', hours: '00', minutes: '00', seconds: '00' };
     }
 
-    const days = padZero(Math.floor(difference / (1000 * 60 * 60 * 24)));
-    const hours = padZero(Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
-    const minutes = padZero(Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)));
-    const seconds = padZero(Math.floor((difference % (1000 * 60)) / 1000));
+    const duration = moment.duration(difference);
+    const days = Math.floor(duration.asDays()); // Calculate days using asDays() method
+    const hours = padZero(duration.hours());
+    const minutes = padZero(duration.minutes());
+    const seconds = padZero(duration.seconds());
 
-    return { days, hours, minutes, seconds };
+    return { days: padZero(days), hours, minutes, seconds }; // Ensure days are padded with zeros
   }
 
   function padZero(value) {
@@ -39,7 +41,7 @@ const Timecounter = () => {
     <div className="boxa">
       <div className="boxa1">
         
-        <h1>SOUTH ASIAN YOUTH TABLE TENNIS CHAMPIONSHIPS-2024</h1>
+        <h1>SOUTH ASIAN YOUTH TABLE TENNIS CHAMPIONSHIP-2024</h1>
         <div className="boxa2">
           <div className="t1">
             <span>{countdown.days}</span>
