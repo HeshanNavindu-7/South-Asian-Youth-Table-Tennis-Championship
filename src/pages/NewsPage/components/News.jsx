@@ -16,6 +16,35 @@ const News = () => {
       <div className="cards flex flex-col sm:flex-row justify-center text-center mt-10">
         <div className="box lg:w-56 mb-4 mx-auto">
           <img
+            src="./images/SACJTT_2024  mascot-01.png"
+            className="custom-shape  lg:max-w-80 lg:mx-1"
+            alt=""
+          />
+        </div>
+        <div className="box  md:text-center lg:w-1/3 mb-4 lg:ml-12">
+          <div className="lg:text-left text-center">
+           
+            <p>Mascot - SAYTTC 2024 - Kandy<br/>
+
+National Animal of Sri Lanka
+
+The Giant Squareail, scientifically known as Tetragonula iridipennis, is a fascinating species of stingless bee native to Sri Lanka. Renowned for its unique social structure and important ecological role, the Giant Squareail holds a special place in the biodiversity of the island nation.
+
+This species of bee is notably larger than its counterparts and exhibits complex social behaviors within its colonies. The colonies are typically found in tree hollows or other sheltered locations, where thousands of individuals work together harmoniously. They play a crucial role in pollination, aiding in the reproduction of various flora across Sri Lanka's diverse ecosystems.
+
+One of the distinguishing features of the Giant Squareail is its construction of intricate honeycombs. These honeycombs serve as both nurseries for the young bees and storage for pollen and nectar collected from surrounding flowers. Additionally, the honey produced by these bees is highly valued for its medicinal properties in traditional Sri Lankan medicine.
+
+Despite its significance, the Giant Squareail faces threats from habitat loss, pesticide use, and climate change. Conservation efforts are crucial to ensure the continued existence of this remarkable species and to maintain the delicate balance of Sri Lanka's ecosystems.
+
+Through education, habitat preservation, and sustainable beekeeping practices, we can work towards safeguarding the Giant Squareail and celebrating its role in the natural heritage of Sri Lanka. Protecting these tiny yet vital creatures is not only essential for biodiversity conservation but also for the well-being of ecosystems and human livelihoods across the island.</p>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div className="cards flex flex-col sm:flex-row justify-center text-center mt-10">
+        <div className="box lg:w-56 mb-4 mx-auto">
+          <img
             src="./images/SACJTT Championship 2024 - Kandy_ logos-01.png"
             className="custom-shape  lg:max-w-80 lg:mx-1"
             alt=""
