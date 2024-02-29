@@ -1,6 +1,6 @@
 .title{
 
-    width: 550px;
+    width: 450px;
     height: 130px;
 
     background:linear-gradient(to left,red,black);
@@ -28,7 +28,7 @@
     left: 440px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
-    
+   
 }
 .list li{
     margin-top: 5px;

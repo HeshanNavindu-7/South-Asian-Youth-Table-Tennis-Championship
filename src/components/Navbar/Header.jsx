@@ -48,7 +48,7 @@ const Header = () => {
        </a>
       </div>
           </div>
-          <ul className="flex lg:space-x-14 md:space-x-2 text-xl list -ml-24">
+          <ul className="flex lg:space-x-14 md:space-x-2 text-xl list -ml-52">
             <li>
               <Link to="/"  className={location.pathname === '/' ? 'active-link' : ''}>
                 Home
@@ -82,6 +82,11 @@ const Header = () => {
               </Link>
             </li>
             <li>
+              <Link to="/" className={location.pathname === '/itsme' ? 'active-link' : ''}>
+                It's Me
+              </Link>
+            </li>
+            <li>
               <Link to="/#contact" className={location.pathname === '/contact' ? 'active-link' : ''}>
                 Contact
               </Link>
@@ -106,6 +111,7 @@ const Header = () => {
         <li><Link onClick={hideMobileMenu}  to="/kandy" className={location.pathname=='/kandy'?'active-link':''}>Kandy</Link></li>
         <li><Link onClick={hideMobileMenu}  to="/NewsPage" className={location.pathname=='/NewsPages'?'active-link':''}>News</Link></li>
         <li><Link onClick={hideMobileMenu}  to="/" className={location.pathname=='/matches'?'active-link':''}>Matches</Link></li>
+        <li><Link onClick={hideMobileMenu}  to="/" className={location.pathname=='/itsme'?'active-link':''}> It's Me</Link></li>
         <li><Link onClick={hideMobileMenu}  to="/" className={location.pathname=='/#contact'?'active-link':''}>Contact</Link></li>
         <li className='bg-red-600' ><Link onClick={hideMobileMenu}  to="/register">Register</Link></li>
         
