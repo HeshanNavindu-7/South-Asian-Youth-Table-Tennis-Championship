@@ -82,7 +82,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to="/" className={location.pathname === '/itsme' ? 'active-link' : ''}>
+              <Link to="/itsme" className={location.pathname === '/itsme' ? 'active-link' : ''}>
                 It's Me
               </Link>
             </li>

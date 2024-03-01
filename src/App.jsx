@@ -14,6 +14,7 @@ import NewsPage from './pages/NewsPage/NewsPage';
 import LEADER from './components/leaderBoard/leader';
 import Matches from './pages/Matches/matches';
 import MoscotPage from './components/MoscotPage/MoscotPage';
+import Itsme from './pages/Itsme/Itsme';
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/NewsPage" element={<NewsPage />} />
         <Route path="/gallery" element={<Event/>} />
         <Route path="/matches" element={<Matches/>} />
+        <Route path="/itsme" element={<Itsme/>} />
         <Route path="/MoscotPage" element={<MoscotPage/>} />
         <Route path="/leader" element={<LEADER/>} />
       </Routes>
