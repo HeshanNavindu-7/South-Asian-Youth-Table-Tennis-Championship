@@ -81,7 +81,7 @@
     color: red;
 }
 
-@media (max-width:912px){
+@media (max-width:932px){
     .title{
         width: 500px;
     }
@@ -156,7 +156,12 @@
 }
 @media (max-width:1024px){
     .title{
-        width: 500px;
+        width: 250px;
+    }
+    .title h2 img{
+        width: 100px;
+        margin-left: -60px;
+        margin-top: 10px;
     }
     .details{
         left: 50px;
@@ -164,13 +169,13 @@
         
     }
     .list li{
-        font-size: 15px;
+        font-size: 14px;
         
         
         
     }
     .list{
-        left: 380px;
+        left: 250px;
     }
 }
 
