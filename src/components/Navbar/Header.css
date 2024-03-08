@@ -160,7 +160,7 @@
     }
     .title h2 img{
         width: 100px;
-        margin-left: -60px;
+        margin-left: 44px;
         margin-top: 10px;
     }
     .details{
@@ -213,7 +213,7 @@
     }
     .btn{
         
-        left: -390px;
+        left: -302px;
 
     }
 }

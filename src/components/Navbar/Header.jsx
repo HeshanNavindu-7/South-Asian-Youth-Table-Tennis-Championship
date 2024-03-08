@@ -19,7 +19,7 @@ const Header = () => {
     <>
       <nav className="p-0 flex h-50 w-full relative overflow-hidden header">
         <div className="lg:basis-2/5 transform -skew-x-12 title">
-          <h2 className="text-3xl"><img src="/images/logo.png"  className="-mt-3 lg:w-44 w-36" alt="" /></h2>
+          <h2 className="text-3xl"><img src="/images/logo.png"  className="ml-7 -mt-3 lg:w-44 w-36" alt="" /></h2>
         </div>
 
         <div className="contacts">
@@ -103,7 +103,7 @@ const Header = () => {
         </button>
       </nav>
       {isMobileMenuOpen && (
-        <ul className="lg:space-x-20 md:space-x-2 lg:text-2xl md:text-xl box1">
+        <ul className="lg:space-x-20 md:space-x-2  lg:text-2xl md:text-xl box1">
         
         <li><Link onClick={hideMobileMenu} to="/" className={location.pathname=='/'?'active-link':''}>Home</Link></li>
         <li><Link onClick={hideMobileMenu}  to="/about" className={location.pathname=='/about'?'active-link':''}>About</Link></li>
