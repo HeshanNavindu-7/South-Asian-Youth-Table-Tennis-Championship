@@ -20,6 +20,7 @@ const Itsme = () => {
     {name: 'Radinsa & Rohansa',  school: "Gateway College Colombo",src: './images/pic6.jpeg' },
     {name: 'Methuli Nelinya',src: './images/pic7.jpeg' },
     {name: 'Thinuli Thiyansa',src: './images/pic8.jpeg' },
+    {name: 'Sandiw Kuruwita',  school: "Royal College, Colombo",src: './images/pic9.jpeg' },
     {src: './images/download.png' },
     {src: './images/download.png' },
     {src: './images/download.png' },
