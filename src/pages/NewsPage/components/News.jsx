@@ -16,7 +16,7 @@ const News = () => {
       <div className="cards flex flex-col sm:flex-row justify-center text-center mt-10">
         <div className="box lg:w-56 mb-4 mx-auto">
           <img
-            src="./images/SACJTT_2024  mascot-01.png"
+            src="./images/b.jpeg"
             className="custom-shape  lg:max-w-80 lg:mx-1"
             alt=""
           />
@@ -24,19 +24,8 @@ const News = () => {
         <div className="box  md:text-center lg:w-1/3 mb-4 lg:ml-12">
           <div className="lg:text-left text-center">
            
-            <p>Mascot - SAYTTC 2024 - Kandy<br/>
-
-National Animal of Sri Lanka
-
-The Giant Squareail, scientifically known as Tetragonula iridipennis, is a fascinating species of stingless bee native to Sri Lanka. Renowned for its unique social structure and important ecological role, the Giant Squareail holds a special place in the biodiversity of the island nation.
-
-This species of bee is notably larger than its counterparts and exhibits complex social behaviors within its colonies. The colonies are typically found in tree hollows or other sheltered locations, where thousands of individuals work together harmoniously. They play a crucial role in pollination, aiding in the reproduction of various flora across Sri Lanka's diverse ecosystems.
-
-One of the distinguishing features of the Giant Squareail is its construction of intricate honeycombs. These honeycombs serve as both nurseries for the young bees and storage for pollen and nectar collected from surrounding flowers. Additionally, the honey produced by these bees is highly valued for its medicinal properties in traditional Sri Lankan medicine.
-
-Despite its significance, the Giant Squareail faces threats from habitat loss, pesticide use, and climate change. Conservation efforts are crucial to ensure the continued existence of this remarkable species and to maintain the delicate balance of Sri Lanka's ecosystems.
-
-Through education, habitat preservation, and sustainable beekeeping practices, we can work towards safeguarding the Giant Squareail and celebrating its role in the natural heritage of Sri Lanka. Protecting these tiny yet vital creatures is not only essential for biodiversity conservation but also for the well-being of ecosystems and human livelihoods across the island.</p>
+            <p>
+            Attention all advertisers! Are you looking to gain exposure during the South Asian Youth Table Tennis Championship 2024 in Kandy? Look no further! We have various advertising spaces available on our souvenir publication to suit your needs. Advertise on the back page in full color for 100,000 LKR, or opt for the back page inner for 25,000 LKR. For prime visibility, consider the front page inner for the same rate. Inner pages are also available: go for full color at 10,000 LKR or half color for 6,000 LKR. For further information and bookings, please get in touch with Mr. Chandana Perera at 0714472400. Don't miss this chance to reach a targeted audience and support a thrilling sporting event!</p>
           </div>
         </div>
         
@@ -45,7 +34,25 @@ Through education, habitat preservation, and sustainable beekeeping practices, w
       <div className="cards flex flex-col sm:flex-row justify-center text-center mt-10">
         <div className="box lg:w-56 mb-4 mx-auto">
           <img
-            src="./images/SACJTT Championship 2024 - Kandy_ logos-01.png"
+            src="./images/SACJTT_2024  mascot-01.png"
+            className="custom-shape  lg:max-w-80 lg:mx-1"
+            alt=""
+          />
+        </div>
+        <div className="box  md:text-center lg:w-1/3 mb-4 lg:ml-12">
+          <div className="lg:text-left text-center">
+           
+            <p>
+            The grizzled giant squirrel (Ratufa macroura) is a large tree squirrel in the genus Ratufa found in the highlands of the Central and Uva provinces of Sri Lanka, and in patches of riparian forest along the Kaveri River and in the hill forests of Karnataka, Tamil Nadu and Kerala states of southern India. The International Union for Conservation of Nature (IUCN) lists the species as near threatened due to habitat loss and hunting. Grizzled giant squirrels are named for the white flecks of hair that cover their greyish-brown bodies, giving them a grizzled look.</p>
+          </div>
+        </div>
+        
+      </div>
+      
+      <div className="cards flex flex-col sm:flex-row justify-center text-center mt-10">
+        <div className="box lg:w-56 mb-4 mx-auto">
+          <img
+            src="./images/a.png"
             className="custom-shape  lg:max-w-80 lg:mx-1"
             alt=""
           />
