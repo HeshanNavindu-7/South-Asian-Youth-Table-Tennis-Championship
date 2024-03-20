@@ -10,7 +10,7 @@ const PDF = () => {
       {/* Embedded PDF */}
       <div className="m-auto max-w-screen-md overflow-hidden">
         <object
-          data="/TTASL.pdf"
+          data="/TTASL Prospectus South Asian Youth Table Tennis Ch_240318_031457.pdf"
           type="application/pdf"
           width="100%"
           height="600"
@@ -21,7 +21,7 @@ const PDF = () => {
 
       {/* Button for downloading the PDF */}
       <a
-        href="/TTASL.pdf"
+        href="/TTASL Prospectus South Asian Youth Table Tennis Ch_240318_031457.pdf"
         className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded inline-block mt-4"
         download
         style={{ marginTop: "2rem" }}

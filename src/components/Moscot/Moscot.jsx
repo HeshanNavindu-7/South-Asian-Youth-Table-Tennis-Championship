@@ -26,8 +26,13 @@ const Moscot = () => {
         <p>Sunday 26 May 2024 to Wednesday 29 May 2024</p><br/>
         <p>Team Events : 26-27 May, 2024</p>
         <p>Individual Events : 28-29 May, 2024</p>
-        <div className='mt-4'>
-          <a href="/TTASL.pdf" download>
+        <div className='mt-4 space-x-3'>
+          <a href="/Invitations to SAY TTC.pdf" download>
+           <button className='bg-red-500 text-white py-2 px-4 rounded-md shadow-md'>
+            Invitation SAYTTC
+           </button>
+          </a>
+          <a href="/TTASL Prospectus South Asian Youth Table Tennis Ch_240318_031457.pdf" download>
            <button className='bg-red-500 text-white py-2 px-4 rounded-md shadow-md'>
              Download Prospectus Booklet
            </button>
