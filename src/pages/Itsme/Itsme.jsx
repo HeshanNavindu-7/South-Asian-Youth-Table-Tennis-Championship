@@ -21,6 +21,8 @@ const Itsme = () => {
     { name: 'Shaneli Wickramanayaka', school: "Buddhist Ladies Collage - Colombo 7", src: './images/pic2.jpeg' },
     { name: 'Akeesha Samaraweera', school: "Anula Vidyalaya, Nugegoda",src: './images/pic3.jpeg' },
     {name: 'Hirundi Wickramasinghe', school: "Anula Vidyalaya - Nugegoda",src: './images/pic5.jpeg' },
+    {name: 'Lisara Wickramasinghe', school: "Gateway Colombo",src: './images/pic10 (1).jpeg' },
+    {name: 'K.Aathigesh', school: "Hindu College Colombo",src: './images/pic10 (2).jpeg' },
     {src: './images/download.png' },
     {src: './images/download.png' },
     {src: './images/download.png' },
