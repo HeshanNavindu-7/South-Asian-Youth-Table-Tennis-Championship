@@ -4,6 +4,10 @@ import './itsme.css';
 const Itsme = () => {
   // Create an array of objects, each containing information about the image
   const imagesData = [
+    { name: 'Akeesha Samaraweera', school: "Anula Vidyalaya, Nugegoda",src: './images/pic3.jpeg' },
+    {name: 'Hirundi Wickramasinghe', school: "Anula Vidyalaya - Nugegoda",src: './images/pic5.jpeg' },
+    {name: 'Lisara Wickramasinghe', school: "Gateway Colombo",src: './images/pic10 (1).jpeg' },
+    {name: 'K.Aathigesh', school: "Hindu College Colombo",src: './images/pic10 (2).jpeg' },
      {name: 'T Luxshitaa ', school: "Bishop’s College - Colombo",src: './images/pic4.jpeg' },
     {name: 'Charitha Gimhan de silva', src: './images/DSC_0237.jpg' },
     {name: 'Shinura kevin', src: './images/DSC_0238 (1).jpg' },
@@ -19,15 +23,12 @@ const Itsme = () => {
     {name: 'Sandiw Kuruwita',  school: "Royal College, Colombo",src: './images/pic9.jpeg' },
     { name: 'Pramukshi  Fernando', school: "Bishop 's College Colombo", src: './images/pic1.jpeg' },
     { name: 'Shaneli Wickramanayaka', school: "Buddhist Ladies Collage - Colombo 7", src: './images/pic2.jpeg' },
-    { name: 'Akeesha Samaraweera', school: "Anula Vidyalaya, Nugegoda",src: './images/pic3.jpeg' },
-    {name: 'Hirundi Wickramasinghe', school: "Anula Vidyalaya - Nugegoda",src: './images/pic5.jpeg' },
-    {name: 'Lisara Wickramasinghe', school: "Gateway Colombo",src: './images/pic10 (1).jpeg' },
-    {name: 'K.Aathigesh', school: "Hindu College Colombo",src: './images/pic10 (2).jpeg' },
+  
     {src: './images/download.png' },
     {src: './images/download.png' },
     {src: './images/download.png' },
     {src: './images/download.png' },
-    {src: './images/download.png' },
+  
    
     // Add more objects for each image
   ];
