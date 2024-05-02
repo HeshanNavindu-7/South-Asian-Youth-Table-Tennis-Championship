@@ -4,6 +4,7 @@ import './itsme.css';
 const Itsme = () => {
   // Create an array of objects, each containing information about the image
   const imagesData = [
+    { name: 'Minuli Wickramnayake', school: "Musaeus College - Colombo",src: './images/WhatsApp Image 2024-04-29 at 06.25.44_b9804e61.jpg' },
     { name: 'Akeesha Samaraweera', school: "Anula Vidyalaya, Nugegoda",src: './images/pic3.jpeg' },
     {name: 'Hirundi Wickramasinghe', school: "Anula Vidyalaya - Nugegoda",src: './images/pic5.jpeg' },
     {name: 'Lisara Wickramasinghe', school: "Gateway Colombo",src: './images/pic10 (1).jpeg' },
