@@ -8,6 +8,21 @@ const images = [
   '/images/Untitled-2.png',
   '/images/Untitled-3.png',
   '/images/Untitled-4.png',
+  '/images/pic (1).jpeg',
+  '/images/pic (2).jpeg',
+  '/images/pic (3).jpeg',
+  '/images/pic (4).jpeg',
+  '/images/pic (5).jpeg',
+  '/images/pic (6).jpeg',
+  '/images/pic (7).jpeg',
+  '/images/pic (8).jpeg',
+  '/images/pic (9).jpeg',
+  '/images/pic (10).jpeg',
+  '/images/pic (11).jpeg',
+  '/images/pic (12).jpeg',
+  '/images/pic (13).jpeg',
+  '/images/pic (14).jpeg',
+  '/images/pic (15).jpeg',
   // Add more image URLs as needed
 ];
 

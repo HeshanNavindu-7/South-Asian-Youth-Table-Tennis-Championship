@@ -223,12 +223,15 @@ const RegisterForm = () => {
           }`}
         >
           <option value="">Select Team position</option>
-          <option value="Athlate">Official</option>
-          <option value="Coach">Referee</option>
-          <option value="Manager">Assistant Referee</option>
-          <option value="Physio">Umpire</option> 
-          <option value="Physio">Media</option> 
-          <option value="Physio">TTASL Official</option> 
+          <option value="Deputy-Competition-Manage">Deputy Competition Manage</option>
+          <option value="Referee">Referee</option>
+          <option value="Assistant-Referee">Assistant Referee</option>
+          <option value="Umpire">Umpire</option> 
+          <option value="Player">Player</option> 
+          <option value="Official">Official</option> 
+          <option value="Media">Media</option> 
+          <option value="Technical-Delegate">Technical Delegate</option> 
+          <option value="Competition-Manager">Competition Manager</option> 
           {/* Add more positions as needed */}
         </select>
         {teamError && <p className="text-red-500 text-xs">{teamError}</p>}
