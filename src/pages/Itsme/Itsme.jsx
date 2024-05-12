@@ -5,6 +5,7 @@ const Itsme = () => {
   // Create an array of objects, each containing information about the image
   const imagesData = [
 
+    { name: 'Medhavi Viaj Neththikumara', school: "Dharmapala Vidyalaya - Pannipitiya", src: './images/pic15.jpeg' },
     { name: 'Risali Perera', school: "Dharmapala Vidyalaya - Pannipitiya", src: './images/pic12.jpg' },
     { name: 'Minuli Wickramnayake', school: "Musaeus College - Colombo", src: './images/pic11.jpeg' },
     { name: 'Akeesha Samaraweera', school: "Anula Vidyalaya, Nugegoda", src: './images/pic3.jpeg' },
