@@ -77,7 +77,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link to="/" className={location.pathname === '/matches' ? 'active-link' : ''}>
+              <Link to="/matches" className={location.pathname === '/matches' ? 'active-link' : ''}>
                 Matches
               </Link>
             </li>
