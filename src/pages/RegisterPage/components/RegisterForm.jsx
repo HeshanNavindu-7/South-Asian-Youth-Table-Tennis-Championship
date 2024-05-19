@@ -1,9 +1,8 @@
+import { ref as dbRef, set } from 'firebase/database';
+import { getDownloadURL, getStorage, ref, uploadBytes } from 'firebase/storage';
 import React, { useState } from 'react';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
-import { push, ref as dbRef, set } from 'firebase/database';
-import { auth, database } from '../../../firebase';
 import Modal from 'react-modal';
+import { database } from '../../../firebase';
 import './RegisterForm.css';
 
 const RegisterForm = () => {
@@ -168,14 +167,14 @@ const RegisterForm = () => {
                 }`}
             >
               <option value="">Select country</option>
-              <option value="Madagascar"> Bangladesh</option>
-              <option value="Madagascar"> Bhutan</option>
+              <option value=" Bangladesh"> Bangladesh</option>
+              <option value="Bhutan"> Bhutan</option>
 
-              <option value="Malawi">Pakistan</option>
-              <option value="Malaysia"> India</option>
-              <option value="Maldives">Sri Lanka</option>
-              <option value="Mali">Nepal</option>
-              <option value="Mali"> Maldives</option>
+              <option value="Pakistan">Pakistan</option>
+              <option value="india"> India</option>
+              <option value="Sri lanka">Sri Lanka</option>
+              <option value="Nepal">Nepal</option>
+              <option value="Maldives"> Maldives</option>
 
               {/* Add more countries as needed */}
             </select>
