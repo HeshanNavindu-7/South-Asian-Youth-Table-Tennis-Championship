@@ -1,64 +1,90 @@
-// src/pages/AboutPage.jsx
+// src/Matches.js
+
 import React from 'react';
-import { Home } from 'react-feather';
-import './matches.css'
+import { Grid, Typography, Card, CardContent } from '@mui/material';
+
+import './matches.css';
+import Player from '../../components/Matchplayers/Player';
 
 const Matches = () => {
   return (
-    <div className="container mx-auto">
-
-      <div id="lsc_app" className="grid grid-cols-1">
-
-        <section id="lsc_header" className="col-span-1">
-          <div className="grid grid-cols-1 sm:grid-cols-2">
-            <div className="col-span-1">
-              <span className="block text-sm font-medium text-gray-500">Round of 16</span>
-              <span className="block text-lg font-semibold">UEFA Champions League</span>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3">
-            <div className="col-span-1 sm:col-span-1">
-              <img src="https://i.postimg.cc/Jt4kSHD7/barcelona-icon.png" className="w-12 h-12" alt="Barcelona Icon" />
-              <div className="mt-2">
-                <ul className="text-sm text-gray-500">
-                  <li>L Messi 60'</li>
-                  <li>L Suarez 66' 88'</li>
-                </ul>
+    <div className="m-8">
+      <Grid container spacing={3} justifyContent="center">
+        <Grid item xs={12} sm={6} md={5}>
+          <Card>
+            <CardContent>
+              <div className='row'>
+                <Typography variant="h5" component="div">
+                  Men's Singles - Qualifying Round 2
+                </Typography>
+                <div className='right-side-score'>
+                  2-3
+                </div>
               </div>
-            </div>
-            <div className="col-span-1 sm:col-span-1 flex items-center justify-center">
-              <span className="text-2xl font-semibold">3 - 2</span>
-              <span className="ml-2 text-sm text-gray-500">90 + 2'</span>
-            </div>
-            <div className="col-span-1 sm:col-span-1">
-              <img src="https://i.postimg.cc/8f5fvxQf/liverpool-icon.png" className="w-12 h-12" alt="Liverpool Icon" />
-              <div className="mt-2">
-                <ul className="text-sm text-gray-500">
-                  <li>M Salah 54'</li>
-                  <li>S Mane 85'</li>
-                </ul>
+              <hr></hr>
+              <div>
+             
+                <Player
+                avatar="/images/pic4.jpeg"
+                name="Rafael Turrini"
+                scores={[2, 11, 6, 14, 10, 7]}
+                countryFlag="/images/pic4.jpeg"
+                status="lose"
+                />
+              
+                <Player
+                   avatar="/images/pic4.jpeg"
+                   name="Lubomir Pistej"
+                   scores={[3, 3, 11, 12, 12, 11]}
+                   countryFlag="/images/pic4.jpeg"
+                   status="win"
+                />
               </div>
-            </div>
-          </div>
-          <div className="grid grid-cols-1">
-            <div className="col-span-1">
-              <ul className="flex justify-center mt-4">
-                <li className="mr-4">
-                  <span className="text-sm font-semibold text-gray-500">Statistics</span>
-                </li>
-                <li className="mr-4">
-                  <span className="text-sm font-semibold text-gray-500">Lineup</span>
-                </li>
-                <li>
-                  <span className="text-sm font-semibold text-gray-500">Formation</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-      </div>
-
+            </CardContent>
+          </Card>
+        </Grid>
+        <Grid item xs={12} sm={6} md={5}>
+          <Card>
+            <CardContent>
+              <Typography variant="h5" component="div">
+                Team Roles and Responsibilities
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                <ul>
+                  <li><strong>Project Manager</strong>
+                    <ul>
+                      <li>Oversee project progress</li>
+                      <li>Coordinate between teams</li>
+                      <li>Manage timelines and resources</li>
+                    </ul>
+                  </li>
+                  <li><strong>Lead Developer</strong>
+                    <ul>
+                      <li>Design and implement core features</li>
+                      <li>Ensure code quality</li>
+                      <li>Mentor junior developers</li>
+                    </ul>
+                  </li>
+                  <li><strong>Quality Assurance</strong>
+                    <ul>
+                      <li>Develop and execute test plans</li>
+                      <li>Identify and document bugs</li>
+                      <li>Ensure product meets quality standards</li>
+                    </ul>
+                  </li>
+                  <li><strong>UI/UX Designer</strong>
+                    <ul>
+                      <li>Create user interface designs</li>
+                      <li>Conduct user experience research</li>
+                      <li>Collaborate with developers for implementation</li>
+                    </ul>
+                  </li>
+                </ul>
+              </Typography>
+            </CardContent>
+          </Card>
+        </Grid>
+      </Grid>
     </div>
   );
 };
