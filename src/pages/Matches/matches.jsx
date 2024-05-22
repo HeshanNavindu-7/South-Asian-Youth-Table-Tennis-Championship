@@ -47,6 +47,48 @@ const Matches = () => {
           status: 'win'
         }
       ]
+    },
+    {
+      id: 3,
+      title: "Women's Singles - Qualifying Round 9",
+      score: '1-3',
+      players: [
+        {
+          avatar: '/images/pic4.jpeg',
+          name: 'Player A',
+          scores: [2, 11, 6, 14],
+          countryFlag: '/images/pic4.jpeg',
+          status: 'lose'
+        },
+        {
+          avatar: '/images/pic4.jpeg',
+          name: 'Player B',
+          scores: [3, 3, 11, 12],
+          countryFlag: '/images/pic4.jpeg',
+          status: 'win'
+        }
+      ]
+    },
+    {
+      id: 4,
+      title: "Women's Singles - Qualifying Round 6",
+      score: '1-3',
+      players: [
+        {
+          avatar: '/images/pic4.jpeg',
+          name: 'Player A',
+          scores: [2, 11, 6, 14],
+          countryFlag: '/images/pic4.jpeg',
+          status: 'lose'
+        },
+        {
+          avatar: '/images/pic4.jpeg',
+          name: 'Player B',
+          scores: [3, 3, 11, 12],
+          countryFlag: '/images/pic4.jpeg',
+          status: 'win'
+        }
+      ]
     }
   ];
 
