@@ -4,7 +4,7 @@ import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 import './slideshow.css';
 const images = [
   '/images/Untitled-5.png',
-  '/images/all.jpeg',
+  '/images/aaall.jpeg',
   '/images/Untitled-1.png',
   '/images/Untitled-2.png',
   '/images/Untitled-3.png',
