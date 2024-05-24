@@ -16,7 +16,7 @@ const Matches = () => {
   const matches = [
     {
       id: 1,
-      title: "Men's Singles - Qualifying Round 2",
+      title: "Boys - Qualifying Round 2",
       score: '2-3',
       players: [
         {
@@ -58,7 +58,7 @@ const Matches = () => {
     },
     {
       id: 3,
-      title: "Women's Singles - Qualifying Round 9",
+      title: "Girls - Qualifying Round 9",
       score: '1-3',
       players: [
         {
@@ -79,7 +79,7 @@ const Matches = () => {
     },
     {
       id: 4,
-      title: "Women's Singles - Qualifying Round 6",
+      title: "Girls - Qualifying Round 6",
       score: '1-3',
       players: [
         {
@@ -119,8 +119,8 @@ const Matches = () => {
       <div className="m-8">
         <div className="filter-buttons">
           <Button variant="contained" color="error" onClick={() => setFilter('all')}>All</Button>
-          <Button variant="contained" color="error" onClick={() => setFilter("Men's Singles")}>Men's Singles</Button>
-          <Button variant="contained" color="error" onClick={() => setFilter("Women's Singles")}>Women's Singles</Button>
+          <Button variant="contained" color="error" onClick={() => setFilter("Girls")}>Girls</Button>
+          <Button variant="contained" color="error" onClick={() => setFilter("Boys")}>Boys</Button>
         </div>
         <Grid container spacing={3} justifyContent="center">
           {filteredMatches.map((match) => (

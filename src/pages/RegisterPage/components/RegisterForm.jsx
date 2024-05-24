@@ -1,9 +1,8 @@
+import { ref as dbRef, set } from 'firebase/database';
+import { getDownloadURL, getStorage, ref, uploadBytes } from 'firebase/storage';
 import React, { useState } from 'react';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
-import { push, ref as dbRef, set } from 'firebase/database';
-import { auth, database } from '../../../firebase';
 import Modal from 'react-modal';
+import { database } from '../../../firebase';
 import './RegisterForm.css';
 
 const RegisterForm = () => {
@@ -126,6 +125,7 @@ const RegisterForm = () => {
           <div>
             <label className="block text-gray-700 text-sm font-bold mb-2">Full Name</label>
             <input
+              disabled
               type="text"
               placeholder="Enter your full name"
               value={username}
@@ -138,6 +138,7 @@ const RegisterForm = () => {
 
             <label className="block text-gray-700 text-sm font-bold mb-2">Email</label>
             <input
+              disabled
               type="email"
               placeholder="Enter your email"
               value={email}
@@ -152,9 +153,11 @@ const RegisterForm = () => {
 
             <label className="block text-gray-700 text-sm font-bold mb-2">Birthday</label>
             <input
+              disabled
               type="date"
               placeholder="Enter your birthday"
               value={birthday}
+
               onChange={(e) => setBirthday(e.target.value)}
               className={`mb-4 p-3 border rounded w-full focus:outline-none ${birthdayError ? 'border-red-500' : 'border-gray-300'
                 }`}
@@ -162,6 +165,7 @@ const RegisterForm = () => {
             {birthdayError && <p className="text-red-500 text-xs">{birthdayError}</p>}
             <label className="block text-gray-700 text-sm font-bold mb-2">Select Country</label>
             <select
+              disabled
               value={Country}
               onChange={(e) => setCountry(e.target.value)}
               className={`mb-4 p-3 border rounded w-full focus:outline-none ${CountryError ? 'border-red-500' : 'border-gray-300'
@@ -185,6 +189,7 @@ const RegisterForm = () => {
           <div>
             <label className="block text-gray-700 text-sm font-bold mb-2">Preferred Name</label>
             <input
+              disabled
               type="text"
               placeholder="Enter your preferred name"
               value={Prefername}
@@ -195,6 +200,7 @@ const RegisterForm = () => {
             {PrefernameError && <p className="text-red-500 text-xs">{PrefernameError}</p>}
             <label className="block text-gray-700 text-sm font-bold mb-2">NIC Number/Passport Number</label>
             <input
+              disabled
               type="text"
               placeholder="Enter your NIC number or Passport number"
               value={nicNumber}
@@ -206,6 +212,7 @@ const RegisterForm = () => {
 
             <label className="block text-gray-700 text-sm font-bold mb-2">Select Team position</label>
             <select
+              disabled
               value={team}
               onChange={(e) => setTeam(e.target.value)}
               className={`mb-4 p-3 border rounded w-full focus:outline-none ${teamError ? 'border-red-500' : 'border-gray-300'
@@ -227,6 +234,7 @@ const RegisterForm = () => {
 
             <label className="block text-gray-700 text-sm font-bold mb-2">Upload Profile Picture</label>
             <input
+              disabled
               type="file"
               accept="image/*"
               onChange={handleImageChange}
@@ -237,6 +245,7 @@ const RegisterForm = () => {
         </div>
         <div className="px-6 py-4 bg-gray-100 border-t border-gray-200 flex justify-end">
           <button
+            disabled
             onClick={handleRegister}
             className="bg-red-500 text-white px-4 py-2 rounded focus:outline-none hover:bg-red-600"
           >
