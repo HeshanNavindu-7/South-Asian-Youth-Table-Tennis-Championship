@@ -1,5 +1,5 @@
 import CloseIcon from '@mui/icons-material/Close';
-import { AppBar, Button, Card, CardContent, Dialog, Grid, IconButton, Slide, Toolbar, Typography } from '@mui/material';
+import { AppBar, Button, Card, CardContent, Dialog, Grid, IconButton, Slide, Table, TableCell, TableContainer, TableHead, TableRow, Toolbar, Typography } from '@mui/material';
 import React, { useState } from 'react';
 import Player from '../../components/Matchplayers/Player';
 import './matches.css';
@@ -161,58 +161,92 @@ const Matches = () => {
       </div>
 
       {selectedMatch &&
-        <Dialog
-          fullScreen
-          open={open}
-          onClose={handleClose}
-          TransitionComponent={Transition}
-          className=''
-        >
-          <AppBar sx={{ position: 'relative', backgroundColor: "red" }}>
-            <Toolbar>
-              <IconButton
-                edge="start"
-                color="inherit"
-                onClick={handleClose}
-                aria-label="close"
-              >
-                <CloseIcon />
-              </IconButton>
-              <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
-                Score
-              </Typography>
+        <div className='w-full'>
+          <Dialog
+            fullScreen
+            open={open}
+            onClose={handleClose}
+            TransitionComponent={Transition}
+            className=''
+          >
+            <AppBar sx={{ position: 'relative', backgroundColor: "red" }}>
+              <Toolbar>
+                <IconButton
+                  edge="start"
+                  color="inherit"
+                  onClick={handleClose}
+                  aria-label="close"
+                >
+                  <CloseIcon />
+                </IconButton>
+                <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
+                  Back
+                </Typography>
 
-            </Toolbar>
-          </AppBar>
-          <div className='w-full bg-black max-sm:absolute overflow-hidden -mt-20' >
-            <h2 className=' max-sm:relative max-md:relative max-md:top-40 text-center text-5xl font-bold lg:relative top-48 text-white'>TENNISE COMPITION</h2>
-            <div className=' flex max-sm:w-fit bg-black m-auto mt-28' style={{ height: "800px", }} >
-              <div className="box mt-10">
-                <img className=' max-sm:w-96 max-sm:mt-40 max-md:w-72 max-lg:w-80 max-2xl:w-96 2xl:w-96 ' src={selectedMatch.players[0].avatar} />
-              </div>
-
-              <div className="box max-sm:w-96 bg-black w-full">
-
-                <p className='max-sm:absolute max-sm:top-48 max-md:relative max-md:top-28 max-sm:left-4 max-sm:mt-40 max-sm:text-4xl max-md:w-96 max-sm:w-88 max-sm:left-20 text-white text-center text-3xl m-5 lg:relative top-28'>{selectedMatch.title}</p>
-                <h3 className=' max-sm:mt-64   max-sm:text-4xl max-sm:w-24 max-sm:m-auto max-sm:mt-52 text-white text-center text-7xl font-bold m-32 lg:relative top-10'> <span>{selectedMatch.score}</span> </h3>
-                <div className="max-2xl:-mt-14 dis font-bold text-white flex m-10 text-3xl justify-center">
-                  <div className=" lg:m-10 max-lg:font-normal max-sm:text-xl max-md:text-xl max-md:font-normal max-sm:font-normal max-md:absolute max-md:left-10  max-sm:absolute max-sm:left-5 max-sm:mt-52 max-md:mt-0 team1">
-                    <h2 className='m-2'>{selectedMatch.players[0].name}</h2>
+              </Toolbar>
+            </AppBar>
+            <div className='bg-black text-white'>
+              <img className='m-auto' src="./images/a.png" width="300px" alt="" />
+              <h2 className='font-bold text-2xl text-center'>SOUTH ASIAN YOUTH TABLE TENNIS CHAMPIONSHIP-2024</h2>
+              <h3 className=' text-xl text-center lg:relative top-10'>{selectedMatch.title}</h3>
+              <div className=' flex w-fit m-auto'>
+                <div>
+                  <div className="box img lg:w-72 m-10 lg:relative -left-28">
+                    <img src={selectedMatch.players[0].avatar} alt="" className=' shadow-red-50 shadow-2xl rounded-full' />
                   </div>
-                  <div className="lg:m-10 max-lg:font-normal max-sm:text-xl max-md:text-xl max-md:font-normal max-sm:font-normal max-md:absolute max-md:right-10  max-sm:absolute max-sm:right-5 max-sm:mt-52 max-md:mt-0 team1">
-                    <h2 className='m-2'>{selectedMatch.players[1].name}</h2>
+                  <h2 className='flex m-10 lg:relative -top-52 left-48'> <span><img width="50px" className='m-3' src="./images/bd.png" alt="" /></span> <span className=' m-2 text-2xl font-bold'>{selectedMatch.players[0].name}</span></h2>
+                </div>
+                <div className='lg:p-32 lg:text-5xl text-3xl max-sm:mt-14 font-bold'>
+                  <span>{selectedMatch.score}</span>
+                </div>
+                <div>
+                  <div className="img lg:w-72 m-10 img lg:w-72 m-10 lg:relative -right-28">
+                    <img src={selectedMatch.players[1].avatar} alt="" className=' rounded-full shadow-red-50 shadow-2xl' />
                   </div>
+                  <h2 className='flex m-10 lg:relative -top-52 right-48'> <span className='m-2 text-2xl font-bold'>{selectedMatch.players[1].name}</span> <span><img width="50px" className='m-3' src="./images/bd.png" alt="" /></span></h2>
                 </div>
               </div>
-              <div className="box mt-10">
-                <img className=' max-sm:w-96 max-sm:mt-40 max-md:w-72  max-lg:w-80 max-2xl:w-96 2xl:w-96 ' src={selectedMatch.players[0].avatar} />
-              </div>
+            </div>
+            <div className=' bg-white w-full '>
+              <h2 className=' text-center m-2 text-3xl font-bold'>Match status </h2>
+              <TableContainer>
+                <Table sx={{ width: 850, margin: "auto", backgroundColor: "white", boxShadow: "0px 0px 10px #bebebe", borderRadius: "20px", marginTop: "20px" }} aria-label="simple table">
+                  <TableHead>
+                    <TableRow>
+                      <TableCell>
+                        <h2 className='flex m-2 lg:relative'> <span><img width="30px" className='m-3' src={selectedMatch.players[0].avatar} alt="" /></span> <span className='m-2 text-lg'>{selectedMatch.players[0].name}</span></h2>
+                      </TableCell>
+
+                      {selectedMatch.players[0].scores.map((data, index) => (
+                        <TableCell key={index}>{data}</TableCell>
+                      )
+                      )}
+
+
+                    </TableRow>
+                  </TableHead>
+                  <TableHead>
+                    <TableRow>
+                      <TableCell>
+                        <h2 className='flex m-2 lg:relative'> <span><img width="30px" className='m-3' src={selectedMatch.players[1].avatar} alt="" /></span> <span className='m-2 text-lg'>{selectedMatch.players[1].name}</span></h2>
+                      </TableCell>
+
+                      {selectedMatch.players[1].scores.map((data, index) => (
+                        <TableCell key={index}>{data}</TableCell>
+                      )
+                      )}
+                    </TableRow>
+                  </TableHead>
+
+                </Table>
+              </TableContainer>
+
+
+
             </div>
 
-
-          </div>
-
-        </Dialog>
+          </Dialog>
+        </div>
       }
     </>
   );

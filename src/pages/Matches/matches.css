@@ -1,16 +1,20 @@
 body {
-    background-color: #000000;
-  }
-  
-.right-side-score{
-  font-size: 3rem; /* Adjust the font size as needed */
-  font-weight: bold; /* Make the text bold */
+  background-color: black;
+}
+
+
+.right-side-score {
+  font-size: 3rem;
+  /* Adjust the font size as needed */
+  font-weight: bold;
+  /* Make the text bold */
   color: #e91818;
   margin-left: auto;
   text-align: right;
 
 
 }
+
 .row {
   display: flex;
   justify-content: space-between;
@@ -24,10 +28,12 @@ body {
 .filter-buttons {
   display: flex;
   justify-content: center;
-  gap: 1rem; /* Add space between buttons */
+  gap: 1rem;
+  /* Add space between buttons */
   margin-bottom: 1rem;
 }
 
 .filter-buttons button {
-  margin: 0 0.5rem; /* Optional additional margin if needed */
+  margin: 0 0.5rem;
+  /* Optional additional margin if needed */
 }
