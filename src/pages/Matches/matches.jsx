@@ -16,63 +16,63 @@ const Matches = () => {
   const matches = [
     {
       id: 1,
-      title: "Boys - Qualifying Round 2",
+      title: "Boys - Under 19 Team",
       score: '2-3',
       players: [
         {
           avatar: '/images/pic4.jpeg',
           name: 'Rafael Turrini',
           scores: [2, 11, 6, 14, 10, 7],
-          countryFlag: '/images/pic4.jpeg',
+          countryFlag: '/images/Flag_of_Sri_Lanka.svg.png',
           status: 'lose'
         },
         {
           avatar: '/images/pic4.jpeg',
           name: 'Lubomir Pistej',
           scores: [3, 3, 11, 12, 12, 11],
-          countryFlag: '/images/pic4.jpeg',
+          countryFlag: '/images/Flag_of_Sri_Lanka.svg.png',
           status: 'win'
         }
       ]
     },
     {
       id: 2,
-      title: "Women's Singles - Qualifying Round 2",
+      title: "Boys - Under 15 Mix-Double",
       score: '1-3',
       players: [
         {
           avatar: '/images/pic4.jpeg',
           name: 'Player A',
           scores: [2, 11, 6, 14],
-          countryFlag: '/images/pic4.jpeg',
+          countryFlag: '/images/Flag_of_Sri_Lanka.svg.png',
           status: 'lose'
         },
         {
           avatar: '/images/pic4.jpeg',
           name: 'Player B',
           scores: [3, 3, 11, 12],
-          countryFlag: '/images/pic4.jpeg',
+          countryFlag: '/images/Flag_of_Sri_Lanka.svg.png',
           status: 'win'
         }
       ]
     },
     {
       id: 3,
-      title: "Girls - Qualifying Round 9",
+      title: "Girls - Under 15",
       score: '1-3',
       players: [
         {
           avatar: '/images/pic4.jpeg',
           name: 'Player A',
           scores: [2, 11, 6, 14],
-          countryFlag: '/images/pic4.jpeg',
+          countryFlag: '/images/Flag_of_Sri_Lanka.svg.png',
           status: 'lose'
         },
         {
           avatar: '/images/pic4.jpeg',
           name: 'Player B',
           scores: [3, 3, 11, 12],
-          countryFlag: '/images/pic4.jpeg',
+          countryFlag: '/images/Flag_of_Sri_Lanka.svg.png',
           status: 'win'
         }
       ]
@@ -86,14 +86,14 @@ const Matches = () => {
           avatar: '/images/pic4.jpeg',
           name: 'Player A',
           scores: [2, 11, 6, 14],
-          countryFlag: '/images/pic4.jpeg',
+          countryFlag: '/images/Flag_of_Sri_Lanka.svg.png',
           status: 'lose'
         },
         {
           avatar: '/images/pic4.jpeg',
           name: 'Player B',
           scores: [3, 3, 11, 12],
-          countryFlag: '/images/pic4.jpeg',
+          countryFlag: '/images/Flag_of_Sri_Lanka.svg.png',
           status: 'win'
         }
       ]
@@ -121,6 +121,12 @@ const Matches = () => {
           <Button variant="contained" color="error" onClick={() => setFilter('all')}>All</Button>
           <Button variant="contained" color="error" onClick={() => setFilter("Girls")}>Girls</Button>
           <Button variant="contained" color="error" onClick={() => setFilter("Boys")}>Boys</Button>
+          <Button variant="contained" color="error" onClick={() => setFilter("Under 15")}>Under 15</Button>
+          <Button variant="contained" color="error" onClick={() => setFilter("Under 19")}>Under 19</Button>
+          <Button variant="contained" color="error" onClick={() => setFilter("Team")}>Team</Button>
+          <Button variant="contained" color="error" onClick={() => setFilter("Single")}>Single</Button>
+          <Button variant="contained" color="error" onClick={() => setFilter("double")}>Double</Button>
+          <Button variant="contained" color="error" onClick={() => setFilter("Mix-Double")}>Mix-Double</Button>
         </div>
         <Grid container spacing={3} justifyContent="center">
           {filteredMatches.map((match) => (
@@ -137,7 +143,7 @@ const Matches = () => {
                   </div>
                   <hr />
                   <form onSubmit={handleView(match)}>
-                    <div>
+                    <div className='ml-16'>
                       {match.players.map((player, index) => (
                         <Player
                           key={index}
