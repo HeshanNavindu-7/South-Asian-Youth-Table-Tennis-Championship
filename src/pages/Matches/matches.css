@@ -1,0 +1,39 @@
+body {
+  background-color: black;
+}
+
+
+.right-side-score {
+  font-size: 3rem;
+  /* Adjust the font size as needed */
+  font-weight: bold;
+  /* Make the text bold */
+  color: #e91818;
+  margin-left: auto;
+  text-align: right;
+
+
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.m-8 {
+  margin: 2rem;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  /* Add space between buttons */
+  margin-bottom: 1rem;
+}
+
+.filter-buttons button {
+  margin: 0 0.5rem;
+  /* Optional additional margin if needed */
+}
