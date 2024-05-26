@@ -456,14 +456,173 @@ const Matches = () => {
         }      ]
     }
 
+
+
+
+      ]
+    },
+    {
+      id: 12,
+      title: "Girls Team - Under 19",
+      venue: "Table 4",
+      score: '2-3',
+
+      day: 'day1',
+      matchType: 'Team',
+      ageRange: "Under 19",
+      teams: {
+        team1: { name: 'MAL', flag: '/images/images (2).png' },
+        team2: { name: 'NEP', flag: '/images/1f1f3-1f1f5.jpg' }
+      },
+      players: [
+        {
+          player1: {
+            avatar: '/images/images (2).png',
+            name: 'Fathimath Dheema Ali',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/1f1f3-1f1f5.jpg',
+            name: 'Bianca Rai',
+            status: 'loss'
+          },
+          scores: '3-0',
+          details: '11-03,11-05, 11-08'
+        },
+        {
+          player1: {
+            avatar: '/images/images (2).png',
+            name: 'Mishka Mohomed Ibrahim',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/1f1f3-1f1f5.jpg',
+            name: 'Evana Thapa magar',
+            status: 'win'
+          },
+          scores: '0-3',
+          details: '06-11,09-11, 08-11'
+        },
+        {
+          player1: {
+            avatar: '/images/images (2).png',
+            name: 'Minha mahjoob Shuiau',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/1f1f3-1f1f5.jpg',
+            name: 'Yanggi Paudel',
+            status: 'win'
+          },
+          scores: '0-3',
+          details: '10-12,10-12, 07-11'
+        },
+        {
+          player1: {
+            avatar: '/images/images (2).png',
+            name: 'Fathimath Dheema Ali',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/1f1f3-1f1f5.jpg',
+            name: 'Evana Thapa Magar',
+            status: 'loss'
+          },
+          scores: '3-0',
+          details: '11-02,11-06, 11-03'
+        },
+        {
+          player1: {
+            avatar: '/images/images (2).png',
+            name: 'Mishka Mohomed',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/1f1f3-1f1f5.jpg',
+            name: 'Bianca Rai',
+            status: 'win'
+          },
+          scores: '0-3',
+          details: '09-11,08-11, 07-11'
+        },
+
+
+
+
+      ]
+    },
+    {
+      id: 13,
+      title: "Boys Team - Under 15",
+      venue: "Table 4",
+      score: '3-0',
+
+      day: 'day1',
+      matchType: 'Team',
+      ageRange: "Under 15",
+      teams: {
+        team1: { name: 'SRI', flag: '/images/Flag_of_Sri_Lanka.svg.png' },
+        team2: { name: 'MAL', flag: '/images/images (2).png' }
+      },
+      players: [
+        {
+          player1: {
+            avatar: '/images/Flag_of_Sri_Lanka.svg.png',
+            name: 'Akian bojith',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/images (2).png',
+            name: 'Mohamed Khalaf Rafiu',
+            status: 'loss'
+          },
+          scores: '3-0',
+          details: '11-04,11-04, 11-05'
+        },
+        {
+          player1: {
+            avatar: '/images/Flag_of_Sri_Lanka.svg.png',
+            name: 'Naviru Nethitha',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/images (2).png',
+            name: 'Umyr Mohamed Muizzu',
+            status: 'loss'
+          },
+          scores: '3-1',
+          details: '11-05,05-11, 11-09,12-10'
+        },
+        {
+          player1: {
+            avatar: '/images/Flag_of_Sri_Lanka.svg.png',
+            name: 'Senul Rathnayake',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/images (2).png',
+            name: 'Yazeen Hussian Shareef',
+            status: 'loss'
+          },
+          scores: '3-0',
+          details: '11-03,11-01, 11-03'
+        },
+
+
+
+
+
+      ]
+    },
+
   ];
 
 
   const filteredMatches = matches.filter(match => {
     const categoryMatch = category === 'all' || match.title.toLowerCase().includes(category.toLowerCase());
     const ageRangeMatch = ageRange === 'all' || match.ageRange === ageRange;
-    const matchTypeMatch = matchType === 'all' || match.type.toLowerCase() === matchType.toLowerCase();
-    return categoryMatch && ageRangeMatch && matchTypeMatch && match.day === dayFilter;
+    const matchTypeMatch = matchType === 'all' || match.matchType.toLowerCase() === matchType.toLowerCase();
+    return categoryMatch && ageRangeMatch && matchTypeMatch;
   });
 
   const handleCategoryChange = (category) => () => setCategory(category);
