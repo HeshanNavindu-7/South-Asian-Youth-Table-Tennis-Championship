@@ -7,116 +7,95 @@ const Matches = () => {
   const [dayFilter, setDayFilter] = useState('day1');
 
   const matches = [
+
     {
-      id: 1,
-      title: "Women's Teams - Round of 16",
-      venue: "BEXCO Convention Centre | Table 4",
-      score: '3-0',
+      id: 5,
+      title: "Boys team - Under 15",
+      venue: "Table 5",
+      score: '02-03',
       day: 'day1',
       teams: {
-        team1: { name: 'JPN', flag: '/images/japan_flag.png' },
-        team2: { name: 'CRO', flag: '/images/croatia_flag.png' }
+        team1: { name: 'Sri', flag: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png' },
+        team2: { name: 'Par', flag: '/images/teams/flags/images.png' },
+
       },
       players: [
         {
           player1: {
-            avatar: '/images/japan_flag.png',
-            name: 'HAYATA Hina',
-            status: 'win'
+            avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+            name: 'Akian Bojith',
+            status: 'loss'
           },
           player2: {
-            avatar: '/images/croatia_flag.png',
-            name: 'RAKOVAC Lea',
-            status: 'lose'
+            avatar: '/images/teams/flags/images.png',
+            name: 'Abdal Muhammad Khan',
+            status: 'win'
           },
-          scores: '3-0',
-          details: '11-4, 11-6, 11-7, 0-0, 0-0'
+          scores: '02-03',
+          details: '11-05, 05-11, 11-05,06-11,08-11'
         },
         {
           player1: {
-            avatar: '/images/japan_flag.png',
-            name: 'HARIMOTO Miwa',
+            avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+            name: 'Naviru nethsitha',
             status: 'win'
           },
           player2: {
-            avatar: '/images/croatia_flag.png',
-            name: 'ARAPOVIC Hana',
-            status: 'lose'
+            avatar: '/images/teams/flags/images.png',
+            name: 'Abbas Amjad khan',
+            status: 'loss'
           },
-          scores: '3-0',
-          details: '11-7, 11-4, 11-5, 0-0, 0-0'
+          scores: '03-02',
+          details: '09-11, 11-04, 12-10,08-11,11-07'
         },
         {
           player1: {
-            avatar: '/images/japan_flag.png',
-            name: 'HIRANO Miu',
+            avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+            name: 'Agasthy Ananditha',
             status: 'win'
           },
           player2: {
-            avatar: '/images/croatia_flag.png',
-            name: 'JEGER Mateja',
-            status: 'lose'
+            avatar: '/images/teams/flags/images.png',
+            name: 'Noor Khan',
+            status: 'loss'
           },
-          scores: '3-0',
-          details: '11-1, 11-4, 11-0, 0-0, 0-0'
-        }
+          scores: '03-01',
+          details: '11-04, 11-04, 05-11,11-09'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+            name: 'Akian Bojith',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/teams/flags/images.png',
+            name: 'Abbas Amjad Khan',
+            status: 'win'
+          },
+          scores: '02-03',
+          details: '11-06, 09-11, 12-10,07-11,06-11'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+            name: 'Naviru Nethsitha',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/teams/flags/images.png',
+            name: 'Abdal Muhammad Khan',
+            status: 'loss'
+          },
+          scores: '03-02',
+          details: '07-11, 11-04, 11-08,11-02'
+        },
+
+
+
       ]
     },
-    {
-      id: 2,
-      title: "Boys's Teams - Round of 16",
-      venue: "BEXCO Convention Centre | Table 4",
-      score: '3-0',
-      day: 'day1',
-      teams: {
-        team1: { name: 'JPN', flag: '/images/japan_flag.png' },
-        team2: { name: 'CRO', flag: '/images/croatia_flag.png' }
-      },
-      players: [
-        {
-          player1: {
-            avatar: '/images/japan_flag.png',
-            name: 'HAYATA Hina',
-            status: 'win'
-          },
-          player2: {
-            avatar: '/images/croatia_flag.png',
-            name: 'RAKOVAC Lea',
-            status: 'lose'
-          },
-          scores: '3-0',
-          details: '11-4, 11-6, 11-7, 0-0, 0-0'
-        },
-        {
-          player1: {
-            avatar: '/images/japan_flag.png',
-            name: 'HARIMOTO Miwa',
-            status: 'win'
-          },
-          player2: {
-            avatar: '/images/croatia_flag.png',
-            name: 'ARAPOVIC Hana',
-            status: 'lose'
-          },
-          scores: '3-0',
-          details: '11-7, 11-4, 11-5, 0-0, 0-0'
-        },
-        {
-          player1: {
-            avatar: '/images/japan_flag.png',
-            name: 'HIRANO Miu',
-            status: 'win'
-          },
-          player2: {
-            avatar: '/images/croatia_flag.png',
-            name: 'JEGER Mateja',
-            status: 'lose'
-          },
-          scores: '3-0',
-          details: '11-1, 11-4, 11-0, 0-0, 0-0'
-        }
-      ]
-    }
+
   ];
 
   const filteredMatches = matches.filter(match =>
