@@ -6,6 +6,7 @@ const Matches = () => {
   const [category, setCategory] = useState('all');
   const [ageRange, setAgeRange] = useState('all');
   const [matchType, setMatchType] = useState('all');
+  const [dayFilter, setDayFilter] = useState('day1');
 
   const matches = [
     {
@@ -15,7 +16,6 @@ const Matches = () => {
       score: '0-3',
       day: 'day1',
       matchType: 'Team',
-      ageRange: "Under 19",
       teams: {
         team1: { name: 'BAN', flag: '/images/bd.png' },
         team2: { name: 'IND', flag: '/images/images (1).png' }
@@ -72,7 +72,6 @@ const Matches = () => {
       score: '3-0',
       day: 'day1',
       matchType: 'Team',
-      ageRange: "Under 15",
       teams: {
         team1: { name: 'IND', flag: '/images/images (1).png' },
         team2: { name: 'BAN', flag: '/images/bd.png' }
@@ -129,7 +128,6 @@ const Matches = () => {
       score: '3-2',
       day: 'day1',
       matchType: 'Team',
-      ageRange: "Under 19",
       teams: {
         team1: { name: 'SRI', flag: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png' },
         team2: { name: 'MAL', flag: '/images/teams/flags/images (2).png' }
@@ -214,7 +212,6 @@ const Matches = () => {
       score: '3-0',
       day: 'day1',
       matchType: 'Team',
-      ageRange: "Under 19",
       teams: {
         team1: { name: 'IND', flag: '/images/images (1).png' },
         team2: { name: 'BAN', flag: '/images/bd.png' }
@@ -271,7 +268,6 @@ const Matches = () => {
       score: '3-2',
       day: 'day1',
       matchType: 'Team',
-      ageRange: "Under 15",
       teams: {
         team1: { name: 'SRI', flag: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png' },
         team2: { name: 'PAK', flag: '/images/teams/flags/images.png' }
@@ -348,17 +344,72 @@ const Matches = () => {
           details: '07-11, 11-04, 11-08, 11-02'
         }
       ]
+    },
+    {
+      id: 7,
+      title: "Boys Team - Under 19",
+      venue: "Table 5",
+      score: '3-0',
+      day: 'day1',
+      matchType: 'Team',
+      teams: {
+        team1: { name: 'NEP', flag: '/images/teams/flags/Nepal.jpg' },
+        team2: { name: 'MAL', flag: '/images/teams/flags/images (2).png' }
+      },
+      players: [
+        {
+          player1: {
+            avatar: '/images/teams/flags/Nepal.jpg',
+            name: 'Rubin',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/teams/flags/images (2).png',
+            name: 'Umir',
+            status: 'loss'
+          },
+          scores: '3-2',
+          details: '11-8,11-6,11-7'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags/Nepal.jpg',
+            name: 'Prince',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/teams/flags/images (2).png',
+            name: 'Akhyar',
+            status: 'loss'
+          },
+          scores: '3-2',
+          details: '6-11,9-11,11-8,11-9,15-13'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags/Nepal.jpg',
+            name: 'Siddharth',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/teams/flags/images.png',
+            name: 'Mohomed',
+            status: 'loss'
+          },
+          scores: '3-0',
+          details: '11-4,11-4,11-4'
+        }      ]
     }
+
   ];
 
 
   const filteredMatches = matches.filter(match => {
     const categoryMatch = category === 'all' || match.title.toLowerCase().includes(category.toLowerCase());
     const ageRangeMatch = ageRange === 'all' || match.ageRange === ageRange;
-    const matchTypeMatch = matchType === 'all' || match.matchType.toLowerCase() === matchType.toLowerCase();
-    return categoryMatch && ageRangeMatch && matchTypeMatch;
+    const matchTypeMatch = matchType === 'all' || match.type.toLowerCase() === matchType.toLowerCase();
+    return categoryMatch && ageRangeMatch && matchTypeMatch && match.day === dayFilter;
   });
-
 
   const handleCategoryChange = (category) => () => setCategory(category);
   const handleAgeRangeChange = (event) => setAgeRange(event.target.value);
@@ -374,7 +425,7 @@ const Matches = () => {
           value={ageRange}
           onChange={handleAgeRangeChange}
           displayEmpty
-          sx={{ height: "40px", backgroundColor: "#c21f1f", color: "white", marginLeft: '10px', marginRight: '10px' }}
+          sx={{ backgroundColor: "white", marginLeft: '10px', marginRight: '10px' }}
         >
           <MenuItem value="all">
             <em>Age Group</em>
@@ -386,7 +437,7 @@ const Matches = () => {
           value={matchType}
           onChange={handleMatchTypeChange}
           displayEmpty
-          sx={{ backgroundColor: "white", height: "40px", backgroundColor: "#c21f1f", color: "white", }}
+          sx={{ backgroundColor: "white" }}
         >
           <MenuItem value="all">
             <em>Match Type</em>
@@ -398,7 +449,9 @@ const Matches = () => {
         </Select>
       </div>
 
-
+      <Typography variant="h4" align="center" gutterBottom>
+        {dayFilter.charAt(0).toUpperCase() + dayFilter.slice(1).replace('day', 'Day ')}
+      </Typography>
       <Grid container spacing={3} justifyContent="center">
         {filteredMatches.map((match) => (
           <Grid item xs={12} sm={8} md={6} key={match.id}>
