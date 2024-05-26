@@ -6,6 +6,7 @@ const Matches = () => {
   const [category, setCategory] = useState('all');
   const [ageRange, setAgeRange] = useState('all');
   const [matchType, setMatchType] = useState('all');
+  const [dayFilter, setDayFilter] = useState('day1');
 
   const matches = [
     {
@@ -747,10 +748,9 @@ const Matches = () => {
   const filteredMatches = matches.filter(match => {
     const categoryMatch = category === 'all' || match.title.toLowerCase().includes(category.toLowerCase());
     const ageRangeMatch = ageRange === 'all' || match.ageRange === ageRange;
-    const matchTypeMatch = matchType === 'all' || match.matchType.toLowerCase() === matchType.toLowerCase();
-    return categoryMatch && ageRangeMatch && matchTypeMatch;
+    const matchTypeMatch = matchType === 'all' || match.type.toLowerCase() === matchType.toLowerCase();
+    return categoryMatch && ageRangeMatch && matchTypeMatch && match.day === dayFilter;
   });
-
 
   const handleCategoryChange = (category) => () => setCategory(category);
   const handleAgeRangeChange = (event) => setAgeRange(event.target.value);
@@ -766,7 +766,7 @@ const Matches = () => {
           value={ageRange}
           onChange={handleAgeRangeChange}
           displayEmpty
-          sx={{ height: "40px", backgroundColor: "#c21f1f", color: "white", marginLeft: '10px', marginRight: '10px' }}
+          sx={{ backgroundColor: "white", marginLeft: '10px', marginRight: '10px' }}
         >
           <MenuItem value="all">
             <em>Age Group</em>
@@ -778,7 +778,7 @@ const Matches = () => {
           value={matchType}
           onChange={handleMatchTypeChange}
           displayEmpty
-          sx={{ backgroundColor: "white", height: "40px", backgroundColor: "#c21f1f", color: "white", }}
+          sx={{ backgroundColor: "white" }}
         >
           <MenuItem value="all">
             <em>Match Type</em>
@@ -790,7 +790,9 @@ const Matches = () => {
         </Select>
       </div>
 
-
+      <Typography variant="h4" align="center" gutterBottom>
+        {dayFilter.charAt(0).toUpperCase() + dayFilter.slice(1).replace('day', 'Day ')}
+      </Typography>
       <Grid container spacing={3} justifyContent="center">
         {filteredMatches.map((match) => (
           <Grid item xs={12} sm={8} md={6} key={match.id}>
