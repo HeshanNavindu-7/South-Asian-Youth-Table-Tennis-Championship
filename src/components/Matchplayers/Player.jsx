@@ -5,8 +5,8 @@ import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 const Player = ({ avatar, name, scores, countryFlag, status }) => {
   return (
     <>
-      <div className=" flex items-center justify-between p-3 -ml-12">
-        <div className="flex items-center">
+      <div className=" flex items-center justify-between p-3 -ml-12 " style={{ width: "400px" }}>
+        <div className="flex items-center w-96" >
 
           <Typography variant="body2" component="div">{status === 'win' ? <CheckCircleOutlineIcon className="text-red-500 absolute -ml-8 -mt-3" /> : null}</Typography>
           <img src={countryFlag} alt={name} className="w-12 h-12 rounded-full mr-7" />
@@ -35,7 +35,7 @@ const Player = ({ avatar, name, scores, countryFlag, status }) => {
 
         </div>
 
-      </div>
+      </div >
 
 
 

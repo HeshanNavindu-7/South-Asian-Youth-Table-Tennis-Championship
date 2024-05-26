@@ -9,6 +9,7 @@ body {
   font-weight: bold;
   /* Make the text bold */
   color: #e91818;
+  color: #c21f1f;
   margin-left: auto;
   text-align: right;
 
@@ -37,4 +38,8 @@ body {
 .filter-buttons button {
   margin: 0 0.5rem;
   /* Optional additional margin if needed */
+}
+
+.card {
+  transform: scale(0.7);
 }

@@ -469,6 +469,68 @@ const Matches = () => {
       ]
     },
     {
+      id: 9,
+      title: "Boys Team - Under 19",
+      venue: "Table 4",
+      score: '0-3',
+      day: 'day1',
+      matchType: 'Team',
+      ageRange: "Under 19",
+      teams: {
+        team1: { name: 'PAK', flag: '/images/images.png' },
+        team2: { name: 'BAN', flag: '/images/teams/flags/bd.png' }
+      },
+      players: [
+        {
+          player1: {
+            avatar: '/images/images.png',
+            name: 'Shayan ',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/teams/flags/bd.png',
+            name: 'MD Nafiz',
+            status: 'win'
+          },
+          scores: '2-3',
+          details: '09-11,11-13, 11-07, 11-06,11-13'
+        },
+        {
+          player1: {
+            avatar: '/images/images.png',
+            name: 'Abbas ',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/teams/flags/bd.png',
+            name: 'Pamhimlian',
+            status: 'win'
+          },
+          scores: '1-3',
+          details: '11-01,06-11, 07-11, 09-11'
+        },
+        {
+          player1: {
+            avatar: '/images/images.png',
+            name: 'Taha Bilal ',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/teams/flags/bd.png',
+            name: 'Abul',
+            status: 'win'
+          },
+          scores: '1-3',
+          details: '11-08,09-11, 08-11, 07-11'
+        },
+
+
+
+
+
+      ]
+    },
+    {
       id: 10,
       title: "Girls Team - Under 15",
       venue: "Table 4",
@@ -790,71 +852,71 @@ const Matches = () => {
         </Select>
       </div>
 
-      <Typography variant="h4" align="center" gutterBottom>
-        {dayFilter.charAt(0).toUpperCase() + dayFilter.slice(1).replace('day', 'Day ')}
-      </Typography>
-      <Grid container spacing={3} justifyContent="center">
-        {filteredMatches.map((match) => (
-          <Grid item xs={12} sm={8} md={6} key={match.id}>
-            <Card>
-              <CardContent>
-                <Typography variant="h5" component="div" className="text-center">
-                  {match.title}
-                </Typography>
-                <Typography variant="body2" color="textSecondary" className="text-center mb-4">
-                  {match.venue}
-                </Typography>
-                <div className="flex justify-between items-center mb-4">
-                  <div className="flex flex-col items-center text-center">
-                    <img src={match.teams.team1.flag} alt={match.teams.team1.name} className="w-10 h-10 mb-2" />
-                    <Typography variant="h6" component="div">
-                      {match.teams.team1.name}
-                    </Typography>
-                  </div>
-                  <Typography variant="h6" component="div" className="font-bold">
-                    {match.score}
+
+      <div >
+        <Grid container spacing={2} justifyContent="center">
+          {filteredMatches.map((match) => (
+            <Grid item xs={12} sm={6} md={4} key={match.id}>
+              <Card>
+                <CardContent>
+                  <Typography variant="h6" component="div" className="text-center">
+                    {match.title}
                   </Typography>
-                  <div className="flex flex-col items-center text-center">
-                    <img src={match.teams.team2.flag} alt={match.teams.team2.name} className="w-10 h-10 mb-2" />
-                    <Typography variant="h6" component="div">
-                      {match.teams.team2.name}
+                  <Typography variant="body2" color="textSecondary" className="text-center mb-2">
+                    {match.venue}
+                  </Typography>
+                  <div className="flex justify-between items-center mb-2">
+                    <div className="flex flex-col items-center text-center">
+                      <img src={match.teams.team1.flag} alt={match.teams.team1.name} className="w-8 h-8 mb-1" />
+                      <Typography variant="body2" component="div">
+                        {match.teams.team1.name}
+                      </Typography>
+                    </div>
+                    <Typography variant="body2" component="div" className="font-bold">
+                      <span className=''>{match.score}</span>
                     </Typography>
-                  </div>
-                </div>
-                <hr />
-                {match.players.map((pair, index) => (
-                  <div key={index} className="flex justify-between items-center my-4">
-                    <div className="flex flex-col space-y-2">
-                      <div className="flex items-center space-x-2">
-                        <img src={pair.player1.avatar} alt={pair.player1.name} className="w-6 h-6" />
-                        <Typography variant="body2" className="text-sm">
-                          {pair.player1.name}
-                          {pair.player1.status === 'win' && <span className="text-green-500"> ✔</span>}
-                        </Typography>
-                      </div>
-                      <div className="flex items-center space-x-2">
-                        <img src={pair.player2.avatar} alt={pair.player2.name} className="w-6 h-6" />
-                        <Typography variant="body2" className="text-sm">
-                          {pair.player2.name}
-                          {pair.player2.status === 'win' && <span className="text-green-500"> ✔</span>}
-                        </Typography>
-                      </div>
-                    </div>
-                    <div className="text-center">
-                      <Typography variant="body2">
-                        {pair.scores}
-                      </Typography>
-                      <Typography variant="body2" color="textSecondary">
-                        {pair.details}
+                    <div className="flex flex-col items-center text-center">
+                      <img src={match.teams.team2.flag} alt={match.teams.team2.name} className="w-8 h-8 mb-1" />
+                      <Typography variant="body2" component="div">
+                        {match.teams.team2.name}
                       </Typography>
                     </div>
                   </div>
-                ))}
-              </CardContent>
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
+                  <hr />
+                  {match.players.map((pair, index) => (
+                    <div key={index} className="flex justify-between items-center my-2">
+                      <div className="flex flex-col space-y-1">
+                        <div className="flex items-center space-x-1">
+                          <img src={pair.player1.avatar} alt={pair.player1.name} className="w-5 h-5" />
+                          <Typography variant="body2" className="text-xs">
+                            {pair.player1.name}
+                            {pair.player1.status === 'win' && <span className="text-green-500"> ✔</span>}
+                          </Typography>
+                        </div>
+                        <div className="flex items-center space-x-1">
+                          <img src={pair.player2.avatar} alt={pair.player2.name} className="w-5 h-5" />
+                          <Typography variant="body2" className="text-xs">
+                            {pair.player2.name}
+                            {pair.player2.status === 'win' && <span className="text-green-500"> ✔</span>}
+                          </Typography>
+                        </div>
+                      </div>
+                      <div className="text-center">
+                        <Typography variant="body2" className="text-xs">
+                          <span> {pair.scores}</span>
+                        </Typography>
+                        <Typography variant="body2" color="textSecondary" className="text-xs">
+                          <span className='' style={{ fontSize: "10px" }}>{pair.details}</span>
+                        </Typography>
+                      </div>
+                    </div>
+                  ))}
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </div>
     </div>
   );
 };
