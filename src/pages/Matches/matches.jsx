@@ -9,111 +9,111 @@ const Matches = () => {
   const matches = [
     {
       id: 1,
-      title: "Women's Teams - Round of 16",
-      venue: "BEXCO Convention Centre | Table 4",
-      score: '3-0',
+      title: "Girls Team - Under 19",
+      venue: "Table 2",
+      score: '0-3',
       day: 'day1',
       teams: {
-        team1: { name: 'JPN', flag: '/images/japan_flag.png' },
-        team2: { name: 'CRO', flag: '/images/croatia_flag.png' }
+        team1: { name: 'BANGLADESH', flag: '/images/images (2).png' },
+        team2: { name: 'INDIA', flag: '/images/images (1).png' }
       },
       players: [
         {
           player1: {
-            avatar: '/images/japan_flag.png',
-            name: 'HAYATA Hina',
-            status: 'win'
-          },
-          player2: {
-            avatar: '/images/croatia_flag.png',
-            name: 'RAKOVAC Lea',
+            avatar: '/images/images (2).png',
+            name: 'Khoi Sai',
             status: 'lose'
           },
-          scores: '3-0',
-          details: '11-4, 11-6, 11-7, 0-0, 0-0'
+          player2: {
+            avatar: '/images/images (1).png',
+            name: 'Sayali Rajesh',
+            status: 'win'
+          },
+          scores: '0-3',
+          details: '6-11, 3-11, 5-11'
         },
         {
           player1: {
-            avatar: '/images/japan_flag.png',
-            name: 'HARIMOTO Miwa',
-            status: 'win'
-          },
-          player2: {
-            avatar: '/images/croatia_flag.png',
-            name: 'ARAPOVIC Hana',
+            avatar: '/images/images (2).png',
+            name: 'Samanta Hossain',
             status: 'lose'
           },
-          scores: '3-0',
-          details: '11-7, 11-4, 11-5, 0-0, 0-0'
+          player2: {
+            avatar: '/images/images (1).png',
+            name: 'Pritha Priya',
+            status: 'win'
+          },
+          scores: '0-3',
+          details: '5-11, 4-11, 10-12'
         },
         {
           player1: {
-            avatar: '/images/japan_flag.png',
-            name: 'HIRANO Miu',
-            status: 'win'
-          },
-          player2: {
-            avatar: '/images/croatia_flag.png',
-            name: 'JEGER Mateja',
+            avatar: '/images/images (2).png',
+            name: 'Rashmi Tanchangya',
             status: 'lose'
           },
-          scores: '3-0',
-          details: '11-1, 11-4, 11-0, 0-0, 0-0'
+          player2: {
+            avatar: '/images/images (1).png',
+            name: 'Taneesha Sanjay',
+            status: 'win'
+          },
+          scores: '0-3',
+          details: '7-11, 4-11, 9-11'
         }
       ]
     },
     {
       id: 2,
-      title: "Boys's Teams - Round of 16",
-      venue: "BEXCO Convention Centre | Table 4",
+      title: "Boys Team - Under 15",
+      venue: "Table 1",
       score: '3-0',
       day: 'day1',
       teams: {
-        team1: { name: 'JPN', flag: '/images/japan_flag.png' },
-        team2: { name: 'CRO', flag: '/images/croatia_flag.png' }
+        team1: { name: 'INDIA', flag: '/images/images (1).png' },
+        team2: { name: 'BANGLADESH', flag: '/images/images (2).png' }
       },
       players: [
         {
           player1: {
-            avatar: '/images/japan_flag.png',
-            name: 'HAYATA Hina',
+            avatar: '/images/images (1).png',
+            name: 'Sarthak Arya',
             status: 'win'
           },
           player2: {
-            avatar: '/images/croatia_flag.png',
-            name: 'RAKOVAC Lea',
+            avatar: '/images/images (2).png',
+            name: 'MD Tahmidur Rahman',
             status: 'lose'
           },
-          scores: '3-0',
-          details: '11-4, 11-6, 11-7, 0-0, 0-0'
+          scores: '3-1',
+          details: '11-13, 11-02, 11-05, 11-06'
         },
         {
           player1: {
-            avatar: '/images/japan_flag.png',
-            name: 'HARIMOTO Miwa',
+            avatar: '/images/images (1).png',
+            name: 'Soham Mukherjee',
             status: 'win'
           },
           player2: {
-            avatar: '/images/croatia_flag.png',
-            name: 'ARAPOVIC Hana',
+            avatar: '/images/images (2).png',
+            name: 'Abul Hashem Hasib',
             status: 'lose'
           },
-          scores: '3-0',
-          details: '11-7, 11-4, 11-5, 0-0, 0-0'
+          scores: '3-1',
+          details: '08-11, 11-03, 11-06, 11-09'
         },
         {
           player1: {
-            avatar: '/images/japan_flag.png',
-            name: 'HIRANO Miu',
+            avatar: '/images/images (1).png',
+            name: 'Sahil Rawat',
             status: 'win'
           },
           player2: {
-            avatar: '/images/croatia_flag.png',
-            name: 'JEGER Mateja',
+            avatar: '/images/images (2).png',
+            name: 'MD Monirul Islam',
             status: 'lose'
           },
           scores: '3-0',
-          details: '11-1, 11-4, 11-0, 0-0, 0-0'
+          details: '13-11, 11-05, 11-05'
         }
       ]
     }
@@ -177,15 +177,15 @@ const Matches = () => {
                         <img src={pair.player1.avatar} alt={pair.player1.name} className="w-6 h-6" />
                         <Typography variant="body2" className="text-sm">
                           {pair.player1.name}
+                          {pair.player1.status === 'win' && <span className="text-green-500"> ✔</span>}
                         </Typography>
-                        {pair.player1.status === 'win' && <span className="text-green-500">✔</span>}
                       </div>
                       <div className="flex items-center space-x-2">
                         <img src={pair.player2.avatar} alt={pair.player2.name} className="w-6 h-6" />
                         <Typography variant="body2" className="text-sm">
                           {pair.player2.name}
+                          {pair.player2.status === 'win' && <span className="text-green-500"> ✔</span>}
                         </Typography>
-                        {pair.player2.status === 'lose' && <span className="text-red-500">✘</span>}
                       </div>
                     </div>
                     <div className="text-right">
