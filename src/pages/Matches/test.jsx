@@ -1,9 +1,8 @@
+import { Button } from '@mui/material';
 import React, { useState } from 'react';
-import { Grid, Typography, Card, CardContent, Button } from '@mui/material';
 import './matches.css';
-import Player from '../../components/Matchplayers/Player';
 
-const Matches = () => {
+const Test = () => {
     const [filter, setFilter] = useState('all');
     const matches = [
         {
@@ -98,45 +97,35 @@ const Matches = () => {
         <div className="m-8">
             <div className="filter-buttons">
                 <Button variant="contained" color="error" onClick={() => setFilter('all')}>All</Button>
-                <Button variant="contained" color="error" onClick={() => setFilter("Men's Singles")}>Men's Singles</Button>
-                <Button variant="contained" color="error" onClick={() => setFilter("Women's Singles")}>Women's Singles</Button>
+                <Button variant="contained" color="error" onClick={() => setFilter("Girls")}>Girls</Button>
+                <Button variant="contained" color="error" onClick={() => setFilter("Boys")}>Boys</Button>
+                <Button variant="contained" color="error" onClick={() => setFilter("Under 15")}>Under 15</Button>
+                <Button variant="contained" color="error" onClick={() => setFilter("Under 19")}>Under 19</Button>
+                <Button variant="contained" color="error" onClick={() => setFilter("Team")}>Team</Button>
+                <Button variant="contained" color="error" onClick={() => setFilter("Single")}>Single</Button>
+                <Button variant="contained" color="error" onClick={() => setFilter("double")}>Double</Button>
+                <Button variant="contained" color="error" onClick={() => setFilter("Mix-Double")}>Mix-Double</Button>
             </div>
-            <Grid container spacing={3} justifyContent="center">
-                {filteredMatches.map((match) => (
-                    <Grid item xs={12} sm={6} md={5} key={match.id}>
-                        <Card>
-                            <CardContent>
-                                <div className='row'>
-                                    <Typography variant="h5" component="div">
-                                        {match.title}
-                                    </Typography>
-                                    <div className='right-side-score'>
-                                        {match.score}
-                                    </div>
-                                </div>
-                                <hr />
-                                <div>
-                                    {match.players.map((player, index) => (
-                                        <Player
-                                            key={index}
-                                            avatar={player.avatar}
-                                            name={player.name}
-                                            scores={player.scores}
-                                            countryFlag={player.countryFlag}
-                                            status={player.status}
-                                        />
-                                    ))}
-                                </div>
-                                <Button variant="contained" color="error" className="mt-4">
-                                    View Match Details
-                                </Button>
-                            </CardContent>
-                        </Card>
-                    </Grid>
-                ))}
-            </Grid>
+            <div>
+                <div className="card w-50 h-52 bg-white " style={{ width: "400px" }}>
+                    <div className=' flex flex-wrap items-center justify-between p-4'>
+                        <h2 className=' text-center'> Girls - Under 15 -team</h2>
+                    </div>
+                    <hr />
+                    <div className=' flex flex-wrap items-center justify-between p-4'>
+                        <img src="./images/teams/flags/bd.png" width="50px" alt="" />
+                        <h2 className=' font-bold text-3xl text-red-500'>0-3</h2>
+                        <img src="./images/teams/flags/images (1).png" width="50px" alt="" />
+                    </div>
+                    <hr />
+
+                </div>
+
+            </div>
+
         </div>
+
     );
 };
 
-export default Matches;
+export default Test;
