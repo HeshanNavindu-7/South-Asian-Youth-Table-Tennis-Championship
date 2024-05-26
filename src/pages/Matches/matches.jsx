@@ -488,7 +488,7 @@ const Matches = () => {
           scores: '3-0',
           details: '11-4,11-4,11-4'
         }]
-    },
+    },//start
     {
       //9)id 13 boys under 15 sl - mala(3)
       id: 13,
@@ -553,6 +553,74 @@ const Matches = () => {
 
       ]
     },
+    //end
+
+    //start
+    {
+      //10)id 16 boys under 15 sl - mala(3)
+      id: 16,
+      title: "Girls Team - Under 15",
+      venue: "Table 2",
+      score: '0-3',
+
+      day: 'day1',
+      matchType: 'Team',
+      ageRange: "Under 15",
+      teams: {
+        team1: { name: 'PAK', flag: '/images/teams/flags/pak.png' },
+        team2: { name: 'IND', flag: '/images/teams/flags/ind.png' }
+      },
+      players: [
+        {
+          player1: {
+            avatar: '/images/teams/flags/pak.png',
+            name: 'Zunaira khan',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/teams/flags/ind.png',
+            name: 'Kavya Pravin',
+            status: 'win'
+          },
+          scores: '0-3',
+          details: '3-11,4-11,2-11'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags/pak.png',
+            name: 'Fatima Danish',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/teams/flags/ind.png',
+            name: 'Divyanshi Bhowmick',
+            status: 'win'
+          },
+          scores: '0-3',
+          details: '2-11,2-11,3-11'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags/pak.png',
+            name: 'Sara Danish',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/teams/flags/ind.png',
+            name: 'Ankolika Charraborty',
+            status: 'win'
+          },
+          scores: '0-3',
+          details: '1-11,4-11,4-11'
+        },
+
+
+
+
+
+      ]
+    },
+    //end
     {
       //11)id 17 girls under 15 sl - mala(3)
       id: 13,
@@ -707,7 +775,7 @@ const Matches = () => {
 
 
       ]
-    }, ,
+    },
     {
 
       // 11)id - 3  Girls under 19 sl -ml (5)
