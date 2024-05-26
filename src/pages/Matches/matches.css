@@ -37,3 +37,58 @@ body {
   margin: 0 0.5rem;
   /* Optional additional margin if needed */
 }
+.m-8 {
+  margin: 2rem;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filter-buttons button {
+  margin: 0 0.5rem;
+}
+
+.team-scores {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.team {
+  display: flex;
+  align-items: center;
+}
+
+.team-flag {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+}
+
+.match-score {
+  font-weight: bold;
+}
+
+.player-pair {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  padding: 0 0.5rem;
+}
+
+.player-pair .player + .player {
+  border-left: 1px solid #ddd;
+}
