@@ -39,7 +39,44 @@ body {
   margin: 0 0.5rem;
   /* Optional additional margin if needed */
 }
+<<<<<<< HEAD
 
 .card {
   transform: scale(0.7);
 }
+=======
+.matches-container {
+  padding: 16px;
+}
+
+.filters {
+  margin-bottom: 16px;
+}
+
+.match-card {
+  min-height: 150px;
+}
+
+.team-flags {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.team-flags img {
+  width: 40px;
+  height: 40px;
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.player-info img {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
+>>>>>>> ed52e528a2e3fee3f3b27e77bda52285fef4c4f3
