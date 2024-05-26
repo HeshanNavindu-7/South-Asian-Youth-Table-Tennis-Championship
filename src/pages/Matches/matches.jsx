@@ -16,6 +16,7 @@ const Matches = () => {
       score: '0-3',
       day: 'day1',
       matchType: 'Team',
+      ageRange: "Under 19",
       teams: {
         team1: { name: 'BAN', flag: '/images/bd.png' },
         team2: { name: 'IND', flag: '/images/images (1).png' }
@@ -72,6 +73,7 @@ const Matches = () => {
       score: '3-0',
       day: 'day1',
       matchType: 'Team',
+      ageRange: "Under 15",
       teams: {
         team1: { name: 'IND', flag: '/images/images (1).png' },
         team2: { name: 'BAN', flag: '/images/bd.png' }
@@ -128,6 +130,7 @@ const Matches = () => {
       score: '3-2',
       day: 'day1',
       matchType: 'Team',
+      ageRange: "Under 19",
       teams: {
         team1: { name: 'SRI', flag: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png' },
         team2: { name: 'MAL', flag: '/images/teams/flags/images (2).png' }
@@ -206,12 +209,70 @@ const Matches = () => {
       ]
     },
     {
+      id: 4,
+      title: "Boys Team - Under 19",
+      venue: "Table 3",
+      score: '3-0',
+      day: 'day1',
+      matchType: 'Team',
+      ageRange: "Under 19",
+      teams: {
+        team1: { name: 'IND', flag: '/images/images (1).png' },
+        team2: { name: 'BAN', flag: '/images/bd.png' }
+      },
+      players: [
+        {
+          player1: {
+            avatar: '/images/images (1).png',
+            name: 'Sarthak Arya',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/bd.png',
+            name: 'Tahmidur Rahman',
+            status: 'loss'
+          },
+          scores: '3-1',
+          details: '11-13, 11-2, 11-5, 11-9'
+        },
+        {
+          player1: {
+            avatar: '/images/images (1).png',
+            name: 'Soham Mukherjee',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/bd.png',
+            name: 'Abul Hashem',
+            status: 'loss'
+          },
+          scores: '3-1',
+          details: '8-11, 11-3, 11-6, 11-9'
+        },
+        {
+          player1: {
+            avatar: '/images/images (1).png',
+            name: 'Sahil Rawat',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/bd.png',
+            name: 'Monirul Islam',
+            status: 'loss'
+          },
+          scores: '3-0',
+          details: '13-11, 11-5, 11-5'
+        }
+      ]
+    },
+    {
       id: 5,
       title: "Boys Team - Under 15",
       venue: "Table 5",
       score: '3-2',
       day: 'day1',
       matchType: 'Team',
+      ageRange: "Under 15",
       teams: {
         team1: { name: 'SRI', flag: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png' },
         team2: { name: 'PAK', flag: '/images/teams/flags/images.png' }
@@ -290,172 +351,239 @@ const Matches = () => {
       ]
     },
     {
-      id: 8,
-      title: "Boys Team - Under 19",
-      venue: "Table 5",
+      id: 6,
+      title: "Girls Team - Under 19",
+      venue: "Table 4",
       score: '3-0',
       day: 'day1',
       matchType: 'Team',
+      ageRange: "Under 19",
       teams: {
-        team1: { name: 'NEP', flag: '/images/teams/flags/Nepal.jpg' },
-        team2: { name: 'MAL', flag: '/images/teams/flags/images (2).png' }
+        team1: { name: 'IND', flag: '/images/teams/flags/images (1).png' },
+        team2: { name: 'PAK', flag: '/images/teams/flags/images.png' }
       },
       players: [
         {
           player1: {
-            avatar: '/images/teams/flags/Nepal.jpg',
-            name: 'Rubin',
-            status: 'win'
-          },
-          player2: {
-            avatar: '/images/teams/flags/images (2).png',
-            name: 'Umir',
-            status: 'loss'
-          },
-          scores: '3-2',
-          details: '11-8,11-6,11-7'
-        },
-        {
-          player1: {
-            avatar: '/images/teams/flags/Nepal.jpg',
-            name: 'Prince',
-            status: 'win'
-          },
-          player2: {
-            avatar: '/images/teams/flags/images (2).png',
-            name: 'Akhyar',
-            status: 'loss'
-          },
-          scores: '3-2',
-          details: '6-11,9-11,11-8,11-9,15-13'
-        },
-        {
-          player1: {
-            avatar: '/images/teams/flags/Nepal.jpg',
-            name: 'Siddharth',
+            avatar: '/images/teams/flags/images (1).png',
+            name: 'Sayali Rajesh Wani',
             status: 'win'
           },
           player2: {
             avatar: '/images/teams/flags/images.png',
-            name: 'Mohomed',
+            name: 'Kalsoom Khan',
             status: 'loss'
           },
-          scores: '3-0',
-          details: '11-4,11-4,11-4'
-        }      ]
-    },,
+          scores: '03-01',
+          details: '11-06, 11-04, 11-05'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags/images (1).png',
+            name: 'Pritha priya vartikar',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/teams/flags/images.png',
+            name: 'Hoor Fawad',
+            status: 'loss'
+          },
+          scores: '03-01',
+          details: '11-06, 11-03, 11-01'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags/images (1).png',
+            name: 'Risha Mirchandani',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/teams/flags/images.png',
+            name: 'Zunaira Khan',
+            status: 'loss'
+          },
+          scores: '03-01',
+          details: '11-02, 11-04, 11-05'
+        },
+
+      ]
+    },
     {
-      id: 4,
-      title: "Boys Team - Under 15",
-      venue: "Table 3",
-      score: '3-0',
+      id: 7,
+      title: "Girls Team - Under 15",
+      venue: "Table 4",
+      score: '0-3',
       day: 'day1',
       matchType: 'Team',
+      ageRange: "Under 15",
       teams: {
-        team1: { name: 'IND', flag: '/images/images (1).png' },
-        team2: { name: 'BAN', flag: '/images/bd.png' }
+        team1: { name: 'NEP', flag: '/images/1f1f3-1f1f5.jpg' },
+        team2: { name: 'IND', flag: '/images/teams/flags/images (1).png' }
       },
       players: [
         {
           player1: {
-            avatar: '/images/images (1).png',
-            name: 'Sarthak Arya',
-            status: 'win'
-          },
-          player2: {
-            avatar: '/images/bd.png',
-            name: 'Tahmidur Rahman',
+            avatar: '/images/1f1f3-1f1f5.jpg',
+            name: 'Sherestha',
             status: 'loss'
           },
-          scores: '3-1',
-          details: '11-13, 11-2, 11-5, 11-9'
+          player2: {
+            avatar: '/images/teams/flags/images (1).png',
+            name: 'Divyanshe',
+            status: 'win'
+          },
+          scores: '0-3',
+          details: '06-11,06-11, 06-11'
         },
         {
           player1: {
-            avatar: '/images/images (1).png',
-            name: 'Soham Mukherjee',
-            status: 'win'
-          },
-          player2: {
-            avatar: '/images/bd.png',
-            name: 'Abul Hashem',
+            avatar: '/images/1f1f3-1f1f5.jpg',
+            name: 'Shakya',
             status: 'loss'
           },
-          scores: '3-1',
-          details: '8-11, 11-3, 11-6, 11-9'
+          player2: {
+            avatar: '/images/teams/flags/images (1).png',
+            name: 'Syndrela',
+            status: 'win'
+          },
+          scores: '0-3',
+          details: '04-11,03-11, 06-11'
         },
         {
           player1: {
-            avatar: '/images/images (1).png',
-            name: 'Sahil Rawat',
-            status: 'win'
-          },
-          player2: {
-            avatar: '/images/bd.png',
-            name: 'Monirul Islam',
+            avatar: '/images/1f1f3-1f1f5.jpg',
+            name: 'Mahata',
             status: 'loss'
           },
-          scores: '3-0',
-          details: '13-11, 11-5, 11-5'
-        }
+          player2: {
+            avatar: '/images/teams/flags/images (1).png',
+            name: 'Kavya',
+            status: 'win'
+          },
+          scores: '0-3',
+          details: '0-11,04-11, 04-11'
+        },
+
+
+
       ]
     },
     {
-      id: 9,
-      title: "Boys Team - Under 19",
-      venue: "Table 5",
-      score: '0-3',
+      id: 10,
+      title: "Girls Team - Under 15",
+      venue: "Table 4",
+      score: '3-0',
       day: 'day1',
       matchType: 'Team',
+      ageRange: "Under 15",
       teams: {
-        team1: { name: 'PAK', flag: '/images/teams/flags/images.png' },
+        team1: { name: 'SRI', flag: '/images/Flag_of_Sri_Lanka.svg.png' },
         team2: { name: 'BAN', flag: '/images/teams/flags/bd.png' }
       },
       players: [
         {
           player1: {
-            avatar: '/images/teams/flags/images.png',
-            name: 'Sayali  Rajesh',
-            status: 'loss'
+            avatar: '/images/Flag_of_Sri_Lanka.svg.png',
+            name: 'Yoshini Jayawardana',
+            status: 'win'
           },
           player2: {
             avatar: '/images/teams/flags/bd.png',
-            name: 'Kalsoom khan',
+            name: 'MSI Haniba Khaan',
             status: 'loss'
           },
-          scores: '2-3',
-          details: '9-11,11-13,11-4,11-6,11-13'
+          scores: '3-0',
+          details: '11-06,11-05, 11-05'
         },
         {
           player1: {
-            avatar: '/images/teams/flags/images.png',
-            name: 'Pritha Priya',
-            status: 'loss'
+            avatar: '/images/Flag_of_Sri_Lanka.svg.png',
+            name: 'Mithuli Shanya',
+            status: 'win'
           },
           player2: {
             avatar: '/images/teams/flags/bd.png',
-            name: 'Hoor Fawad',
-            status: 'win'
+            name: 'Msiasma Khaan',
+            status: 'loss'
           },
-          scores: '1-3',
-          details: '11-1,6-11,-11,9-11'
+          scores: '3-0',
+          details: '12-10,11-04, 11-04'
         },
         {
           player1: {
-            avatar: '/images/teams/flags/images.png',
-            name: 'Risha Mirchandani',
-            status: 'loss'
+            avatar: '/images/Flag_of_Sri_Lanka.svg.png',
+            name: 'Samindi Weerasooriya',
+            status: 'win'
           },
           player2: {
             avatar: '/images/teams/flags/bd.png',
-            name: 'Zunaira Khan',
-            status: 'win'
+            name: 'nusai Jahan Ananna',
+            status: 'loss'
           },
-          scores: '1-3',
-          details: '11-8,9-11,8-11,7-11'
-        }      ]
-    }
+          scores: '3-0',
+          details: '12-10,11-04, 11-04'
+        },
 
+
+
+
+      ]
+    },
+    {
+      id: 11,
+      title: "Boys Team - Under 15",
+      venue: "Table 4",
+      score: '0-3',
+      day: 'day1',
+      matchType: 'Team',
+      ageRange: "Under 15",
+      teams: {
+        team1: { name: 'NEP', flag: '/images/1f1f3-1f1f5.jpg' },
+        team2: { name: 'IND', flag: '/images/teams/flags/images (1).png' }
+      },
+      players: [
+        {
+          player1: {
+            avatar: '/images/1f1f3-1f1f5.jpg',
+            name: 'Jayashinu Maharjan',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/teams/flags/images (1).png',
+            name: 'Sahil Rawat',
+            status: 'win'
+          },
+          scores: '0-3',
+          details: '08-11,11-13, 02-11'
+        },
+        {
+          player1: {
+            avatar: '/images/1f1f3-1f1f5.jpg',
+            name: 'Rijan Shakya',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/teams/flags/images (1).png',
+            name: 'Sarthak Arya',
+            status: 'win'
+          },
+          scores: '0-3',
+          details: '06-11,03-11, 06-11'
+        },
+        {
+          player1: {
+            avatar: '/images/1f1f3-1f1f5.jpg',
+            name: 'Sabin Chhetri',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/teams/flags/images (1).png',
+            name: 'Sardar Rumpam',
+            status: 'win'
+          },
+          scores: '0-3',
+          details: '5-11,09-11, 06-11'
+        },
 
 
 
@@ -614,7 +742,6 @@ const Matches = () => {
 
       ]
     },
-
   ];
 
 
