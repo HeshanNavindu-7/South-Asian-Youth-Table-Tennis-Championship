@@ -690,7 +690,7 @@ const Matches = () => {
       ageRange: "Under 15",
       teams: {
         team1: { name: 'SRI', flag: '/images/Flag_of_Sri_Lanka.svg.png' },
-        team2: { name: 'MAL', flag: '/images/1f1f3-1f1f5.jpg' }
+        team2: { name: 'MAL', flag: '/images/images (2).png' }
       },
       players: [
         {
@@ -700,7 +700,7 @@ const Matches = () => {
             status: 'win'
           },
           player2: {
-            avatar: '/images/1f1f3-1f1f5.jpg',
+            avatar: '/images/images (2).png',
             name: 'Mohamed Khalaf Rafiu',
             status: 'loss'
           },
@@ -714,7 +714,7 @@ const Matches = () => {
             status: 'win'
           },
           player2: {
-            avatar: '/images/1f1f3-1f1f5.jpg',
+            avatar: '/images/images (2).png',
             name: 'Umyr Mohamed Muizzu',
             status: 'loss'
           },
@@ -728,7 +728,7 @@ const Matches = () => {
             status: 'win'
           },
           player2: {
-            avatar: '/images/1f1f3-1f1f5.jpg',
+            avatar: '/images/images (2).png',
             name: 'Yazeen Hussian Shareef',
             status: 'loss'
           },
@@ -748,8 +748,8 @@ const Matches = () => {
   const filteredMatches = matches.filter(match => {
     const categoryMatch = category === 'all' || match.title.toLowerCase().includes(category.toLowerCase());
     const ageRangeMatch = ageRange === 'all' || match.ageRange === ageRange;
-    const matchTypeMatch = matchType === 'all' || match.type.toLowerCase() === matchType.toLowerCase();
-    return categoryMatch && ageRangeMatch && matchTypeMatch && match.day === dayFilter;
+    const matchTypeMatch = matchType === 'all' || match.matchType.toLowerCase() === matchType.toLowerCase();
+    return categoryMatch && ageRangeMatch && matchTypeMatch;
   });
 
   const handleCategoryChange = (category) => () => setCategory(category);
