@@ -1,27 +1,29 @@
-import { Button, Card, CardContent, Grid, Typography } from '@mui/material';
+import { Button, Card, CardContent, Grid, MenuItem, Select, Typography } from '@mui/material';
 import React, { useState } from 'react';
 import './matches.css';
 
 const Matches = () => {
-  const [typeFilter, setTypeFilter] = useState('all');
+  const [category, setCategory] = useState('all');
+  const [ageRange, setAgeRange] = useState('all');
+  const [matchType, setMatchType] = useState('all');
   const [dayFilter, setDayFilter] = useState('day1');
 
   const matches = [
-
     {
       id: 1,
       title: "Girls Team - Under 19",
       venue: "Table 2",
       score: '0-3',
       day: 'day1',
+      matchType: 'Team',
       teams: {
-        team1: { name: 'BAN', flag: '/images/images (2).png' },
+        team1: { name: 'BAN', flag: '/images/bd.png' },
         team2: { name: 'IND', flag: '/images/images (1).png' }
       },
       players: [
         {
           player1: {
-            avatar: '/images/images (2).png',
+            avatar: '/images/bd.png',
             name: 'Khoi Sai',
             status: 'lose'
           },
@@ -35,7 +37,7 @@ const Matches = () => {
         },
         {
           player1: {
-            avatar: '/images/images (2).png',
+            avatar: '/images/bd.png',
             name: 'Samanta Hossain',
             status: 'lose'
           },
@@ -49,7 +51,7 @@ const Matches = () => {
         },
         {
           player1: {
-            avatar: '/images/images (2).png',
+            avatar: '/images/bd.png',
             name: 'Rashmi Tanchangya',
             status: 'lose'
           },
@@ -69,9 +71,10 @@ const Matches = () => {
       venue: "Table 1",
       score: '3-0',
       day: 'day1',
+      matchType: 'Team',
       teams: {
         team1: { name: 'IND', flag: '/images/images (1).png' },
-        team2: { name: 'BAN', flag: '/images/images (2).png' }
+        team2: { name: 'BAN', flag: '/images/bd.png' }
       },
       players: [
         {
@@ -81,7 +84,7 @@ const Matches = () => {
             status: 'win'
           },
           player2: {
-            avatar: '/images/images (2).png',
+            avatar: '/images/bd.png',
             name: 'MD Tahmidur Rahman',
             status: 'lose'
           },
@@ -95,7 +98,7 @@ const Matches = () => {
             status: 'win'
           },
           player2: {
-            avatar: '/images/images (2).png',
+            avatar: '/images/bd.png',
             name: 'Abul Hashem Hasib',
             status: 'lose'
           },
@@ -109,7 +112,7 @@ const Matches = () => {
             status: 'win'
           },
           player2: {
-            avatar: '/images/images (2).png',
+            avatar: '/images/bd.png',
             name: 'MD Monirul Islam',
             status: 'lose'
           },
@@ -117,16 +120,17 @@ const Matches = () => {
           details: '13-11, 11-05, 11-05'
         }
       ]
-    }, {
+    },
+    {
       id: 3,
-      title: "Girls team - Under 19",
-      venue: "Table  3",
+      title: "Girls Team - Under 19",
+      venue: "Table 3",
       score: '3-2',
       day: 'day1',
+      matchType: 'Team',
       teams: {
-        team1: { name: 'Sri', flag: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png' },
-        team2: { name: 'Mal', flag: '/images/teams/flags/images (2).png' },
-
+        team1: { name: 'SRI', flag: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png' },
+        team2: { name: 'MAL', flag: '/images/teams/flags/images (2).png' }
       },
       players: [
         {
@@ -179,11 +183,11 @@ const Matches = () => {
           },
           player2: {
             avatar: '/images/teams/flags/images (2).png',
-            name: 'fathimath Dheema Ali',
+            name: 'Fathimath Dheema Ali',
             status: 'loss'
           },
           scores: '02-03',
-          details: '05-11, 11-06, 11-06,05-11,07-11'
+          details: '05-11, 11-06, 11-06, 05-11, 07-11'
         },
         {
           player1: {
@@ -193,25 +197,80 @@ const Matches = () => {
           },
           player2: {
             avatar: '/images/teams/flags/images (2).png',
-            name: 'Minha mahjoob Shujau',
+            name: 'Minha Mahjoob Shujau',
             status: 'loss'
           },
           scores: '03-00',
           details: '13-11, 12-10, 11-05'
+        }
+      ]
+    },
+    {
+      id: 4,
+      title: "Boys Team - Under 19",
+      venue: "Table 3",
+      score: '3-0',
+      day: 'day1',
+      matchType: 'Team',
+      teams: {
+        team1: { name: 'IND', flag: '/images/images (1).png' },
+        team2: { name: 'BAN', flag: '/images/bd.png' }
+      },
+      players: [
+        {
+          player1: {
+            avatar: '/images/images (1).png',
+            name: 'Sarthak Arya',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/bd.png',
+            name: 'Tahmidur Rahman',
+            status: 'loss'
+          },
+          scores: '3-1',
+          details: '11-13, 11-2, 11-5, 11-9'
         },
-
+        {
+          player1: {
+            avatar: '/images/images (1).png',
+            name: 'Soham Mukherjee',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/bd.png',
+            name: 'Abul Hashem',
+            status: 'loss'
+          },
+          scores: '3-1',
+          details: '8-11, 11-3, 11-6, 11-9'
+        },
+        {
+          player1: {
+            avatar: '/images/images (1).png',
+            name: 'Sahil Rawat',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/bd.png',
+            name: 'Monirul Islam',
+            status: 'loss'
+          },
+          scores: '3-0',
+          details: '13-11, 11-5, 11-5'
+        }
       ]
     },
     {
       id: 5,
-      title: "Boys team - Under 15",
+      title: "Boys Team - Under 15",
       venue: "Table 5",
       score: '3-2',
       day: 'day1',
+      matchType: 'Team',
       teams: {
-        team1: { name: 'Sri', flag: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png' },
-        team2: { name: 'Par', flag: '/images/teams/flags/images.png' },
-
+        team1: { name: 'SRI', flag: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png' },
+        team2: { name: 'PAK', flag: '/images/teams/flags/images.png' }
       },
       players: [
         {
@@ -226,21 +285,21 @@ const Matches = () => {
             status: 'win'
           },
           scores: '02-03',
-          details: '11-05, 05-11, 11-05,06-11,08-11'
+          details: '11-05, 05-11, 11-05, 06-11, 08-11'
         },
         {
           player1: {
             avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
-            name: 'Naviru nethsitha',
+            name: 'Naviru Nethsitha',
             status: 'win'
           },
           player2: {
             avatar: '/images/teams/flags/images.png',
-            name: 'Abbas Amjad khan',
+            name: 'Abbas Amjad Khan',
             status: 'loss'
           },
           scores: '03-02',
-          details: '09-11, 11-04, 12-10,08-11,11-07'
+          details: '09-11, 11-04, 12-10, 08-11, 11-07'
         },
         {
           player1: {
@@ -254,7 +313,7 @@ const Matches = () => {
             status: 'loss'
           },
           scores: '03-01',
-          details: '11-04, 11-04, 05-11,11-09'
+          details: '11-04, 11-04, 05-11, 11-09'
         },
         {
           player1: {
@@ -268,7 +327,7 @@ const Matches = () => {
             status: 'win'
           },
           scores: '02-03',
-          details: '11-06, 09-11, 12-10,07-11,06-11'
+          details: '11-06, 09-11, 12-10, 07-11, 06-11'
         },
         {
           player1: {
@@ -282,88 +341,56 @@ const Matches = () => {
             status: 'loss'
           },
           scores: '03-02',
-          details: '07-11, 11-04, 11-08,11-02'
-        },
-
-
-
-      ]
-    }, {
-      id: 4,
-      title: "Boys team - Under 19",
-      venue: "Table 3",
-      score: '3-0',
-      day: 'day1',
-      teams: {
-        team1: { name: 'IND', flag: '/images/images (1).png' },
-        team2: { name: 'BAN', flag: '/images/images (2).png' },
-
-      },
-      players: [
-        {
-          player1: {
-            avatar: '/images/images (1).png',
-            name: 'Sarthak Arya',
-            status: 'win'
-          },
-          player2: {
-            avatar: '/images/images (2).png',
-            name: 'Tahmidur Rahman',
-            status: 'loss'
-          },
-          scores: '3-1',
-          details: '11-13,11-2,11-5,11-9'
-        },
-        {
-          player1: {
-            avatar: '/images/images (1).png',
-            name: 'Soham Mukherjee',
-            status: 'loss'
-          },
-          player2: {
-            avatar: '/images/images (2).png',
-            name: 'Abul Hashem',
-            status: 'win'
-          },
-          scores: '3-1',
-          details: '8-11,11-3,11-6,11-9'
-        },
-        {
-          player1: {
-            avatar: '/images/images (1).png',
-            name: 'Sahil Rawat',
-            status: 'win'
-          },
-          player2: {
-            avatar: '/images/images (2).png',
-            name: 'Monirul Islam',
-            status: 'loss'
-          },
-          scores: '3-0',
-          details: '13-11,11-5,11-5'
+          details: '07-11, 11-04, 11-08, 11-02'
         }
       ]
     }
-
   ];
 
-  const filteredMatches = matches.filter(match =>
-    (typeFilter === 'all' || match.title.includes(typeFilter)) &&
-    match.day === dayFilter
-  );
+
+  const filteredMatches = matches.filter(match => {
+    const categoryMatch = category === 'all' || match.title.toLowerCase().includes(category.toLowerCase());
+    const ageRangeMatch = ageRange === 'all' || match.ageRange === ageRange;
+    const matchTypeMatch = matchType === 'all' || match.type.toLowerCase() === matchType.toLowerCase();
+    return categoryMatch && ageRangeMatch && matchTypeMatch && match.day === dayFilter;
+  });
+
+  const handleCategoryChange = (category) => () => setCategory(category);
+  const handleAgeRangeChange = (event) => setAgeRange(event.target.value);
+  const handleMatchTypeChange = (event) => setMatchType(event.target.value);
 
   return (
     <div className="m-8">
       <div className="filter-buttons">
-        <Button variant="contained" color="error" onClick={() => setTypeFilter('all')}>All</Button>
-        <Button variant="contained" color="error" onClick={() => setTypeFilter("Girls")}>Girls</Button>
-        <Button variant="contained" color="error" onClick={() => setTypeFilter("Boys")}>Boys</Button>
-        <Button variant="contained" color="error" onClick={() => setTypeFilter("Under 15")}>Under 15</Button>
-        <Button variant="contained" color="error" onClick={() => setTypeFilter("Under 19")}>Under 19</Button>
-        <Button variant="contained" color="error" onClick={() => setTypeFilter("Team")}>Team</Button>
-        <Button variant="contained" color="error" onClick={() => setTypeFilter("Single")}>Single</Button>
-        <Button variant="contained" color="error" onClick={() => setTypeFilter("double")}>Double</Button>
-        <Button variant="contained" color="error" onClick={() => setTypeFilter("Mix-Double")}>Mix-Double</Button>
+        <Button variant="contained" color="error" onClick={handleCategoryChange('all')}>All</Button>
+        <Button variant="contained" color="error" onClick={handleCategoryChange('Girls')}>Girls</Button>
+        <Button variant="contained" color="error" onClick={handleCategoryChange('Boys')}>Boys</Button>
+        <Select
+          value={ageRange}
+          onChange={handleAgeRangeChange}
+          displayEmpty
+          sx={{ backgroundColor: "white", marginLeft: '10px', marginRight: '10px' }}
+        >
+          <MenuItem value="all">
+            <em>Age Group</em>
+          </MenuItem>
+          <MenuItem value="Under 15">Under 15</MenuItem>
+          <MenuItem value="Under 19">Under 19</MenuItem>
+        </Select>
+        <Select
+          value={matchType}
+          onChange={handleMatchTypeChange}
+          displayEmpty
+          sx={{ backgroundColor: "white" }}
+        >
+          <MenuItem value="all">
+            <em>Match Type</em>
+          </MenuItem>
+          <MenuItem value="Team">Team</MenuItem>
+          <MenuItem value="Singles">Singles</MenuItem>
+          <MenuItem value="Doubles">Doubles</MenuItem>
+          <MenuItem value="Mixed Doubles">Mixed Doubles</MenuItem>
+        </Select>
       </div>
 
       <Typography variant="h4" align="center" gutterBottom>
@@ -416,8 +443,8 @@ const Matches = () => {
                         </Typography>
                       </div>
                     </div>
-                    <div className="text-right">
-                      <Typography variant="body2" className="font-bold">
+                    <div className="text-center">
+                      <Typography variant="body2">
                         {pair.scores}
                       </Typography>
                       <Typography variant="body2" color="textSecondary">
