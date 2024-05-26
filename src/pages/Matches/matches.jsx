@@ -116,6 +116,145 @@ const Matches = () => {
           details: '13-11, 11-05, 11-05'
         }
       ]
+    },{
+      id: 3,
+      title: "Girls team - Under 19",
+      venue: "Table  3",
+      score: '3-0',
+      day: 'day1',
+      teams: {
+        team1: { name: 'Sri', flag: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png' },
+        team2: { name: 'Mal', flag: '/images/teams/flags/images (2).png' },
+
+      },
+      players: [
+        {
+          player1: {
+            avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+            name: 'Bimandee Bandara',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/teams/flags/images (2).png',
+            name: 'Minha Mahjoob Shujau',
+            status: 'loss'
+          },
+          scores: '03-00',
+          details: '11-07, 11-07, 11-06'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+            name: 'Tamadi Kavindya',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/teams/flags/images (2).png',
+            name: 'Fathimath Dheema Alu',
+            status: 'win'
+          },
+          scores: '02-03',
+          details: '11-06, 11-07, 11-08'
+        },    
+            {
+          player1: {
+            avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+            name: 'Divya Dharani',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/teams/flags/images (2).png',
+            name: 'Mishka mohamed Ibrahim',
+            status: 'loss'
+          },
+          scores: '03-00',
+          details: '11-06, 11-07, 11-08'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+            name: 'Binamdee Bandara',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/teams/flags/images (2).png',
+            name: 'fathimath Dheema Ali',
+            status: 'loss'
+          },
+          scores: '02-03',
+          details: '05-11, 11-06, 11-06,05-11,07-11'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+            name: 'Thamadi Kavinndya',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/teams/flags/images (2).png',
+            name: 'Minha mahjoob Shujau',
+            status: 'loss'
+          },
+          scores: '03-00',
+          details: '13-11, 12-10, 11-05'
+        },
+
+      ]
+    },{
+      id: 4,
+      title: "Boys team - Under 19",
+      venue: "Table 3",
+      score: '3-0',
+      day: 'day1',
+      teams: {
+        team1: { name: 'IND', flag: '/images/images (1).png' },
+        team2: { name: 'BAN', flag: '/images/images (2).png' },
+
+      },
+      players: [
+        {
+          player1: {
+            avatar: '/images/images (1).png',
+            name: 'Sarthak Arya',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/images (2).png',
+            name: 'Tahmidur Rahman',
+            status: 'loss'
+          },
+          scores: '3-1',
+          details: '11-13,11-2,11-5,11-9'
+        },
+        {
+          player1: {
+            avatar: '/images/images (1).png',
+            name: 'Soham Mukherjee',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/images (2).png',
+            name: 'Abul Hashem',
+            status: 'win'
+          },
+          scores: '3-1',
+          details: '8-11,11-3,11-6,11-9'
+        },    
+            {
+          player1: {
+            avatar: '/images/images (1).png',
+            name: 'Sahil Rawat',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/images (2).png',
+            name: 'Monirul Islam',
+            status: 'loss'
+          },
+          scores: '3-0',
+          details: '13-11,11-5,11-5'
+        }
+      ]
     }
   ];
 
