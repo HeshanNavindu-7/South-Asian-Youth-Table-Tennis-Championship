@@ -12,6 +12,7 @@ import Event from './pages/EventPage/Event';
 import Home from './pages/HomePage/HomePage';
 import Itsme from './pages/Itsme/Itsme';
 import Kandy from './pages/Kandypage/Kandy';
+import Matches from './pages/Matches/matches';
 import NewsPage from './pages/NewsPage/NewsPage';
 import Register from './pages/RegisterPage/RegisterPage';
 
@@ -27,7 +28,7 @@ const App = () => {
         <Route path="/kandy" element={<Kandy />} />
         <Route path="/NewsPage" element={<NewsPage />} />
         <Route path="/gallery" element={<Event />} />
-        <Route path="/matches" element={<Home />} />
+        <Route path="/matches" element={<Matches />} />
         <Route path="/itsme" element={<Itsme />} />
         <Route path="/MoscotPage" element={<MoscotPage />} />
         <Route path="/leader" element={<LEADER />} />

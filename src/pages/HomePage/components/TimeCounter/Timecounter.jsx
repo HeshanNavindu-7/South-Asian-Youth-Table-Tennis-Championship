@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import './Timecounter.css';
-import { Link } from 'react-router-dom';
 import moment from 'moment-timezone';
+import React, { useEffect, useState } from 'react';
+import './Timecounter.css';
 
 const Timecounter = () => {
   const [countdown, setCountdown] = useState(calculateCountdown());
@@ -40,8 +39,8 @@ const Timecounter = () => {
   return (
     <div className="boxa">
       <div className="boxa1">
-        
-        <h1>SOUTH ASIAN YOUTH TABLE TENNIS CHAMPIONSHIP-2024</h1>
+
+        {/* <h1>SOUTH ASIAN YOUTH TABLE TENNIS CHAMPIONSHIP-2024</h1>
         <div className="boxa2">
           <div className="t1">
             <span>{countdown.days}</span>
@@ -66,9 +65,9 @@ const Timecounter = () => {
 
         <Link to="register">
         <button className='btn1'>Register Now</button>
-        </Link>
+        </Link> */}
 
-        
+
       </div>
     </div>
   );

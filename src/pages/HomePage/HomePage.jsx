@@ -1,30 +1,28 @@
 // src/pages/HomePage.jsx
 import React from 'react';
 
-import Slideshow from './components/slideshow';
-import Timecounter from './components/TimeCounter/Timecounter';;
-import Updates from './components/Updates';
-import Carosel from './components/Carosel';
-import Teams from './components/Teams';
-import Partisipant from './components/partisipant/Partisipant';
-import Partners from './components/partners/Partners';
+import Contact from '../../components/ContactUs/Contact';
 import MyFooter from '../../components/Footer/footer';
 import Moscot from '../../components/Moscot/Moscot';
-import Contact from '../../components/ContactUs/Contact';
+import Timecounter from './components/TimeCounter/Timecounter';
+import Partisipant from './components/partisipant/Partisipant';
+import Partners from './components/partners/Partners';
+import Slideshow from './components/slideshow';
+;
 
 const HomePage = () => {
   return (
     <div>
-      
 
-      <Slideshow/>
-      <Timecounter/>
-      <Partisipant/>
-     
-      <Moscot/>
-      <Partners/>
-      <Contact/>
-      <MyFooter/>
+
+      <Slideshow />
+      <Timecounter />
+      <Partisipant />
+
+      <Moscot />
+      <Partners />
+      <Contact />
+      <MyFooter />
 
 
 

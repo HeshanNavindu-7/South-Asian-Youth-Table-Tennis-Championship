@@ -17,88 +17,113 @@ const Matches = () => {
   const matches = [
     {
       id: 1,
-      title: "Boys - Under 19 Team",
-      score: '2-3',
+      title: "Girls - under 19 - Team ",
+      score: '0-0',
       players: [
         {
-          avatar: '/images/pic4.jpeg',
+          avatar: '/images/teams/flags/images (1).pn',
           name: 'Rafael Turrini',
-          scores: [2, 11, 6, 14, 10, 7],
-          countryFlag: '/images/Flag_of_Sri_Lanka.svg.png',
+          scores: [0, 0, 0, 0, 0, 0],
+          countryFlag: '/images/teams/flags/images (1).png',
           status: 'lose'
         },
         {
-          avatar: '/images/pic4.jpeg',
+          avatar: '/image/pic4.jpeg',
           name: 'Lubomir Pistej',
-          scores: [3, 3, 11, 12, 12, 11],
-          countryFlag: '/images/Flag_of_Sri_Lanka.svg.png',
-          status: 'win'
+          scores: [0, 0, 0, 0, 0, 0],
+          countryFlag: '/images/teams/flags/bd.png',
+          status: 'wi'
         }
       ]
     },
     {
       id: 2,
-      title: "Boys - Under 15 Mix-Double",
-      score: '1-3',
+      title: "Pending",
+      score: 'pending',
       players: [
         {
-          avatar: '/images/pic4.jpeg',
-          name: 'Player A',
-          scores: [2, 11, 6, 14],
+          avatar: '/image/pic4.jpeg',
+          name: 'Rafael Turrini',
+          scores: [0, 0, 0, 0, 0, 0],
           countryFlag: '/images/Flag_of_Sri_Lanka.svg.png',
           status: 'lose'
         },
         {
-          avatar: '/images/pic4.jpeg',
-          name: 'Player B',
-          scores: [3, 3, 11, 12],
+          avatar: '/image/pic4.jpeg',
+          name: 'Lubomir Pistej',
+          scores: [0, 0, 0, 0, 0, 0],
           countryFlag: '/images/Flag_of_Sri_Lanka.svg.png',
-          status: 'win'
+          status: 'wi'
         }
       ]
     },
     {
       id: 3,
-      title: "Girls - Under 15",
-      score: '1-3',
+      title: "Pending",
+      score: 'pending',
       players: [
         {
-          avatar: '/images/pic4.jpeg',
-          name: 'Player A',
-          scores: [2, 11, 6, 14],
+          avatar: '/image/pic4.jpeg',
+          name: 'Rafael Turrini',
+          scores: [0, 0, 0, 0, 0, 0],
           countryFlag: '/images/Flag_of_Sri_Lanka.svg.png',
           status: 'lose'
         },
         {
-          avatar: '/images/pic4.jpeg',
-          name: 'Player B',
-          scores: [3, 3, 11, 12],
+          avatar: '/image/pic4.jpeg',
+          name: 'Lubomir Pistej',
+          scores: [0, 0, 0, 0, 0, 0],
           countryFlag: '/images/Flag_of_Sri_Lanka.svg.png',
-          status: 'win'
+          status: 'wi'
         }
       ]
     },
     {
       id: 4,
-      title: "Girls - Qualifying Round 6",
-      score: '1-3',
+      title: "Pending",
+      score: 'pending',
       players: [
         {
-          avatar: '/images/pic4.jpeg',
-          name: 'Player A',
-          scores: [2, 11, 6, 14],
+          avatar: '/image/pic4.jpeg',
+          name: 'Rafael Turrini',
+          scores: [0, 0, 0, 0, 0, 0],
           countryFlag: '/images/Flag_of_Sri_Lanka.svg.png',
           status: 'lose'
         },
         {
-          avatar: '/images/pic4.jpeg',
-          name: 'Player B',
-          scores: [3, 3, 11, 12],
+          avatar: '/image/pic4.jpeg',
+          name: 'Lubomir Pistej',
+          scores: [0, 0, 0, 0, 0, 0],
           countryFlag: '/images/Flag_of_Sri_Lanka.svg.png',
-          status: 'win'
+          status: 'wi'
         }
       ]
-    }
+    },
+
+    // {
+    //   id: 4,
+    //   title: "Boys - Under 19 Team",
+    //   score: 'pending',
+    //   players: [
+    //     {
+    //       avatar: '/image/pic4.jpeg',
+    //       name: 'Rafael Turrini',
+    //       scores: [2, 11, 6, 14, 10, 7],
+    //       countryFlag: '/images/Flag_of_Sri_Lanka.svg.png',
+    //       status: 'lose'
+    //     },
+    //     {
+    //       avatar: '/image/pic4.jpeg',
+    //       name: 'Lubomir Pistej',
+    //       scores: [3, 3, 11, 12, 12, 11],
+    //       countryFlag: '/images/Flag_of_Sri_Lanka.svg.png',
+    //       status: 'wi'
+    //     }
+    //   ]
+    // },
+
+
+
   ];
 
   const handleView = (match) => (e) => {
@@ -201,7 +226,7 @@ const Matches = () => {
                   <div className="box img lg:w-72 m-10 lg:relative -left-28">
                     <img src={selectedMatch.players[0].avatar} alt="" className=' shadow-red-50 shadow-2xl rounded-full' />
                   </div>
-                  <h2 className='flex m-10 lg:relative -top-52 left-48'> <span><img width="50px" className='m-3' src="./images/bd.png" alt="" /></span> <span className=' m-2 text-2xl font-bold'>{selectedMatch.players[0].name}</span></h2>
+                  <h2 className='flex m-10 lg:relative -top-52 left-48'> <span><img width="50px" className='m-3' src={selectedMatch.players[0].countryFlag} alt="" /></span> <span className=' m-2 text-2xl font-bold'>{selectedMatch.players[0].name}</span></h2>
                 </div>
                 <div className='lg:p-32 lg:text-5xl text-3xl max-sm:mt-14 font-bold'>
                   <span>{selectedMatch.score}</span>

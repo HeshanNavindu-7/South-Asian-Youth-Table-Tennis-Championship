@@ -1,5 +1,6 @@
-.boxa1{
-    background:linear-gradient(to left,rgba(0, 0, 0, 0.668),rgba(38, 36, 36, 0.334));
+.boxa1 {
+    /* background:linear-gradient(to left,rgba(0, 0, 0, 0.668),rgba(38, 36, 36, 0.334)); */
+    background-color: rgba(255, 0, 0, 0);
     border-radius: 20px;
     width: 70%;
     height: 500px;
@@ -9,49 +10,56 @@
     margin: 10px auto;
     text-align: center;
     color: aliceblue;
-    
+
 }
-.boxa1 h2{
+
+.boxa1 h2 {
     font-size: 25px;
     position: relative;
     top: 40px;
 }
-.boxa1 h1{
+
+.boxa1 h1 {
     font-size: 60px;
     position: relative;
     top: 40px;
 }
-.boxa2{
+
+.boxa2 {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     top: 60px;
 }
-.boxa2 .t1{
+
+.boxa2 .t1 {
     margin: 10px 30px;
     font-size: 25px;
 }
-.boxa2 .t1 span{
+
+.boxa2 .t1 span {
     background-color: rgba(11, 11, 11, 0.741);
     font-size: 50px;
     padding: 10px 30px;
     color: red;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: 1px rgb(147, 147, 147) solid;
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
-.boxa2 .t1 p{
+.boxa2 .t1 p {
     position: relative;
     left: -10px;
 }
-.text{
+
+.text {
     font-size: 70px;
     position: relative;
     top: -25px;
 }
-.btn1{
+
+.btn1 {
     background-color: rgb(213, 16, 16);
     border-radius: 10px;
     padding: 15px 30px;
@@ -60,138 +68,173 @@
     position: relative;
     top: 100px;
 }
-.btn1:hover{
+
+.btn1:hover {
     background-color: black;
 }
-.btn1:active{
+
+.btn1:active {
     box-shadow: 0px 0px 10px black;
 }
-@media (max-width:1024px){
-    .boxa2{
+
+@media (max-width:1024px) {
+    .boxa2 {
         transform: scale(0.8);
     }
 }
-@media (max-width:768px){
-    .boxa2{
+
+@media (max-width:768px) {
+    .boxa2 {
         transform: scale(0.5);
     }
-    .boxa1 h2{
+
+    .boxa1 h2 {
         font-size: 15px;
     }
-    .boxa1 h1{
+
+    .boxa1 h1 {
         font-size: 20px;
     }
-    .boxa1{
+
+    .boxa1 {
         height: 400px;
         top: 10px;
     }
 }
-@media (max-width:600px){
-    .boxa2{
+
+@media (max-width:600px) {
+    .boxa2 {
         transform: scale(0.4);
     }
-    .boxa1 h2{
+
+    .boxa1 h2 {
         font-size: 15px;
     }
-    .boxa1 h1{
+
+    .boxa1 h1 {
         font-size: 20px;
     }
-    .boxa1{
+
+    .boxa1 {
         height: 300px;
         top: 10px;
     }
-    .btn1{
+
+    .btn1 {
         transform: scale(0.6);
         top: 50px;
     }
 }
-@media (max-width:468px){
-    .boxa2{
+
+@media (max-width:468px) {
+    .boxa2 {
         transform: scale(0.4);
     }
-    .boxa1 h2{
+
+    .boxa1 h2 {
         font-size: 15px;
     }
-    .boxa1 h1{
+
+    .boxa1 h1 {
         font-size: 20px;
     }
-    .boxa1{
+
+    .boxa1 {
         height: 300px;
         top: 10px;
     }
-    .btn1{
+
+    .btn1 {
         transform: scale(0.6);
         top: 50px;
     }
 }
-@media (max-width:376px){
-    .boxa2{
+
+@media (max-width:376px) {
+    .boxa2 {
         transform: scale(0.3);
         top: -10px;
     }
-    .boxa1 h2{
+
+    .boxa1 h2 {
         font-size: 15px;
     }
-    .boxa1 h1{
+
+    .boxa1 h1 {
         font-size: 20px;
     }
-    .boxa1{
+
+    .boxa1 {
         height: 220px;
         top: 10px;
     }
-    .btn1{
+
+    .btn1 {
         transform: scale(0.5);
         top: -50px;
     }
-    .boxa{
+
+    .boxa {
         position: relative;
         top: 80px;
     }
 }
-@media (max-width:415px){
-    .boxa2{
+
+@media (max-width:415px) {
+    .boxa2 {
         transform: scale(0.3);
         top: -10px;
     }
-    .boxa1 h2{
+
+    .boxa1 h2 {
         font-size: 15px;
     }
-    .boxa1 h1{
+
+    .boxa1 h1 {
         font-size: 20px;
     }
-    .boxa1{
+
+    .boxa1 {
         height: 220px;
         top: 10px;
     }
-    .btn1{
+
+    .btn1 {
         transform: scale(0.5);
         top: -50px;
     }
-    .boxa{
+
+    .boxa {
         position: relative;
         top: 80px;
     }
 }
-@media (max-width:435px){
-    .boxa2{
+
+@media (max-width:435px) {
+    .boxa2 {
         transform: scale(0.3);
         top: -10px;
     }
-    .boxa1 h2{
+
+    .boxa1 h2 {
         font-size: 15px;
     }
-    .boxa1 h1{
+
+    .boxa1 h1 {
         font-size: 20px;
     }
-    .boxa1{
+
+    .boxa1 {
         height: 220px;
         top: 10px;
     }
-    .btn1{
+
+    .btn1 {
         transform: scale(0.5);
         top: -50px;
     }
-    .boxa{
+
+    .boxa {
         position: relative;
         top: 80px;
     }
