@@ -39,12 +39,7 @@ body {
   margin: 0 0.5rem;
   /* Optional additional margin if needed */
 }
-<<<<<<< HEAD
 
-.card {
-  transform: scale(0.7);
-}
-=======
 .matches-container {
   padding: 16px;
 }
@@ -79,4 +74,3 @@ body {
   height: 30px;
   margin-right: 8px;
 }
->>>>>>> ed52e528a2e3fee3f3b27e77bda52285fef4c4f3

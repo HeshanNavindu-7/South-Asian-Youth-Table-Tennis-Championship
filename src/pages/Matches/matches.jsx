@@ -554,6 +554,70 @@ const Matches = () => {
       ]
     },
     {
+      //11)id 17 girls under 15 sl - mala(3)
+      id: 13,
+      title: "Girls Team - Under 15",
+      venue: "Table 4",
+      score: '3-0',
+
+      day: 'day1',
+      matchType: 'Team',
+      ageRange: "Under 15",
+      teams: {
+        team1: { name: 'SRI', flag: '/images/Flag_of_Sri_Lanka.svg.png' },
+        team2: { name: 'MAL', flag: '/images/images (2).png' }
+      },
+      players: [
+        {
+          player1: {
+            avatar: '/images/Flag_of_Sri_Lanka.svg.png',
+            name: 'Yoshini Jayawardana',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/images (2).png',
+            name: 'Aishath Malak',
+            status: 'loss'
+          },
+          scores: '3-0',
+          details: '11-05,11-05, 11-06'
+        },
+        {
+          player1: {
+            avatar: '/images/Flag_of_Sri_Lanka.svg.png',
+            name: 'Muthuli Shanya',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/images (2).png',
+            name: 'Aishath Alsaa',
+            status: 'loss'
+          },
+          scores: '3-0',
+          details: '11-04,11-04, 11-04'
+        },
+        {
+          player1: {
+            avatar: '/images/Flag_of_Sri_Lanka.svg.png',
+            name: 'Melakya Frenando',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/images (2).png',
+            name: 'Mishka Binthi Muizzu',
+            status: 'loss'
+          },
+          scores: '3-0',
+          details: '11-05,11-05, 11-03'
+        },
+
+
+
+
+
+      ]
+    },
+    {
       // 10)id 12  girls under 19(5)
       id: 12,
       title: "Girls Team - Under 19",
@@ -815,7 +879,95 @@ const Matches = () => {
           details: '7-11, 11-4, 11-8, 11-2'
         }
       ]
-    }
+    },
+    { //18)id = 5 boys under  15(5)
+      id: 18,
+      title: "Boys Team - Under 15",
+      venue: "Table 5",
+      score: '3-2',
+      day: 'day1',
+      matchType: 'Team',
+      ageRange: "Under 15",
+      teams: {
+        team1: { name: 'PAK', flag: '/images/teams/flags/images.png' },
+        team2: { name: 'MAL', flag: '/images/teams/flags/images (2).png' }
+      },
+      players: [
+        {
+          player1: {
+            avatar: '/images/teams/flags//images/teams/flags/images.png',
+            name: 'Shanya Farooq',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/teams/flags/images (2).png',
+            name: 'Umyr Mohamed',
+            status: 'loss'
+          },
+          scores: '3-0',
+          details: '12-10, 11-5, 11-4, 6-11, 8-11'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags//images/teams/flags/images.png',
+            name: 'Abbass Amijad',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/teams/flags/images (2).png',
+            name: 'Akhayar Ahemed',
+            status: 'win'
+          },
+          scores: '2-3',
+          details: '11-4, 7-11, 11-4, 8-11, 7-11'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags//images/teams/flags/images.png',
+            name: 'Taha Bilal',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/teams/flags/images (2).png',
+            name: 'MOhamed Aan',
+            status: 'loss'
+          },
+          scores: '3-0',
+          details: '11-3, 11-2, 11-2'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags//images/teams/flags/images.png',
+            name: 'Shanyan farooq',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/teams/flags/images (2).png',
+            name: 'MOhamed Aan',
+            status: 'win'
+          },
+          scores: '1-3',
+          details: '6-11, 5-11, 11-3,9-11'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags//images/teams/flags/images.png',
+            name: 'Abbas Amjad',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/teams/flags/images (2).png',
+            name: 'Umyr Mohamed',
+            status: 'loss'
+          },
+          scores: '1-3',
+          details: '11-4, 11-7, 12-10'
+        },
+
+      ]
+    },
+
+
   ];
 
 
