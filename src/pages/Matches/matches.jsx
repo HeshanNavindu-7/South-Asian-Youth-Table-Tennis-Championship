@@ -1172,18 +1172,18 @@ const Matches = () => {
       matchType: 'Team',
       ageRange: "Under 15",
       teams: {
-        team1: { name: 'PAK', flag: '/images/teams/flags/images.png' },
-        team2: { name: 'MAL', flag: '/images/teams/flags/images (2).png' }
+        team1: { name: 'PAK', flag: '/images/teams/flags/pak.png' },
+        team2: { name: 'MAL', flag: '/images/teams/flags/mal.png' }
       },
       players: [
         {
           player1: {
-            avatar: '/images/teams/flags//images/teams/flags/images.png',
+            avatar: '/images/teams/flags/pak.png',
             name: 'Shanya Farooq',
             status: 'win'
           },
           player2: {
-            avatar: '/images/teams/flags/images (2).png',
+            avatar: '/images/teams/flags/mal.png',
             name: 'Umyr Mohamed',
             status: 'loss'
           },
@@ -1192,7 +1192,7 @@ const Matches = () => {
         },
         {
           player1: {
-            avatar: '/images/teams/flags//images/teams/flags/images.png',
+            avatar: '/images/teams/flags/pak.png',
             name: 'Abbass Amijad',
             status: 'loss'
           },
@@ -1206,7 +1206,7 @@ const Matches = () => {
         },
         {
           player1: {
-            avatar: '/images/teams/flags//images/teams/flags/images.png',
+            avatar: '/images/teams/flags/pak.png',
             name: 'Taha Bilal',
             status: 'win'
           },
@@ -1220,7 +1220,7 @@ const Matches = () => {
         },
         {
           player1: {
-            avatar: '/images/teams/flags//images/teams/flags/images.png',
+            avatar: '/images/teams/flags/pak.png',
             name: 'Shanyan farooq',
             status: 'loss'
           },
@@ -1234,7 +1234,7 @@ const Matches = () => {
         },
         {
           player1: {
-            avatar: '/images/teams/flags//images/teams/flags/images.png',
+            avatar: '/images/teams/flags/pak.png',
             name: 'Abbas Amjad',
             status: 'win'
           },
