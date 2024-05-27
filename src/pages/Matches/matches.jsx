@@ -623,6 +623,72 @@ const Matches = () => {
 
       ]
     },
+    {
+      //10)id 37 boys under 15 sl - mala(3)
+      id: 37,
+      title: "Boys Team - Under 19",
+      venue: "Table 2",
+      score: '0-3',
+
+      day: 'day2',
+      matchType: 'Team',
+      ageRange: "Under 19",
+      teams: {
+        team1: { name: 'MAL', flag: '/images/images (2).png' },
+        team2: { name: 'BAN', flag: '/images/bd.png' }
+      },
+      players: [
+        {
+          player1: {
+            avatar: '/images/images (2).png',
+            name: 'Akhyar Ahmed',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/bd.png',
+            name: 'Nafiz Iqbal',
+            status: 'win'
+          },
+          scores: '0-3',
+          details: '8-11,1-11,4-11'
+        },
+        {
+          player1: {
+            avatar: '/images/images (2).png',
+            name: 'Umyr Mohoamed',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/bd.png',
+            name: 'Ramhimlian Bawm',
+            status: 'win'
+          },
+          scores: '0-3',
+          details: '4-11,8-11,1-11'
+        },
+        {
+          player1: {
+            avatar: '/images/images (2).png',
+            name: 'Mohamed Aan',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/bd.png',
+            name: 'Abul Hashem',
+            status: 'win'
+          },
+          scores: '0-3',
+          details: '6-11,6-11,9-11'
+        },
+
+
+
+
+
+
+
+      ]
+    },
     //end
     {
       //11)id 17 girls under 15 sl - mala(3)
