@@ -188,7 +188,7 @@ const Matches = () => {
     },
     {
       //  4)id 7 under 15 nep ind(3)
-      id: 7,
+      id: 71,
       title: "Girls Team - Under 15",
       venue: "Table 4",
       score: '0-3',
@@ -492,8 +492,8 @@ const Matches = () => {
         }]
     },//start
     {
-      //9)id 13 boys under 15 sl - mala(3)
-      id: 13,
+      //9)id 72 boys under 15 sl - mala(3)
+      id: 72,
       title: "Boys Team - Under 15",
       venue: "Table 4",
       score: '3-0',
@@ -738,7 +738,7 @@ const Matches = () => {
             status: 'win'
           },
           player2: {
-            avatar:  '/images/teams/flags/Nepal.jpg',
+            avatar: '/images/teams/flags/Nepal.jpg',
             name: 'Yanggi Paudel',
             status: 'loss'
           },
@@ -753,8 +753,8 @@ const Matches = () => {
       ]
     },
     //end
-     //start
-     {
+    //start
+    {
       //13)id 21 Boyss under 15 mal  - pak(3)
       id: 21,
       title: "Boys Team - Under 15",
@@ -804,7 +804,7 @@ const Matches = () => {
             status: 'loss'
           },
           player2: {
-            avatar:   '/images/teams/flags/pak.png',
+            avatar: '/images/teams/flags/pak.png',
             name: 'Muhammad Azaan',
             status: 'win'
           },
@@ -819,86 +819,86 @@ const Matches = () => {
       ]
     },
     //end
- //start
- {
-  //50)id 50  boys under 15 Ban - nepal(4)
-  id: 50,
-  title: "Boys Team - Under 15",
-  venue: "Table 1",
-  score: '3-1',
-
-  day: 'day2',
-  matchType: 'Team',
-  ageRange: "Under 15",
-  teams: {
-    team1: { name: 'BAN', flag: '/images/teams/flags/bd.png' },
-    team2: { name: 'NEP', flag: '/images/teams/flags/Nepal.jpg' }
-  },
-  players: [
+    //start
     {
-      player1: {
-        avatar: '/images/teams/flags/bd.png',
-        name: 'Abul Hashem',
-        status: 'win'
-      },
-      player2: {
-        avatar: '/images/teams/flags/Nepal.jpg',
-        name: 'Subin Chheri',
-        status: 'loss'
-      },
-      scores: '3-0',
-      details: '11-4,16-14,11-5'
-    },
-    {
-      player1: {
-        avatar: '/images/teams/flags/bd.png',
-        name: 'Tahmidur Rahman',
-        status: 'win'
-      },
-      player2: {
-        avatar: '/images/teams/flags/Nepal.jpg',
-        name: 'Jayashunu Maharjan',
-        status: 'loss'
-      },
-      scores: '3-0',
-      details: '11-9,11-9,13-11'
-    },
-    {
-      player1: {
-        avatar: '/images/teams/flags/bd.png',
-        name: 'Mhatabur Rahman',
-        status: 'loss'
+      //50)id 50  boys under 15 Ban - nepal(4)
+      id: 50,
+      title: "Boys Team - Under 15",
+      venue: "Table 1",
+      score: '3-1',
 
+      day: 'day2',
+      matchType: 'Team',
+      ageRange: "Under 15",
+      teams: {
+        team1: { name: 'BAN', flag: '/images/teams/flags/bd.png' },
+        team2: { name: 'NEP', flag: '/images/teams/flags/Nepal.jpg' }
       },
-      player2: {
-        avatar:  '/images/teams/flags/Nepal.jpg',
-        name: 'Rijan Shakya',
-        status: 'win'
-      },
-      scores: '2-3',
-      details: '14-12,8-11,9-11,11-9,6-11'
+      players: [
+        {
+          player1: {
+            avatar: '/images/teams/flags/bd.png',
+            name: 'Abul Hashem',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/teams/flags/Nepal.jpg',
+            name: 'Subin Chheri',
+            status: 'loss'
+          },
+          scores: '3-0',
+          details: '11-4,16-14,11-5'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags/bd.png',
+            name: 'Tahmidur Rahman',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/teams/flags/Nepal.jpg',
+            name: 'Jayashunu Maharjan',
+            status: 'loss'
+          },
+          scores: '3-0',
+          details: '11-9,11-9,13-11'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags/bd.png',
+            name: 'Mhatabur Rahman',
+            status: 'loss'
+
+          },
+          player2: {
+            avatar: '/images/teams/flags/Nepal.jpg',
+            name: 'Rijan Shakya',
+            status: 'win'
+          },
+          scores: '2-3',
+          details: '14-12,8-11,9-11,11-9,6-11'
+        },
+
+        {
+          player1: {
+            avatar: '/images/teams/flags/bd.png',
+            name: 'Hashem Hasib',
+            status: 'win'
+
+          },
+          player2: {
+            avatar: '/images/teams/flags/Nepal.jpg',
+            name: 'Jayashunu Maharajan',
+            status: 'win'
+          },
+          scores: '3-0',
+          details: '14-12,11-6,11-6'
+        },
+
+
+      ]
     },
-    
-    {
-      player1: {
-        avatar: '/images/teams/flags/bd.png',
-        name: 'Hashem Hasib',
-        status: 'win'
-
-      },
-      player2: {
-        avatar:  '/images/teams/flags/Nepal.jpg',
-        name: 'Jayashunu Maharajan',
-        status: 'win'
-      },
-      scores: '3-0',
-      details: '14-12,11-6,11-6'
-    },
-
-
-  ]
-},
-//end
+    //end
 
     {
       // 10)id 12  girls under 19(5)
