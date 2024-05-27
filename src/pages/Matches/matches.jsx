@@ -968,7 +968,7 @@ const Matches = () => {
     //end
 //start
 {
-  //50)id 51  boys under 19 sl - nepal(4)
+  //51)id 51  boys under 19 sl - nepal(4)
   id: 51,
   title: "Boys Team - Under 19",
   venue: "Table 1",
@@ -1040,6 +1040,86 @@ const Matches = () => {
       },
       scores: '3-0',
       details: '11-5,11-8,11-7'
+    },
+
+
+  ]
+},
+//end
+//start
+{
+  //52)id 52  boys under 19 sl - nepal(4)
+  id: 52,
+  title: "Girls Team - Under 15",
+  venue: "Table 1",
+  score: '1-3',
+
+  day: 'day2',
+  matchType: 'Team',
+  ageRange: "Under 15",
+  teams: {
+    team1: { name: 'PAK', flag: '/images/teams/flags/pak.png' },
+    team2: { name: 'NEP', flag: '/images/teams/flags/Nepal.jpg' }
+  },
+  players: [
+    {
+      player1: {
+        avatar: '/images/teams/flags/pak.png',
+        name: 'Zunaira Khan',
+        status: 'win'
+      },
+      player2: {
+        avatar: '/images/teams/flags/Nepal.jpg',
+        name: 'Suramya Shakya',
+        status: 'loss'
+      },
+      scores: '3-1',
+      details: '5-11,11-9,11-5,11-9'
+    },
+    {
+      player1: {
+        avatar: '/images/teams/flags/pak.png',
+        name: 'Fatima Danish',
+        status: 'loss'
+      },
+      player2: {
+        avatar: '/images/teams/flags/Nepal.jpg',
+        name: 'Subhashree shrestha',
+        status: 'win'
+      },
+      scores: '1-3',
+      details: '11-5,7-11,9-11,5-11'
+    },
+    {
+      player1: {
+        avatar: '/images/teams/flags/pak.png',
+        name: 'Sara Danish',
+        status: 'loss'
+
+      },
+      player2: {
+        avatar: '/images/teams/flags/Nepal.jpg',
+        name: 'Mahima Mahata',
+        status: 'win'
+      },
+      scores: '1-3',
+      details: '8-11,11-9,4-11,8-11'
+    },
+
+    {
+      player1: {
+        avatar: '/images/teams/flags/pak.png',
+        name: 'Zunaira khan',
+        status: 'loss'
+
+      },
+      player2: {
+        avatar: '/images/teams/flags/Nepal.jpg',
+        name: 'Subhashree Shrestha',
+        status: 'win'
+      },
+      scores: '0-3',
+      details: '5-11,4-11,11-13'
     },
 
 
