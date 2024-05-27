@@ -821,71 +821,71 @@ const Matches = () => {
     },
     //end
     
-    //start
-    {
-      //13)id 21 Boyss under 15 mal  - pak(3)
-      id: 21,
-      title: "Boys Team - Under 15",
-      venue: "Table 2",
-      score: '0-3',
+    // //start
+    // {
+    //   //13)id 21 Boyss under 15 mal  - pak(3)
+    //   id: 21,
+    //   title: "Boys Team - Under 15",
+    //   venue: "Table 2",
+    //   score: '0-3',
 
-      day: 'day2',
-      matchType: 'Team',
-      ageRange: "Under 15",
-      teams: {
-        team1: { name: 'MAL', flag: '/images/teams/flags/mal.png' },
-        team2: { name: 'PAK', flag: '/images/teams/flags/pak.png' }
-      },
-      players: [
-        {
-          player1: {
-            avatar: '/images/teams/flags/mal.png',
-            name: 'Mohomed Muizzu',
-            status: 'loss'
-          },
-          player2: {
-            avatar: '/images/teams/flags/pak.png',
-            name: 'Muhammad Khan',
-            status: 'win'
-          },
-          scores: '0-3',
-          details: '4-11,6-11,6-11'
-        },
-        {
-          player1: {
-            avatar: '/images/teams/flags/mal.png',
-            name: 'Kalaf Rafiu',
-            status: 'loss'
-          },
-          player2: {
-            avatar: '/images/teams/flags/pak.png',
-            name: 'Amjad Khan',
-            status: 'win'
-          },
-          scores: '0-3',
-          details: '5-11,5-11,3-11'
-        },
-        {
-          player1: {
-            avatar: '/images/teams/flags/mal.png',
-            name: 'Hussain Shareef',
-            status: 'loss'
-          },
-          player2: {
-            avatar: '/images/teams/flags/pak.png',
-            name: 'Muhammad Azaan',
-            status: 'win'
-          },
-          scores: '0-3',
-          details: '7-11,5-11,6-11'
-        },
-
-
+    //   day: 'day2',
+    //   matchType: 'Team',
+    //   ageRange: "Under 15",
+    //   teams: {
+    //     team1: { name: 'MAL', flag: '/images/teams/flags/mal.png' },
+    //     team2: { name: 'PAK', flag: '/images/teams/flags/pak.png' }
+    //   },
+    //   players: [
+    //     {
+    //       player1: {
+    //         avatar: '/images/teams/flags/mal.png',
+    //         name: 'Mohomed Muizzu',
+    //         status: 'loss'
+    //       },
+    //       player2: {
+    //         avatar: '/images/teams/flags/pak.png',
+    //         name: 'Muhammad Khan',
+    //         status: 'win'
+    //       },
+    //       scores: '0-3',
+    //       details: '4-11,6-11,6-11'
+    //     },
+    //     {
+    //       player1: {
+    //         avatar: '/images/teams/flags/mal.png',
+    //         name: 'Kalaf Rafiu',
+    //         status: 'loss'
+    //       },
+    //       player2: {
+    //         avatar: '/images/teams/flags/pak.png',
+    //         name: 'Amjad Khan',
+    //         status: 'win'
+    //       },
+    //       scores: '0-3',
+    //       details: '5-11,5-11,3-11'
+    //     },
+    //     {
+    //       player1: {
+    //         avatar: '/images/teams/flags/mal.png',
+    //         name: 'Hussain Shareef',
+    //         status: 'loss'
+    //       },
+    //       player2: {
+    //         avatar: '/images/teams/flags/pak.png',
+    //         name: 'Muhammad Azaan',
+    //         status: 'win'
+    //       },
+    //       scores: '0-3',
+    //       details: '7-11,5-11,6-11'
+    //     },
 
 
 
-      ]
-    },
+
+
+    //   ]
+    // },
     {
       //13)id 21 Boyss under 15 mal  - pak(3)
       id: 38,
@@ -961,13 +961,13 @@ const Matches = () => {
       matchType: 'Team',
       ageRange: "Under 19",
       teams: {
-        team1: { name: 'NEP', flag: '/images/teams/flags/Nepal.png' },
+        team1: { name: 'NEP', flag: '/images/teams/flags/Nepal.jpg' },
         team2: { name: 'IND', flag: '/images/teams/flags/ind.png' }
       },
       players: [
         {
           player1: {
-            avatar: '/images/teams/flags/Nepal.png',
+            avatar: '/images/teams/flags/Nepal.jpg',
             name: 'Evana Thapa',
             status: 'loss'
           },
@@ -981,7 +981,7 @@ const Matches = () => {
         },
         {
           player1: {
-            avatar: '/images/teams/flags/Nepal.png',
+            avatar: '/images/teams/flags/Nepal.jpg',
             name: 'Bianca Rai',
             status: 'loss'
           },
@@ -995,7 +995,7 @@ const Matches = () => {
         },
         {
           player1: {
-            avatar: '/images/teams/flags/Nepal.png',
+            avatar: '/images/teams/flags/Nepal.jpg',
             name: 'Yanggi Paudel',
             status: 'loss'
           },
@@ -1149,7 +1149,219 @@ const Matches = () => {
   ]
 },
 //end
-    //start
+//start
+{
+  //14)id 20 boys under 15 ind - pak(3)
+  id: 20,
+  title: "Girls Team - Under 15",
+  venue: "Table 1",
+  score: '0-3',
+
+  day: 'day2',
+  matchType: 'Team',
+  ageRange: "Under 15",
+  teams: {
+    team1: { name: 'BAN', flag: '/images/teams/flags/bd.png' },
+    team2: { name: 'IND', flag: '/images/teams/flags/ind.png' }
+  },
+  players: [
+    {
+      player1: {
+        avatar: '/images/teams/flags/bd.png',
+        name: 'Asma Khatun',
+        status: 'loss'
+      },
+      player2: {
+        avatar: '/images/teams/flags/ind.png',
+        name: 'Divyanshi Bhowmick',
+        status: 'win'
+      },
+      scores: '0-3',
+      details: '4-11,5-11,8-11'
+    },
+    {
+      player1: {
+        avatar: '/images/teams/flags/bd.png',
+        name: 'Habiba Khatun',
+        status: 'loss'
+      },
+      player2: {
+        avatar: '/images/teams/flags/ind.png',
+        name: 'Syndela Das',
+        status: 'win'
+      },
+      scores: '0-3',
+      details: '2-11,4-11,4-11'
+    },
+    {
+      player1: {
+        avatar: '/images/teams/flags/bd.png',
+        name: 'Nusrat Jahan',
+        status: 'loss'
+      },
+      player2: {
+        avatar: '/images/teams/flags/ind.png',
+        name: 'Ankolika Charraborty',
+        status: 'win'
+      },
+      scores: '0-3',
+      details: '3-11,2-11,2-11'
+    },
+
+
+
+
+
+  ]
+},
+//end
+//start
+{
+  //14)id 21 boys under 19 ind - pak(3)
+  id: 21,
+  title: "Boyss Team - Under 19",
+  venue: "Table 3",
+  score: '0-3',
+
+  day: 'day2',
+  matchType: 'Team',
+  ageRange: "Under 19",
+  teams: {
+    team1: { name: 'MAL', flag: '/images/teams/flags/mal.png' },
+    team2: { name: 'SRI', flag: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png' }
+  },
+  players: [
+    {
+      player1: {
+        avatar: '/images/teams/flags/mal.png',
+        name: 'Akhyar ahmed',
+        status: 'loss'
+      },
+      player2: {
+        avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+        name: 'janith Batugedara',
+        status: 'win'
+      },
+      scores: '0-3',
+      details: '5-11,8-11,11-9,8-11'
+    },
+    {
+      player1: {
+        avatar: '/images/teams/flags/mal.png',
+        name: 'Umyr Mohamed',
+        status: 'loss'
+      },
+      player2: {
+        avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+        name: 'Shafiullah Akram',
+        status: 'win'
+      },
+      scores: '0-3',
+      details: '6-11,8-11,7-11'
+    },
+    {
+      player1: {
+        avatar: '/images/teams/flags/mal.png',
+        name: 'Mohamed Aan ',
+        status: 'loss'
+      },
+      player2: {
+        avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+        name: 'Diran hamer ',
+        status: 'win'
+      },
+      scores: '0-3',
+      details: '2-11,5-11,3-11'
+    },
+
+
+
+
+
+  ]
+},
+//end
+//start
+    {
+      //50)id 50  boys under 15 Ban - nepal(4)
+      id: 50,
+      title: "Boys Team - Under 15",
+      venue: "Table 1",
+      score: '3-1',
+
+      day: 'day2',
+      matchType: 'Team',
+      ageRange: "Under 15",
+      teams: {
+        team1: { name: 'BAN', flag: '/images/teams/flags/bd.png' },
+        team2: { name: 'NEP', flag: '/images/teams/flags/Nepal.jpg' }
+      },
+      players: [
+        {
+          player1: {
+            avatar: '/images/teams/flags/bd.png',
+            name: 'Abul Hashem',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/teams/flags/Nepal.jpg',
+            name: 'Subin Chheri',
+            status: 'loss'
+          },
+          scores: '3-0',
+          details: '11-4,16-14,11-5'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags/bd.png',
+            name: 'Tahmidur Rahman',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/teams/flags/Nepal.jpg',
+            name: 'Jayashunu Maharjan',
+            status: 'loss'
+          },
+          scores: '3-0',
+          details: '11-9,11-9,13-11'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags/bd.png',
+            name: 'Mhatabur Rahman',
+            status: 'loss'
+
+          },
+          player2: {
+            avatar: '/images/teams/flags/Nepal.jpg',
+            name: 'Rijan Shakya',
+            status: 'win'
+          },
+          scores: '2-3',
+          details: '14-12,8-11,9-11,11-9,6-11'
+        },
+
+        {
+          player1: {
+            avatar: '/images/teams/flags/bd.png',
+            name: 'Hashem Hasib',
+            status: 'win'
+
+          },
+          player2: {
+            avatar: '/images/teams/flags/Nepal.jpg',
+            name: 'Jayashunu Maharajan',
+            status: 'win'
+          },
+          scores: '3-0',
+          details: '14-12,11-6,11-6'
+        },
+
+
+      ]
+    },
+    //end
+     //start
     {
       //50)id 50  boys under 15 Ban - nepal(4)
       id: 50,
@@ -1241,13 +1453,13 @@ const Matches = () => {
   matchType: 'Team',
   ageRange: "Under 19",
   teams: {
-    team1: { name: 'BAN', flag: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png' },
+    team1: { name: 'BAN', flag: '/images/teams/flags/bd.png' },
     team2: { name: 'NEP', flag: '/images/teams/flags/Nepal.jpg' }
   },
   players: [
     {
       player1: {
-        avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+        avatar: '/images/teams/flags/bd.png',
         name: 'Shafiullah Akram',
         status: 'win'
       },
@@ -1261,7 +1473,7 @@ const Matches = () => {
     },
     {
       player1: {
-        avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+        avatar: '/images/teams/flags/bd.png',
         name: 'Janith Batugedara',
         status: 'win'
       },
@@ -1275,7 +1487,7 @@ const Matches = () => {
     },
     {
       player1: {
-        avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+        avatar: '/images/teams/flags/bd.png',
         name: 'Diran Hamer',
         status: 'loss'
 
@@ -1291,7 +1503,7 @@ const Matches = () => {
 
     {
       player1: {
-        avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+        avatar: '/images/teams/flags/bd.png',
         name: 'Shaflullah Akram',
         status: 'win'
 
@@ -1818,7 +2030,7 @@ const Matches = () => {
         },
 
       ]
-    },
+    },//start
     { //30)id = 5 boys under  19(5)
       id: 30,
       title: "Boys Team - Under 19",
@@ -1906,6 +2118,98 @@ const Matches = () => {
 
       ]
     },
+    //end
+    // //start
+    // { //35)id = 35 finals  girls under  19(5)
+    //   id: 35,
+    //   title: "Boys Team - Under 19",
+    //   special:"Finals",
+    //   venue: "",
+    //   score: '2-3',
+    //   day: 'day2',
+    //   matchType: 'Team',
+    //   ageRange: "Under 19",
+    //   teams: {
+    //     team1: { name: 'BAN', flag: '/images/teams/flags/bd.png' },
+    //     team2: { name: 'SRI', flag: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png' }
+    //   },
+    //   players: [
+    //     {
+    //       player1: {
+    //         avatar: '/images/teams/flags/bd.png',
+    //         name: 'Ramhimlian Bawm',
+    //         status: 'win'
+    //       },
+    //       player2: {
+    //         avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+    //         name: 'Janith Batugedara',
+    //         status: 'loss'
+    //       },
+    //       scores: '3-1',
+    //       details: '11-7, 9-11, 11-9, 11-9'
+    //     },
+    //     {
+    //       player1: {
+    //         avatar: '/images/teams/flags/bd.png',
+    //         name: 'MD Nafiz Iqbal',
+    //         status: 'win'
+    //       },
+    //       player2: {
+    //         avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+    //         name: 'Shafiullan Akram',
+    //         status: 'loss'
+    //       },
+    //       scores: '3-1',
+    //       details: '14-12, 2-11, 11-4, 11-7'
+    //     },
+    //     {
+    //       player1: {
+    //         avatar: '/images/teams/flags/bd.png',
+    //         name: 'Abul hashem',
+    //         status: 'loss'
+    //       },
+    //       player2: {
+    //         avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+    //         name: 'Diran hamer',
+    //         status: 'win'
+    //       },
+    //       scores: '1-3',
+    //       details: '7-11, 11-4, 9-11, 5-11'
+    //     },
+    //     {
+    //       player1: {
+    //         avatar: '/images/teams/flags/bd.png',
+    //         name: 'Ramhimlian Bawm',
+    //         status: 'loss'
+    //       },
+    //       player2: {
+    //         avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+    //         name: 'Shafiullah Akram',
+    //         status: 'win'
+    //       },
+    //       scores: '0-3',
+    //       details: '7-11, 4-11, 4-11'
+    //     },
+    //     {
+    //       player1: {
+    //         avatar: '/images/teams/flags/bd.png',
+    //         name: 'MD Nafiz',
+    //         status: 'loss'
+    //       },
+    //       player2: {
+    //         avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+    //         name: 'Janith Batugedara',
+    //         status: 'win'
+    //       },
+    //       scores: '1-3',
+    //       details: '11-9, 11-13, 7-11,4-11'
+    //     },
+
+
+    //   ]
+    // },
+    // //end
+ 
     { //31)id = 5 Girls under  19(5)
       id: 31,
       title: "Girls Team - Under 19",
