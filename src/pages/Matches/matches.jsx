@@ -1913,31 +1913,7 @@ const Matches = () => {
 
       ]
     },
-    {
-      id: 1,
-      title: "Girls Doubles - Under 19",
-      venue: "Table 5",
-      score: "3-1",
-      day: "day2",
-      matchType: "Doubles",
-      ageRange: "Under 19",
-      pair1: [
-        { country: "IND" },
-        { scoreDetails: "11-9, 7-11, 11-6, 11-8" },
-        { flag: "/images/teams/flags/ind.png" },
-        { status: "win" },
-        { name: "Player G" },
-        { name: "Player H" }
-      ],
-      pair2: [
-        { country: "PAK" },
-        { scoreDetails: "9-11, 11-7, 6-11, 8-11" },
-        { flag: "/images/teams/flags/pak.png" },
-        { status: "los" },
-        { name: "Player I" },
-        { name: "Player J" }
-      ]
-    }
+
 
 
 
