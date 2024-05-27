@@ -1215,12 +1215,12 @@ const Matches = () => {
       ]
     },
     {
-      //14)id 41 boys under 19 ind - pak(3)
+      //14)id 80 boys under 19 ind - pak(3)
       id: 80,
       title: "Girls Team - Under 19",
       venue: "Table 3",
       score: '0-3',
-
+      special: "Final",
       day: 'day2',
       matchType: 'Team',
       ageRange: "Under 19",
