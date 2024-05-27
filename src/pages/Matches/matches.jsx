@@ -820,6 +820,7 @@ const Matches = () => {
       ]
     },
     //end
+    
     //start
     {
       //13)id 21 Boyss under 15 mal  - pak(3)
@@ -886,6 +887,72 @@ const Matches = () => {
       ]
     },
     //end
+//start
+{
+  //14)id 19 boys under 15 ind - pak(3)
+  id: 19,
+  title: "Boys Team - Under 15",
+  venue: "Table 1",
+  score: '3-0',
+
+  day: 'day2',
+  matchType: 'Team',
+  ageRange: "Under 15",
+  teams: {
+    team1: { name: 'IND', flag: '/images/teams/flags/ind.png' },
+    team2: { name: 'PAK', flag: '/images/teams/flags/pak.png' }
+  },
+  players: [
+    {
+      player1: {
+        avatar: '/images/teams/flags/ind.png',
+        name: 'Sarthak Arya',
+        status: 'win'
+      },
+      player2: {
+        avatar: '/images/teams/flags/pak.png',
+        name: 'Abdal Muhammad',
+        status: 'loss'
+      },
+      scores: '3-0',
+      details: '11-6,11-7,11-4'
+    },
+    {
+      player1: {
+        avatar: '/images/teams/flags/ind.png',
+        name: 'Soham Mukherjee',
+        status: 'win'
+      },
+      player2: {
+        avatar: '/images/teams/flags/pak.png',
+        name: 'Abbas Amjad',
+        status: 'loss'
+      },
+      scores: '3-1',
+      details: '5-11,11-3,11-7,11-6'
+    },
+    {
+      player1: {
+        avatar: '/images/teams/flags/ind.png',
+        name: 'Sardar Rupam',
+        status: 'win'
+      },
+      player2: {
+        avatar: '/images/teams/flags/pak.png',
+        name: 'Noor Khan',
+        status: 'loss'
+      },
+      scores: '3-0',
+      details: '11-5,11-9,11-8'
+    },
+
+
+
+
+
+  ]
+},
+//end
     //start
     {
       //50)id 50  boys under 15 Ban - nepal(4)
@@ -1049,7 +1116,7 @@ const Matches = () => {
 //start
 {
   //52)id 52  boys under 19 sl - nepal(4)
-  id: 52,
+  id: 52, 
   title: "Girls Team - Under 15",
   venue: "Table 1",
   score: '1-3',
@@ -1572,7 +1639,7 @@ const Matches = () => {
       ageRange: "Under 19",
       teams: {
         team1: { name: 'BAN', flag: '/images/teams/flags/bd.png' },
-        team2: { name: 'SRI', flag: '/images/teams/flags/images.png' }
+        team2: { name: 'PAK', flag: '/images/teams/flags/images.png' }
       },
       players: [
         {
