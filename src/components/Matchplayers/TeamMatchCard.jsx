@@ -12,6 +12,9 @@ const TeamMatchCard = ({ match }) => {
                 <Typography variant="body2" color="textSecondary" className="text-center mb-2">
                     {match.venue}
                 </Typography>
+                <Typography variant="h4" color="error" className="text-center mb-2">
+                    {match.special}
+                </Typography>
                 <div className="flex justify-between items-center mb-2">
                     <div className="flex flex-col items-center text-center">
                         <img src={match.teams.team1.flag} alt={match.teams.team1.name} className="w-8 h-8 mb-1" />
