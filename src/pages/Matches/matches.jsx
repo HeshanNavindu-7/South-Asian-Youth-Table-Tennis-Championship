@@ -762,7 +762,7 @@ const Matches = () => {
       venue: "Table 2",
       score: '0-3',
 
-      day: 'day2',
+      day: 'day1',
       matchType: 'Team',
       ageRange: "Under 15",
       teams: {
@@ -828,7 +828,7 @@ const Matches = () => {
       venue: "Table 1",
       score: '3-1',
 
-      day: 'day2',
+      day: 'day1',
       matchType: 'Team',
       ageRange: "Under 15",
       teams: {
@@ -1255,7 +1255,7 @@ const Matches = () => {
       title: "Boys Team - Under 19",
       venue: "Table 5",
       score: '2-3',
-      day: 'day2',
+      day: 'day1',
       matchType: 'Team',
       ageRange: "Under 19",
       teams: {
@@ -1342,7 +1342,7 @@ const Matches = () => {
       title: "Girls Team - Under 19",
       venue: "Table 5",
       score: '2-3',
-      day: 'day2',
+      day: 'day1',
       matchType: 'Team',
       ageRange: "Under 19",
       teams: {
