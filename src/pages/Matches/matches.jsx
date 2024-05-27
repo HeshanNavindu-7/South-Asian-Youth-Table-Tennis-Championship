@@ -9,6 +9,7 @@ const Matches = () => {
   const [category, setCategory] = useState('all');
   const [ageRange, setAgeRange] = useState('all');
   const [matchType, setMatchType] = useState('all');
+  const [day, setDay] = useState('all');
 
   const matches = [
     {
@@ -1254,7 +1255,7 @@ const Matches = () => {
       title: "Boys Team - Under 19",
       venue: "Table 5",
       score: '2-3',
-      day: 'day1',
+      day: 'day2',
       matchType: 'Team',
       ageRange: "Under 19",
       teams: {
@@ -1341,7 +1342,7 @@ const Matches = () => {
       title: "Girls Team - Under 19",
       venue: "Table 5",
       score: '2-3',
-      day: 'day1',
+      day: 'day2',
       matchType: 'Team',
       ageRange: "Under 19",
       teams: {
@@ -1432,12 +1433,14 @@ const Matches = () => {
     const categoryMatch = category === 'all' || match.title.toLowerCase().includes(category.toLowerCase());
     const ageRangeMatch = ageRange === 'all' || match.ageRange === ageRange;
     const matchTypeMatch = matchType === 'all' || match.matchType.toLowerCase() === matchType.toLowerCase();
-    return categoryMatch && ageRangeMatch && matchTypeMatch;
+    const dayMatch = day === 'all' || match.day === day;
+    return categoryMatch && ageRangeMatch && matchTypeMatch && dayMatch;
   });
 
   const handleCategoryChange = (category) => () => setCategory(category);
   const handleAgeRangeChange = (event) => setAgeRange(event.target.value);
   const handleMatchTypeChange = (event) => setMatchType(event.target.value);
+  const handleDayChange = (event) => setDay(event.target.value);
 
   return (
     <div className="m-8">
@@ -1470,6 +1473,19 @@ const Matches = () => {
           <MenuItem value="Singles">Singles</MenuItem>
           <MenuItem value="Doubles">Doubles</MenuItem>
           <MenuItem value="Mixed Doubles">Mixed Doubles</MenuItem>
+        </Select>
+        <Select
+          value={day}
+          onChange={handleDayChange}
+          displayEmpty
+          sx={{ backgroundColor: "#c21f1f", color: "white", marginLeft: '10px' }}
+        >
+          <MenuItem value="all">
+            <em>Day</em>
+          </MenuItem>
+          <MenuItem value="day1">Day 1</MenuItem>
+          <MenuItem value="day2">Day 2</MenuItem>
+          <MenuItem value="day3">Day 3</MenuItem>
         </Select>
       </div>
 
