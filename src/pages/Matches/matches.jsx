@@ -440,7 +440,7 @@ const Matches = () => {
     {// 8)id 8 under 19 nepal boys(8)
       id: 8,
       title: "Boys Team - Under 19",
-      venue: "Table 5",
+      venue: "Table 4",
       score: '3-0',
       day: 'day1',
       matchType: 'Team',
@@ -1193,7 +1193,88 @@ const Matches = () => {
   ]
 },
 //end
+//start
+{
+  //53)id 53  boys under 19 sl - nepal(4)
+  id: 53, 
+  title: "Girls Team - Under 19",
+  venue: "Table 2",
+  score: '1-3',
+
+  day: 'day2',
+  matchType: 'Team',
+  ageRange: "Under 19",
+  teams: {
+    team1: { name: 'PAK', flag: '/images/teams/flags/pak.png' },
+    team2: { name: 'SRI', flag: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png' }
+  },
+  players: [
     {
+      player1: {
+        avatar: '/images/teams/flags/pak.png',
+        name: 'Hoor Fawad',
+        status: 'win'
+      },
+      player2: {
+        avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+        name: 'Tamadi Kavindya',
+        status: 'loss'
+      },
+      scores: '3-2',
+      details: '4-11,11-9,7-11,11-6,13-11'
+    },
+    {
+      player1: {
+        avatar: '/images/teams/flags/pak.png',
+        name: 'Kalsoom Khan',
+        status: 'loss'
+      },
+      player2: {
+        avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+        name: 'Bimandee Bandara',
+        status: 'win'
+      },
+      scores: '0-3',
+      details: '6-11,4-11,2-11'
+    },
+    {
+      player1: {
+        avatar: '/images/teams/flags/pak.png',
+        name: 'Bisma Faryal',
+        status: 'loss'
+
+      },
+      player2: {
+        avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+        name: 'Lesanya Sethumdi',
+        status: 'win'
+      },
+      scores: '1-3',
+      details: '11-7,5-11,9-11,4-11'
+    },
+
+    {
+      player1: {
+        avatar: '/images/teams/flags/pak.png',
+        name: 'Hoor Fawad',
+        status: 'loss'
+
+      },
+      player2: {
+        avatar:'/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+        name: 'Bimandee Bandara',
+        status: 'win'
+      },
+      scores: '0-3',
+      details: '6-11,7-11,5-11'
+    },
+
+
+  ]
+},
+//end
+
+{
       // 10)id 12  girls under 19(5)
       id: 12,
       title: "Girls Team - Under 19",
@@ -1374,7 +1455,7 @@ const Matches = () => {
     { //12)id = 5 boys under  15(5)
       id: 5,
       title: "Boys Team - Under 15",
-      venue: "Table 5",
+      venue: "Table ",
       score: '3-2',
       day: 'day1',
       matchType: 'Team',
@@ -1459,7 +1540,7 @@ const Matches = () => {
     { //18)id = 5 boys under  15(5)
       id: 18,
       title: "Boys Team - Under 15",
-      venue: "Table 5",
+      venue: "Table 4",
       score: '3-2',
       day: 'day1',
       matchType: 'Team',
@@ -1545,7 +1626,7 @@ const Matches = () => {
     { //30)id = 5 boys under  19(5)
       id: 30,
       title: "Boys Team - Under 19",
-      venue: "Table 5",
+      venue: "Table 4",
       score: '2-3',
       day: 'day2',
       matchType: 'Team',
@@ -1632,7 +1713,7 @@ const Matches = () => {
     { //31)id = 5 Girls under  19(5)
       id: 31,
       title: "Girls Team - Under 19",
-      venue: "Table 5",
+      venue: "Table 4",
       score: '2-3',
       day: 'day2',
       matchType: 'Team',
