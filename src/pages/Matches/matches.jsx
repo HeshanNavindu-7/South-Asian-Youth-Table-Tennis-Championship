@@ -1352,7 +1352,7 @@ const Matches = () => {
           player2: {
             avatar: '/images/teams/flags/Nepal.jpg',
             name: 'Jayashunu Maharajan',
-            status: 'win'
+            status: 'loss'
           },
           scores: '3-0',
           details: '14-12,11-6,11-6'
@@ -2525,7 +2525,7 @@ const Matches = () => {
       venue: "Table 4",
       special: "Final",
       score: "0-3", // Fill in the scores if known
-      day: "day3", // Adjust the day accordingly
+      day: "day2", // Adjust the day accordingly
       matchType: "Team", // Adjust the match type accordingly
       ageRange: "Under 15",
       teams: {
@@ -2660,7 +2660,7 @@ const Matches = () => {
       venue: "",
       special: "Final",
       score: '3-1',
-      day: 'day3',
+      day: 'day2',
       matchType: 'Team',
       ageRange: "Under 15",
       teams: {
