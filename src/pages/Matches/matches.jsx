@@ -1215,65 +1215,6 @@ const Matches = () => {
       ]
     },
 
-    {
-      //14)id 80 boys under 19 ind - pak(3)
-      id: 80,
-      title: "Girls Team - Under 19",
-      venue: "Table 3",
-      score: '0-3',
-      special: "Final",
-      day: 'day2',
-      matchType: 'Team',
-      ageRange: "Under 19",
-      teams: {
-        team1: { name: 'SRI', flag: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png' },
-        team2: { name: 'IND', flag: '/images/teams/flags/ind.png' }
-      },
-      players: [
-        {
-          player1: {
-            avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
-            name: 'Bimandee bandara',
-            status: 'loss'
-          },
-          player2: {
-            avatar: '/images/teams/flags/ind.png',
-            name: 'Sanjay',
-            status: 'win'
-          },
-          scores: '0-3',
-          details: '6-11,10-12,8-11'
-        },
-        {
-          player1: {
-            avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
-            name: 'Tamadi Kavindya',
-            status: 'loss'
-          },
-          player2: {
-            avatar: '/images/teams/flags/ind.png',
-            name: 'Pritha',
-            status: 'win'
-          },
-          scores: '2-3',
-          details: '11-8,3-11,7-11,11-6,0-11'
-        },
-        {
-          player1: {
-            avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
-            name: 'Divya Dharani',
-            status: 'loss'
-          },
-          player2: {
-            avatar: '/images/teams/flags/ind.png',
-            name: 'M.Risha',
-            status: 'win'
-          },
-          scores: '0-3',
-          details: '8-11,7-11,7-11'
-        },
-      ]
-    },
     //end
     //start
     {
@@ -1421,6 +1362,96 @@ const Matches = () => {
       ]
     },
     //end
+    ,
+
+
+
+    {
+      // New match details for UNDER 19 Boys - Nepal vs Pakistan
+      id: 91,
+      title: "UNDER 19 - BOYS: Nepal vs Pakistan",
+      venue: "4th Round",
+      score: '2-3',
+      day: '27-May',
+      matchType: 'Team',
+      ageRange: "Under 19",
+      teams: {
+        team1: { name: 'NEP', flag: '/images/teams/flags/Nepal.jpg' },
+        team2: { name: 'PAK', flag: '/images/teams/flags/pak.png' }
+      },
+      players: [
+        {
+          player1: {
+            avatar: '/images/teams/flags/Nepal.jpg',
+            name: 'Prince Thapa Magar',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/teams/flags/pak.png',
+            name: 'Abbas Amjad Khan',
+            status: 'loss'
+          },
+          scores: '3-0',
+          details: '11-6, 11-9, 11-5'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags/Nepal.jpg',
+            name: 'Siddharth Tamang',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/teams/flags/pak.png',
+            name: 'Shayan Farooq',
+            status: 'win'
+          },
+          scores: '1-3',
+          details: '6-11, 8-11, 11-4, 8-11'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags/Nepal.jpg',
+            name: 'Rubin Maharjan',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/teams/flags/pak.png',
+            name: 'Muhammad Zain',
+            status: 'loss'
+          },
+          scores: '3-2',
+          details: '5-11, 10-12, 11-6, 11-8, 11-4'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags/Nepal.jpg',
+            name: 'Prince Thapa Magar',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/teams/flags/pak.png',
+            name: 'Shayan Farooq',
+            status: 'win'
+          },
+          scores: '2-3',
+          details: '9-11, 13-11, 1-11, 12-10, 7-11'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags/Nepal.jpg',
+            name: 'Siddharth Tamang',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/teams/flags/pak.png',
+            name: 'Abbas Amjad Khan',
+            status: 'win'
+          },
+          scores: '2-3',
+          details: '9-11, 11-7, 11-4, 9-11,8-11'
+        }
+      ]
+    },
     //  //start
     // {
     //   //50)id 50  boys under 15 Ban - nepal(4)
@@ -2357,79 +2388,136 @@ const Matches = () => {
 
 
       ]
-
     },
     {
-      id: 1,
-      title: "  Boys team Under- 15",
+      id: 95,
+      title: "Under 15 Girls",
       venue: "Table4",
-      score: "3-1",
-      special: "Final",
-      day: "day2",
-      matchType: "Team",
+      score: "3-1", // Fill in the scores if known
+      day: "day2", // Adjust the day accordingly
+      matchType: "Team", // Adjust the match type accordingly
       ageRange: "Under 15",
       teams: {
         team1: { name: "SRI", flag: "/images/teams/flags/Flag_of_Sri_Lanka.svg.png" },
-        team2: { name: "IND", flag: "/images/teams/flags/ind.png" }
+        team2: { name: "NEP", flag: "/images/teams/flags/Nepal.jpg" }
       },
       players: [
         {
           player1: {
             avatar: "/images/teams/flags/Flag_of_Sri_Lanka.svg.png",
-            name: "Naviru Nethsara",
-            status: "loss"
+            name: "Yoshini jayawardana",
+            status: "win" // Adjust the status accordingly
           },
           player2: {
-            avatar: "/images/teams/flags/ind.png",
-            name: "S. Arya",
-            status: "win"
+            avatar: "/images/teams/flags/Nepal.jpg",
+            name: "Suramya Shakya",
+            status: "loss" // Adjust the status accordingly
           },
-          scores: "0-3",
-          details: "04-11, 05-11, 05-11"
+          scores: "3-0", // Fill in the scores if known
+          details: "11-2,11-3,11-7" // Provide details if necessary
+        },
+        // Add two more player pairs following the same structure
+        {
+          player1: {
+            avatar: "/images/teams/flags/Flag_of_Sri_Lanka.svg.png",
+            name: "Muthuli Shanya",
+            status: "loss" // Adjust the status accordingly
+          },
+          player2: {
+            avatar: "/images/teams/flags/Nepal.jpg",
+            name: "Subhashree Shrestha",
+            status: "win" // Adjust the status accordingly
+          },
+          scores: "0-3", // Fill in the scores if known
+          details: "9-11,8-11,4-11" // Provide details if necessary
         },
         {
           player1: {
             avatar: "/images/teams/flags/Flag_of_Sri_Lanka.svg.png",
-            name: "Akain Bojith",
-            status: "loss"
+            name: "Samindi Weerasooriya",
+            status: "win" // Adjust the status accordingly
           },
           player2: {
-            avatar: "/images/teams/flags/ind.png",
-            name: "M.Soham",
-            status: "win"
+            avatar: "/images/teams/flags/Nepal.jpg",
+            name: "Mahima Mahata",
+            status: "loss" // Adjust the status accordingly
           },
-          scores: "0-3",
-          details: "06-11, 06-11, 06-11"
+          scores: "3-0", // Fill in the scores if known
+          details: "12-10,13-11,11-2" // Provide details if necessary
         },
         {
           player1: {
             avatar: "/images/teams/flags/Flag_of_Sri_Lanka.svg.png",
-            name: "Agasthya Ananditha",
-            status: "win"
+            name: "Yoshini Jayawardana",
+            status: "win" // Adjust the status accordingly
           },
           player2: {
-            avatar: "/images/teams/flags/ind.png",
-            name: "S.Rupam",
-            status: "loss"
+            avatar: "/images/teams/flags/Nepal.jpg",
+            name: "Subhashree Shrestha",
+            status: "loss" // Adjust the status accordingly
           },
-          scores: "3-2",
-          details: "11-07, 03-11, 06-11, 11-09, 12-10"
+          scores: "3-0", // Fill in the scores if known
+          details: "11-7,11-9,11-8" // Provide details if necessary
         },
-        {
-          player1: {
-            avatar: "/images/teams/flags/Flag_of_Sri_Lanka.svg.png",
-            name: "Akain Bojith",
-            status: "loss"
-          },
-          player2: {
-            avatar: "/images/teams/flags/ind.png",
-            name: "S. Arya",
-            status: "win"
-          },
-          scores: "0-3",
-          details: "03-11, 08-11, 08-11"
-        }
       ]
+    },
+    {
+      //14)id 80 boys under 19 ind - pak(3)
+      id: 80,
+      title: "Girls Team - Under 19",
+      venue: "Table 3",
+      score: '0-3',
+      special: "Final",
+      day: 'day2',
+      matchType: 'Team',
+      ageRange: "Under 19",
+      teams: {
+        team1: { name: 'SRI', flag: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png' },
+        team2: { name: 'IND', flag: '/images/teams/flags/ind.png' }
+      },
+      players: [
+        {
+          player1: {
+            avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+            name: 'Bimandee bandara',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/teams/flags/ind.png',
+            name: 'Sanjay',
+            status: 'win'
+          },
+          scores: '0-3',
+          details: '6-11,10-12,8-11'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+            name: 'Tamadi Kavindya',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/teams/flags/ind.png',
+            name: 'Pritha',
+            status: 'win'
+          },
+          scores: '2-3',
+          details: '11-8,3-11,7-11,11-6,0-11'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+            name: 'Divya Dharani',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/teams/flags/ind.png',
+            name: 'M.Risha',
+            status: 'win'
+          },
+          scores: '0-3',
+          details: '8-11,7-11,7-11'
+        },]
     },
     {
       id: 94,
@@ -2437,7 +2525,7 @@ const Matches = () => {
       venue: "Table 4",
       special: "Final",
       score: "0-3", // Fill in the scores if known
-      day: "day2", // Adjust the day accordingly
+      day: "day3", // Adjust the day accordingly
       matchType: "Team", // Adjust the match type accordingly
       ageRange: "Under 15",
       teams: {
@@ -2490,84 +2578,163 @@ const Matches = () => {
         },
       ]
     },
+
     {
-      id: 95,
-      title: "Under 15 Girls",
-      venue: "Table4",
-      score: "3-1", // Fill in the scores if known
-      day: "day2", // Adjust the day accordingly
-      matchType: "Team", // Adjust the match type accordingly
+      // New match details for UNDER 15 Boys - India vs Sri Lanka
+      id: 93,
+      title: "UNDER 15 - BOYS: India vs Sri Lanka",
+      venue: "",
+      special: "Final",
+      score: '3-1',
+      day: '27-May',
+      matchType: 'Team',
       ageRange: "Under 15",
       teams: {
-        team1: { name: "SRI", flag: "/images/teams/flags/Flag_of_Sri_Lanka.svg.png" },
-        team2: { name: "NEP", flag: "/images/teams/flags/Nepal.png" }
+        team1: { name: 'IND', flag: '/images/teams/flags/ind.png' },
+        team2: { name: 'SRI', flag: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png' }
       },
       players: [
         {
           player1: {
-            avatar: "/images/teams/flags/Flag_of_Sri_Lanka.svg.png",
-            name: "Yoshini jayawardana",
-            status: "win" // Adjust the status accordingly
+            avatar: '/images/teams/flags/ind.png',
+            name: 'Sarthak Arya',
+            status: 'win'
           },
           player2: {
-            avatar: "/images/teams/flags/Nepal.png",
-            name: "Suramya Shakya",
-            status: "loss" // Adjust the status accordingly
+            avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+            name: 'Naviru Nethsitha',
+            status: 'loss'
           },
-          scores: "3-0", // Fill in the scores if known
-          details: "11-2,11-3,11-7" // Provide details if necessary
-        },
-        // Add two more player pairs following the same structure
-        {
-          player1: {
-            avatar: "/images/teams/flags/Flag_of_Sri_Lanka.svg.png",
-            name: "Muthuli Shanya",
-            status: "loss" // Adjust the status accordingly
-          },
-          player2: {
-            avatar: "/images/teams/flags/Nepal.png",
-            name: "Subhashree Shrestha",
-            status: "win" // Adjust the status accordingly
-          },
-          scores: "0-3", // Fill in the scores if known
-          details: "9-11,8-11,4-11" // Provide details if necessary
+          scores: '3-0',
+          details: '11-4, 11-5, 11-5'
         },
         {
           player1: {
-            avatar: "/images/teams/flags/Flag_of_Sri_Lanka.svg.png",
-            name: "Samindi Weerasooriya",
-            status: "win" // Adjust the status accordingly
+            avatar: '/images/teams/flags/ind.png',
+            name: 'Soham Mukherjee',
+            status: 'win'
           },
           player2: {
-            avatar: "/images/teams/flags/Nepal.png",
-            name: "Mahima Mahata",
-            status: "loss" // Adjust the status accordingly
+            avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+            name: 'Akian Bojith',
+            status: 'loss'
           },
-          scores: "3-0", // Fill in the scores if known
-          details: "12-10,13-11,11-2" // Provide details if necessary
+          scores: '3-0',
+          details: '11-6, 11-6, 11-6'
         },
         {
           player1: {
-            avatar: "/images/teams/flags/Flag_of_Sri_Lanka.svg.png",
-            name: "Yoshini Jayawardana",
-            status: "win" // Adjust the status accordingly
+            avatar: '/images/teams/flags/ind.png',
+            name: 'Sahil Rawat',
+            status: 'loss'
           },
           player2: {
-            avatar: "/images/teams/flags/Nepal.png",
-            name: "Subhashree Shrestha",
-            status: "loss" // Adjust the status accordingly
+            avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+            name: 'Agasthya Ananditha',
+            status: 'win'
           },
-          scores: "3-0", // Fill in the scores if known
-          details: "11-7,11-9,11-8" // Provide details if necessary
+          scores: '2-3',
+          details: '7-11, 11-3, 11-6,9-11,10-12'
         },
+        {
+          player1: {
+            avatar: '/images/teams/flags/ind.png',
+            name: 'Sarthak Arya',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+            name: 'Akian Bojith',
+            status: 'loss'
+          },
+          scores: '3-0',
+          details: '11-3, 11-8,11-8'
+        },
+
       ]
-    }
+    },
+    {
+      // New match details for U15 Boys (FINAL)
+      id: 40,
+      title: "Boys Team - Under 15",
+      venue: "",
+      special: "Final",
+      score: '3-1',
+      day: 'day3',
+      matchType: 'Team',
+      ageRange: "Under 15",
+      teams: {
+        team1: { name: 'SRI', flag: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png' },
+        team2: { name: 'IND', flag: '/images/teams/flags/ind.png' }
+      },
+      players: [
+        {
+          player1: {
+            avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+            name: 'Naviru Nethsara',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/teams/flags/ind.png',
+            name: 'S. Arya',
+            status: 'win'
+          },
+          scores: '0-3',
+          details: '04-11,05-11,05-11'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+            name: 'Akain Bojith',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/teams/flags/ind.png',
+            name: 'M.Soham',
+            status: 'win'
+          },
+          scores: '0-3',
+          details: '06-11,06-11,06-11'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+            name: 'Agasthya Ananditha',
+            status: 'win'
+          },
+          player2: {
+            avatar: '/images/teams/flags/ind.png',
+            name: 'S.Rupam',
+            status: 'loss'
+          },
+          scores: '3-2',
+          details: '11-07,03-11,06-11,11-09,12-10'
+        },
+        {
+          player1: {
+            avatar: '/images/teams/flags/Flag_of_Sri_Lanka.svg.png',
+            name: 'Akain Bojith',
+            status: 'loss'
+          },
+          player2: {
+            avatar: '/images/teams/flags/ind.png',
+            name: 'S. Arya',
+            status: 'win'
+          },
+          scores: '0-3',
+          details: '03-11,08-11,08-11'
+        }
 
 
 
 
 
-  ]
+      ]
+    },
+
+
+
+  ];
 
   const filteredMatches = matches.filter(match => {
     const categoryMatch = category === 'all' || match.title.toLowerCase().includes(category.toLowerCase());
