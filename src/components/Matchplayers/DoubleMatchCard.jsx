@@ -45,13 +45,13 @@ const DoubleMatchCard = ({ match }) => {
                                     {match.pair1[0].country}
                                 </Typography>
                                 <Typography variant="body2" sx={{ fontSize: "10px" }}>
-                                    {match.pair1[4].name} /
-                                    <div>{match.pair1[5].name}</div>
+                                <div> {match.pair1[4].name} </div>
+                                    <div className=''>/ {match.pair1[5].name}</div>
                                 </Typography>
                             </Grid>
                             <Grid item xs={7}>
                                 <Typography variant="body2" align="left">
-                                    <span className='ml-16' style={{ fontSize: "12px" }}>{match.pair1[1].scoreDetails}</span>
+                                    <span className='ml-28' style={{ fontSize: "15px" }}>{match.pair1[1].scoreDetails}</span>
                                 </Typography>
                             </Grid>
                         </Grid>
@@ -69,13 +69,13 @@ const DoubleMatchCard = ({ match }) => {
                                     {match.pair2[0].country}
                                 </Typography>
                                 <Typography variant="body2" sx={{ fontSize: "10px" }}>
-                                    {match.pair2[4].name} /
-                                    <div>{match.pair2[5].name}</div>
+                                   <div> {match.pair2[4].name} </div>
+                                    <div className=''>/{match.pair2[5].name}</div>
                                 </Typography>
                             </Grid>
                             <Grid item xs={7}>
                                 <Typography variant="body2" align="left">
-                                    <span className='ml-16' style={{ fontSize: "12px" }}>{match.pair2[1].scoreDetails}</span>
+                                    <span className='ml-28' style={{ fontSize: "15px" }}>{match.pair2[1].scoreDetails}</span>
                                 </Typography>
                             </Grid>
                         </Grid>
