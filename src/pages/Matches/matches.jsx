@@ -3225,14 +3225,14 @@ const Matches = () => {
         { "country": "SRI" },
         { "scoreDetails": "12,16,4,11,10" },
         { "flag": "/images/teams/flags/Flag_of_Sri_Lanka.svg.png" },
-        { "status": "win" },
+        { "status": "loss" },
         { "name": "Bimandee Bandara" }
       ],
       "pair2": [
         { "country": "IND" },
         { "scoreDetails": "10,18,11,9,12" },
         { "flag": "/images/teams/flags/ind.png" },
-        { "status": "loss" },
+        { "status": "win" },
         { "name": "R. Sayali" }
       ]
     },
@@ -3282,6 +3282,203 @@ const Matches = () => {
         { "name": "N. Iqbal" }
       ]
     },
+    {
+      "id": 125,
+      "title": "U15 Girls Singles",
+      "venue": "Final",
+      "score": "3-1",
+      "day": "day4",
+      "matchType": "Singles",
+      "ageRange": "U15",
+      "pair1": [
+        { "country": "IND" },
+        { "scoreDetails": "2,10,12,8,11" },
+        { "flag": "/images/teams/flags/ind.png" },
+        { "status": "win" },
+        { "name": "S. Das" }
+      ],
+      "pair2": [
+        { "country": "IND" },
+        { "scoreDetails": "1,11,10,8,8" },
+        { "flag": "/images/teams/flags/ind.png" },
+        { "status": "loss" },
+        { "name": "B. Divyanshi" }
+      ]
+    },
+    {
+      "id": 126,
+      "title": "U15 Boys Singles",
+      "venue": "Final",
+      "score": "3-0",
+      "day": "day4",
+      "matchType": "Singles",
+      "ageRange": "U15",
+      "pair1": [
+        { "country": "IND" },
+        { "scoreDetails": "11,11,11" },
+        { "flag": "/images/teams/flags/ind.png" },
+        { "status": "win" },
+        { "name": "S. Mukherjee" }
+      ],
+      "pair2": [
+        { "country": "IND" },
+        { "scoreDetails": "7,8,7" },
+        { "flag": "/images/teams/flags/ind.png" },
+        { "status": "loss" },
+        { "name": "S.Arya" }
+      ]
+    },
+    {
+      "id": 127,
+      "title": "U19 Girls Singles",
+      "venue": "Final",
+      "score": "3-1",
+      "day": "day4",
+      "matchType": "Singles",
+      "ageRange": "U19",
+      "pair1": [
+        { "country": "IND" },
+        { "scoreDetails": "9,12,4,8" },
+        { "flag": "/images/teams/flags/ind.png" },
+        { "status": "loss" },
+        { "name": "P.Priya" }
+      ],
+      "pair2": [
+        { "country": "IND" },
+        { "scoreDetails": "11,10,11,11" },
+        { "flag": "/images/teams/flags/ind.png" },
+        { "status": "win" },
+        { "name": "R. Sayali" }
+      ]
+    },
+    {
+      "id": 128,
+      "title": "U19 Boys Singles",
+      "venue": "Final",
+      "score": "3-1",
+      "day": "day4",
+      "matchType": "Singles",
+      "ageRange": "U19",
+      "pair1": [
+        { "country": "IND" },
+        { "scoreDetails": "8,11,9,6" },
+        { "flag": "/images/teams/flags/ind.png" },
+        { "status": "loss" },
+        { "name": "A.Modi" }
+      ],
+      "pair2": [
+        { "country": "IND" },
+        { "scoreDetails": "11,5,11,11" },
+        { "flag": "/images/teams/flags/ind.png" },
+        { "status": "win" },
+        { "name": "A.Bhattacharjee" }
+      ]
+    },
+    {
+      "id": 500,
+      "title": "Final - India vs Sri Lanka",
+      "venue": "Final",
+      "score": "3-0",
+      "day": "day4",
+      "matchType": "Doubles",
+      "ageRange": "Senior",
+      "pair1": [
+        { "country": "IND" },
+        { "scoreDetails": "11,11,11" },
+        { "flag": "/images/teams/flags/ind.png" },
+        { "status": "win" },
+        { "name": "P. Bhatt" },
+        { "name": "C. Ankolika" }
+      ],
+      "pair2": [
+        { "country": "SRI" },
+        { "scoreDetails": "6,5,6" },
+        { "flag": "/images/teams/flags/sri.png" },
+        { "status": "loss" },
+        { "name": "Yoshini Jayawardhane" },
+        { "name": "Mithuli Shanaya" }
+      ]
+    },
+    {
+      "id": 501,
+      "title": "Final - India vs Bangladesh",
+      "venue": "Final",
+      "score": "3-0",
+      "day": "day5",
+      "matchType": "Doubles",
+      "ageRange": "Under 15",
+      "pair1": [
+        { "country": "IND" },
+        { "scoreDetails": "11,11,11" },
+        { "flag": "/images/teams/flags/ind.png" },
+        { "status": "win" },
+        { "name": "R. Sahil" },
+        { "name": "S. Rupam" }
+      ],
+      "pair2": [
+        { "country": "BAN" },
+        { "scoreDetails": "8,6,8" },
+        { "flag": "/images/teams/flags/bd.png" },
+        { "status": "loss" },
+        { "name": "H. Hasib" },
+        { "name": "T. Rahman" }
+      ]
+    },
+    {
+      "id": 502,
+      "title": "Final - India vs Nepal",
+      "venue": "Final",
+      "score": "3-0",
+      "day": "day5",
+      "matchType": "Doubles",
+      "ageRange": "Under 19",
+      "pair1": [
+        { "country": "IND" },
+        { "scoreDetails": "11,11,11" },
+        { "flag": "/images/teams/flags/ind.png" },
+        { "status": "win" },
+        { "name": "T. Sanjay" },
+        { "name": "M. Risha" }
+      ],
+      "pair2": [
+        { "country": "NEP" },
+        { "scoreDetails": "3,6,5" },
+        { "flag": "/images/teams/flags/nep.png" },
+        { "status": "loss" },
+        { "name": "B. Rai" },
+        { "name": "E. Thapa" }
+      ]
+    },
+    {
+      "id": 503,
+      "title": "Final - India vs Pakistan",
+      "venue": "Final",
+      "score": "3-0",
+      "day": "day5",
+      "matchType": "Doubles",
+      "ageRange": "Senior",
+      "pair1": [
+        { "country": "IND" },
+        { "scoreDetails": "11,12,13" },
+        { "flag": "/images/teams/flags/ind.png" },
+        { "status": "win" },
+        { "name": "A. Bhattacharjee" },
+        { "name": "J. Modi" }
+      ],
+      "pair2": [
+        { "country": "PAK" },
+        { "scoreDetails": "6,11,9" },
+        { "flag": "/images/teams/flags/pak.png" },
+        { "status": "loss" },
+        { "name": "F. Shayan" },
+        { "name": "T. Bilal" }
+      ]
+    },
+
+
+
+
+
 
 
 
