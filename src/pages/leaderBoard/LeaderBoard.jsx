@@ -79,7 +79,9 @@ const Leaderboard = () => {
                                 onClick={() => setSelectedCountry(country)}
                             >
                                 <td className="px-6 py-4 whitespace-nowrap flex items-center">
+                                    <span className='w-8'> {index + 1} </span>
                                     <span className="text-3xl mr-4 w-10">
+
                                         <img src={country.flag} alt={`${country.name} flag`} />
                                     </span>
                                     <span className="text-lg font-semibold text-gray-900">{country.name}</span>
@@ -101,35 +103,40 @@ const Leaderboard = () => {
             </div>
 
             {selectedCountry && (
-                <div className="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50">
-                    <div className="bg-white rounded-lg p-8 shadow-lg relative max-w-md mx-auto">
+                <div className="fixed inset-0 flex items-center justify-center z-50">
+                    <div className="absolute inset-0 bg-gray-900 bg-opacity-50"></div>
+                    <div className="bg-white rounded-lg p-8 shadow-lg relative min-w-lg mx-auto z-10" style={{ width: "500px" }}>
                         <button
                             className="absolute top-2 right-2 text-gray-600 hover:text-gray-800"
                             onClick={() => setSelectedCountry(null)}
                         >
                             &times;
                         </button>
-                        <h2 className="text-2xl font-bold mb-4 text-center">{selectedCountry.name}</h2>
-                        <div className="flex justify-center mb-4">
-                            <img src={selectedCountry.flag} alt={`${selectedCountry.name} flag`} className="w-16 h-16" />
+                        <h2 className="text-3xl font-bold mb-4 text-center text-gray-900">{selectedCountry.name}</h2>
+                        <div className="flex justify-center mb-6">
+                            <img src={selectedCountry.flag} alt={`${selectedCountry.name} flag`} className="w-30 h-20" />
                         </div>
-                        <div className="flex justify-center mb-4">
-                            <img src="/images/gold_medal.png" alt="Gold Medal" className="w-8 h-8 mx-2" />
-                            <p className="text-lg">{selectedCountry.gold}</p>
+                        <div className='flex w-fit m-auto'>
+
+                            <div className=" justify-center mb-4">
+                                <img src="https://i.pinimg.com/originals/dc/1a/21/dc1a213d5a749f2b045220f75c214854.png" alt="Silver Medal" className="w-14  mx-2" />
+                                <p className="text-lg text-gray-600 font-semibold ml-8">{selectedCountry.silver}</p>
+                            </div>
+                            <div className=" justify-center mb-4">
+                                <img src="https://img.pikbest.com/png-images/20190929/red-streamer-gold-medal-png-transparent-bottom_2603785.png!sw800" alt="Gold Medal" className="w-28 mx-2" />
+                                <p className="text-lg text-yellow-600 font-semibold ml-14">{selectedCountry.gold}</p>
+                            </div>
+                            <div className=" justify-center mb-4">
+                                <img src="https://i.pinimg.com/originals/28/52/82/285282ec75359c4bb5670cd4d170285a.png" alt="Bronze Medal" className="w-12 mx-2" />
+                                <p className="text-lg text-orange-600 font-semibold ml-8">{selectedCountry.bronze}</p>
+                            </div>
                         </div>
-                        <div className="flex justify-center mb-4">
-                            <img src="/images/silver_medal.png" alt="Silver Medal" className="w-8 h-8 mx-2" />
-                            <p className="text-lg">{selectedCountry.silver}</p>
-                        </div>
-                        <div className="flex justify-center mb-4">
-                            <img src="/images/bronze_medal.png" alt="Bronze Medal" className="w-8 h-8 mx-2" />
-                            <p className="text-lg">{selectedCountry.bronze}</p>
-                        </div>
-                        <p className="text-lg font-bold text-center mb-4">Total Medals: {selectedCountry.total}</p>
-                        <p className="text-lg mt-4 text-green-600 font-semibold text-center">Congratulations!</p>
+                        <p className="text-lg font-bold text-center mb-4 text-gray-900">Total Medals: {selectedCountry.total}</p>
+                        <p className="text-lg mt-2 text-green-600 font-semibold text-center">Congratulations!</p>
                     </div>
                 </div>
             )}
+
         </div>
     );
 };
