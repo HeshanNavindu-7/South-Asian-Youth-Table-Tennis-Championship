@@ -92,8 +92,8 @@ const Header = () => {
               </Link>
             </li>
             <li >
-              <Link to="/register" className={location.pathname === '/register' ? 'active-lin' : ''}>
-               <p className='-ml-4 -mt-2 text-xl bg-red-600 px-2 py-2 rounded'>  Register</p>
+              <Link to="/leaderboard" className={location.pathname === '/leaderboard' ? 'active-lin' : ''}>
+               <p className='-ml-4 -mt-2 text-xl bg-red-600 px-2 py-2 rounded'>LeaderBoard</p>
               </Link>
             </li>
           </ul>
@@ -113,7 +113,7 @@ const Header = () => {
         <li><Link onClick={hideMobileMenu}  to="/matches" className={location.pathname=='/matches'?'active-link':''}>Matches</Link></li>
         <li><Link onClick={hideMobileMenu}  to="/itsme" className={location.pathname=='/itsme'?'active-link':''}> It's Me</Link></li>
         <li><Link onClick={hideMobileMenu}  to="/" className={location.pathname=='/#contact'?'active-link':''}>Contact</Link></li>
-        <li className='bg-red-600' ><Link onClick={hideMobileMenu}  to="/register">Register</Link></li>
+        <li className='bg-red-600' ><Link onClick={hideMobileMenu}  to="/leaderboard">LeaderBoard</Link></li>
         
       </ul>
         

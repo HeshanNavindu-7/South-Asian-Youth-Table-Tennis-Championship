@@ -4,44 +4,44 @@ const countries = [
     {
         name: 'Sri Lanka',
         flag: './images/teams/flags/Flag_of_Sri_Lanka.svg.png',
-        gold: 3,
-        silver: 4,
-        bronze: 2,
+        gold: 1,
+        silver: 3,
+        bronze: 0,
     },
     {
         name: 'Bangladesh',
         flag: './images/teams/flags/bd.png',
-        gold: 1,
-        silver: 3,
+        gold: 0,
+        silver: 1,
         bronze: 2,
     },
     {
         name: 'Nepal',
         flag: './images/teams/flags/Nepal.jpg',
-        gold: 2,
-        silver: 2,
+        gold: 0,
+        silver: 0,
         bronze: 3,
     },
     {
         name: 'Pakistan',
         flag: './images/teams/flags/pak.png',
-        gold: 5,
-        silver: 6,
-        bronze: 4,
+        gold: 0,
+        silver: 0,
+        bronze: 3,
     },
     {
         name: 'India',
         flag: './images/teams/flags/ind.png',
-        gold: 10,
-        silver: 8,
-        bronze: 6,
+        gold: 3,
+        silver: 0,
+        bronze: 0,
     },
     {
         name: 'Maldives',
         flag: './images/teams/flags/mal.png',
         gold: 0,
-        silver: 1,
-        bronze: 1,
+        silver: 0,
+        bronze: 0,
     },
     // Add more countries as needed
 ];
@@ -67,7 +67,6 @@ const Leaderboard = () => {
             // If silver medals are also equal, compare by bronze medals
             return b.bronze - a.bronze;
         });
-
 
     return (
         <div className="container mx-auto px-4 py-8">
