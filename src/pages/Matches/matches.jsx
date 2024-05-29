@@ -3053,7 +3053,7 @@ const Matches = () => {
       "venue": "Semi Final 1",
       "score": "0-3",
       "day": "day4",
-      "matchType": "Doubles",
+      "matchType": "Singles",
       "ageRange": "Under 15",
       "pair1": [
         { "country": "SRI" },
@@ -3061,7 +3061,7 @@ const Matches = () => {
         { "flag": "/images/teams/flags/Flag_of_Sri_Lanka.svg.png" },
         { "status": "loss" },
         { "name": "Yoshini Jayawardhane" },
-        { "name": "" },
+        
       ],
       "pair2": [
         { "country": "IND" },
@@ -3069,7 +3069,7 @@ const Matches = () => {
         { "flag": "/images/teams/flags/ind.png" },
         { "status": "win" },
         { "name": "S. Das (IND)	" },
-        { "name": "" },
+        
       ]
     },
     {
@@ -3078,7 +3078,7 @@ const Matches = () => {
       "venue": "Semi Final 2",
       "score": "3-0",
       "day": "day4",
-      "matchType": "Doubles",
+      "matchType": "Singles",
       "ageRange": "Under 15",
       "pair1": [
         { "country": "SRI" },
@@ -3086,7 +3086,7 @@ const Matches = () => {
         { "flag": "/images/teams/flags/ind.png" },
         { "status": "win" },
         { "name": "B. Divyanshi" },
-        { "name": "" },
+       
       ],
       "pair2": [
         { "country": "IND" },
@@ -3094,7 +3094,7 @@ const Matches = () => {
         { "flag": "/images/teams/flags/Nepal.jpg" },
         { "status": "loss" },
         { "name": "S. Shrestha	" },
-        { "name": "" },
+        
       ]
     },
 

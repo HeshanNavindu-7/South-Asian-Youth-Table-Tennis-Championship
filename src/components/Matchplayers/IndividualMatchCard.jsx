@@ -1,9 +1,9 @@
-import { Card, CardContent, Typography } from '@mui/material';
+import { Box, Card, CardContent, Grid, Typography } from '@mui/material';
 import React from 'react';
 
 const IndividualMatchCard = ({ match }) => {
-    // Check if match object or players array is undefined
-    if (!match || !match.players || !Array.isArray(match.players)) {
+    // Check if match object or pair1 or pair2 arrays are undefined
+    if (!match || !match.pair1 || !match.pair2) {
         return (
             <Card>
                 <CardContent>
@@ -16,38 +16,71 @@ const IndividualMatchCard = ({ match }) => {
     }
 
     return (
-        <Card>
+        <Card sx={{ margin: 2, padding: 2 }}>
             <CardContent>
-                <Typography variant="h6" component="div" className="text-center">
-                    {match.title} - {match.scores}
-                </Typography>
-                <Typography variant="body2" color="textSecondary" className="text-center mb-2">
+                <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 2 }}>
+                    <Typography variant="h6" component="div">
+                        {match.title}
+                    </Typography>
+                    <Typography variant="h6" component="div" sx={{ color: 'red', fontWeight: 'bold', fontSize: '24px' }}>
+                        {match.score}
+                    </Typography>
+                </Box>
+                <Typography variant="body2" color="textSecondary" align="center" gutterBottom>
                     {match.venue}
                 </Typography>
-                {match.players.map((player, index) => (
-                    <div key={index} className="flex justify-between items-center my-2">
-                        <div className="flex items-center space-x-2">
-                            {player.avatar && (
-                                <img src={player.avatar} alt={player.name} className="w-8 h-8" />
-                            )}
-                            <Typography variant="body2" className="text-xs">
-                                {player.name}
-                            </Typography>
-                            {player.country && player.flag && (
-                                <img src={player.flag} alt={player.country} className="w-5 h-5" />
-                            )}
-                        </div>
-                        <div className="text-center">
-                            <Typography variant="body1" className="text-xs">
-                                {match.scores}
-                            </Typography>
-                            <Typography variant="paragraph" color="textSecondary" className="text-xs">
-                                {match.details}
-                            </Typography>
-                        </div>
-                        {/* No opponent for Singles match */}
-                    </div>
-                ))}
+                <hr />
+                <Box mx={-2}>
+                    <Grid container spacing={2} alignItems="center">
+                        {/* Pair 1 */}
+                        <Grid item xs={15} container justifyContent="space-between" alignItems="center">
+                            <Grid item container xs={1} justifyContent="flex-start">
+                                {match.pair1[3].status === 'win' && <span style={{ color: 'green' }}>✔</span>}
+                            </Grid>
+                            <Grid item container xs={1} justifyContent="flex-start">
+                                <img className='' src={match.pair1[2].flag} alt={match.pair1[0].country} style={{ width: 20, height: 20, }} />
+                            </Grid>
+                            <Grid item xs={3}>
+                                <Typography variant="body2" sx={{ fontWeight: 'bold' }}>
+                                    {match.pair1[0].country}
+                                </Typography>
+                                <Typography variant="body2" sx={{ fontSize: "8px" }}>
+                                <div> {match.pair1[4].name} </div>
+                                    
+                                </Typography>
+                            </Grid>
+                            <Grid item xs={7}>
+                                <Typography variant="body2" align="left">
+                                    <span className='ml-28' style={{ fontSize: "15px" }}>{match.pair1[1].scoreDetails}</span>
+                                </Typography>
+                            </Grid>
+                        </Grid>
+
+                        {/* Pair 2 */}
+                        <Grid item xs={15} container justifyContent="space-between" alignItems="center">
+                            <Grid item container xs={1} justifyContent="flex-start">
+                                {match.pair2[3].status === 'win' && <span style={{ color: 'green' }}>✔</span>}
+                            </Grid>
+                            <Grid item container xs={1} justifyContent="flex-start">
+                                <img src={match.pair2[2].flag} alt={match.pair2[0].country} style={{ width: 20, height: 20, }} />
+                            </Grid>
+                            <Grid item xs={3}>
+                                <Typography variant="body2" sx={{ fontWeight: 'bold' }}>
+                                    {match.pair2[0].country}
+                                </Typography>
+                                <Typography variant="body2" sx={{ fontSize: "10px" }}>
+                                   <div> {match.pair2[4].name} </div>
+                                 
+                                </Typography>
+                            </Grid>
+                            <Grid item xs={7}>
+                                <Typography variant="body2" align="left">
+                                    <span className='ml-28' style={{ fontSize: "15px" }}>{match.pair2[1].scoreDetails}</span>
+                                </Typography>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Box>
             </CardContent>
         </Card>
     );
