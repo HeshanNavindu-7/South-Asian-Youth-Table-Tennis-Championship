@@ -3022,6 +3022,7 @@ const Matches = () => {
         { "name": "V. Pritha" }
       ]
     },
+
     {
       "id": 115,
       "title": "Mixed Doubles - Under 19",
@@ -3061,7 +3062,7 @@ const Matches = () => {
         { "flag": "/images/teams/flags/Flag_of_Sri_Lanka.svg.png" },
         { "status": "loss" },
         { "name": "Yoshini Jayawardhane" },
-        
+
       ],
       "pair2": [
         { "country": "IND" },
@@ -3069,7 +3070,7 @@ const Matches = () => {
         { "flag": "/images/teams/flags/ind.png" },
         { "status": "win" },
         { "name": "S. Das (IND)	" },
-        
+
       ]
     },
     {
@@ -3081,22 +3082,207 @@ const Matches = () => {
       "matchType": "Singles",
       "ageRange": "Under 15",
       "pair1": [
-        { "country": "SRI" },
+        { "country": "IND" },
         { "scoreDetails": "11,11,11" },
         { "flag": "/images/teams/flags/ind.png" },
         { "status": "win" },
         { "name": "B. Divyanshi" },
-       
+
       ],
       "pair2": [
-        { "country": "IND" },
-        { "scoreDetails": "11,11,11" },
+        { "country": "NEP" },
+        { "scoreDetails": "3,4,8" },
         { "flag": "/images/teams/flags/Nepal.jpg" },
         { "status": "loss" },
         { "name": "S. Shrestha	" },
-        
+
       ]
     },
+    {
+      "id": 117,
+      "title": "Under 15 Girls Singles",
+      "venue": "Semi Final 1",
+      "score": "3-0",
+      "day": "day4",
+      "matchType": "Singles",
+      "ageRange": "Under 15",
+      "pair1": [
+        { "country": "IND" },
+        { "scoreDetails": "11,11,11" },
+        { "flag": "/images/teams/flags/ind.png" },
+        { "status": "win" },
+        { "name": "S. Das" }
+      ],
+      "pair2": [
+        { "country": "SRI" },
+        { "scoreDetails": "8,4,7" },
+        { "flag": "/images/teams/flags/Flag_of_Sri_Lanka.svg.png" },
+        { "status": "loss" },
+        { "name": "Yoshini Jayawardhane" }
+      ]
+    },
+    {
+      "id": 118,
+      "title": "Under 15 Girls Singles",
+      "venue": "Semi Final 2",
+      "score": "3-0",
+      "day": "day4",
+      "matchType": "Singles",
+      "ageRange": "Under 15",
+      "pair1": [
+        { "country": "IND" },
+        { "scoreDetails": "11,11,11" },
+        { "flag": "/images/teams/flags/ind.png" },
+        { "status": "win" },
+        { "name": "B. Divyanshi" }
+      ],
+      "pair2": [
+        { "country": "NEP" },
+        { "scoreDetails": "3,4,8" },
+        { "flag": "/images/teams/flags/Nepal.jpg" },
+        { "status": "loss" },
+        { "name": "S. Shrestha" }
+      ]
+    },
+    {
+      "id": 119,
+      "title": "Under 15 Boys Singles",
+      "venue": "Semi Final 1",
+      "score": "3-1",
+      "day": "day4",
+      "matchType": "Singles",
+      "ageRange": "Under 15",
+      "pair1": [
+        { "country": "IND" },
+        { "scoreDetails": "11,11,10,11" },
+        { "flag": "/images/teams/flags/ind.png" },
+        { "status": "win" },
+        { "name": "S. Mukherjee" }
+      ],
+      "pair2": [
+        { "country": "PAK" },
+        { "scoreDetails": "9,9,12,8" },
+        { "flag": "/images/teams/flags/pak.png" },
+        { "status": "loss" },
+        { "name": "M. Khan" }
+      ]
+    },
+    {
+      "id": 120,
+      "title": "Under 15 Boys Singles",
+      "venue": "Semi Final 2",
+      "score": "3-0",
+      "day": "day4",
+      "matchType": "Singles",
+      "ageRange": "Under 15",
+      "pair1": [
+        { "country": "IND" },
+        { "scoreDetails": "11,13,11" },
+        { "flag": "/images/teams/flags/ind.png" },
+        { "status": "win" },
+        { "name": "S. Arya" }
+      ],
+      "pair2": [
+        { "country": "PAK" },
+        { "scoreDetails": "9,11,2" },
+        { "flag": "/images/teams/flags/pak.png" },
+        { "status": "loss" },
+        { "name": "A. Khan" }
+      ]
+    },
+    {
+      "id": 121,
+      "title": "Under 19 Girls Singles",
+      "venue": "Semi Final 1",
+      "score": "3-0",
+      "day": "day4",
+      "matchType": "Singles",
+      "ageRange": "Under 19",
+      "pair1": [
+        { "country": "IND" },
+        { "scoreDetails": "11,11,11" },
+        { "flag": "/images/teams/flags/ind.png" },
+        { "status": "win" },
+        { "name": "P. Priya" }
+      ],
+      "pair2": [
+        { "country": "PAK" },
+        { "scoreDetails": "7,8,3" },
+        { "flag": "/images/teams/flags/pak.png" },
+        { "status": "loss" },
+        { "name": "F. Hoor" }
+      ]
+    },
+    {
+      "id": 122,
+      "title": "Under 19 Girls Singles",
+      "venue": "Semi Final 2",
+      "score": "2-3",
+      "day": "day4",
+      "matchType": "Singles",
+      "ageRange": "Under 19",
+      "pair1": [
+        { "country": "SRI" },
+        { "scoreDetails": "12,16,4,11,10" },
+        { "flag": "/images/teams/flags/Flag_of_Sri_Lanka.svg.png" },
+        { "status": "win" },
+        { "name": "Bimandee Bandara" }
+      ],
+      "pair2": [
+        { "country": "IND" },
+        { "scoreDetails": "10,18,11,9,12" },
+        { "flag": "/images/teams/flags/ind.png" },
+        { "status": "loss" },
+        { "name": "R. Sayali" }
+      ]
+    },
+    {
+      "id": 123,
+      "title": "Under 19 Boys Singles",
+      "venue": "Semi Final 1",
+      "score": "3-0",
+      "day": "day4",
+      "matchType": "Singles",
+      "ageRange": "Under 19",
+      "pair1": [
+        { "country": "IND" },
+        { "scoreDetails": "11,11,11" },
+        { "flag": "/images/teams/flags/ind.png" },
+        { "status": "win" },
+        { "name": "A. Bhattacharjee" }
+      ],
+      "pair2": [
+        { "country": "PAK" },
+        { "scoreDetails": "5,7,6" },
+        { "flag": "/images/teams/flags/pak.png" },
+        { "status": "loss" },
+        { "name": "S. Farooq" }
+      ]
+    },
+    {
+      "id": 124,
+      "title": "Under 19 Boys Singles",
+      "venue": "Semi Final 2",
+      "score": "3-0",
+      "day": "day4",
+      "matchType": "Singles",
+      "ageRange": "Under 19",
+      "pair1": [
+        { "country": "IND" },
+        { "scoreDetails": "11,11,11" },
+        { "flag": "/images/teams/flags/ind.png" },
+        { "status": "win" },
+        { "name": "A. Modi" }
+      ],
+      "pair2": [
+        { "country": "BAN" },
+        { "scoreDetails": "3,9,5" },
+        { "flag": "/images/teams/flags/bd.png" },
+        { "status": "loss" },
+        { "name": "N. Iqbal" }
+      ]
+    },
+
 
 
   ];

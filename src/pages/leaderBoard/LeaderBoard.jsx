@@ -5,8 +5,8 @@ const countries = [
         name: 'Sri Lanka',
         flag: './images/teams/flags/Flag_of_Sri_Lanka.svg.png',
         gold: 1,
-        silver: 5,
-        bronze: 6,
+        silver: 4,
+        bronze: 0,
     },
     {
         name: 'Bangladesh',
@@ -32,8 +32,8 @@ const countries = [
     {
         name: 'India',
         flag: './images/teams/flags/ind.png',
-        gold: 13,
-        silver: 4,
+        gold: 4,
+        silver: 0,
         bronze: 0,
     },
     {
