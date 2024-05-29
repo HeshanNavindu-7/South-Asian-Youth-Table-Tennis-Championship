@@ -2785,6 +2785,58 @@ const Matches = () => {
 
 
     }, ,
+    {
+      id: 1001,
+      "title": "U19 MIXED DOUBLES",
+      "venue": "Final",
+      "score": "3-0",
+      "day": "day4",
+      matchType: "Doubles",
+      ageRange: "Under 19 ",
+      "pair1": [
+        { "country": "MAL" },
+        { "scoreDetails": "9,12,11" },
+        { "flag": "/images/teams/flags/mal.png" },
+        { "status": "loss" },
+        { "name": "Dheema Ali" },
+        { "name": "A. Khalid" }
+      ],
+      "pair2": [
+        { "country": "IND" },
+        { "scoreDetails": "11,14,8" },
+        { "flag": "/images/teams/flags/ind.png" },
+        { "status": "win" },
+        { "name": "A. Bhattacharjee" },
+        { "name": "V. Pritha" }
+      ],
+
+
+    },   {
+      id: 1001,
+      "title": "U15 MIXED DOUBLES",
+      "venue": "Final",
+      "score": "3-1",
+      "day": "day4",
+      matchType: "Doubles",
+      ageRange: "Under 19 ",
+      "pair1": [
+        { "country": "SRI" },
+        { "scoreDetails": "8,11,2,10" },
+        { "flag": "/images/teams/flags/Flag_of_Sri_Lanka.svg.png" },
+        { "status": "loss" },
+        { "name": "Akain Bojith" },
+        { "name": "Yoshini Jayawardhane" }
+      ],
+      "pair2": [
+        { "country": "IND" },
+        { "scoreDetails": "11,1,11,12" },
+        { "flag": "/images/teams/flags/ind.png" },
+        { "status": "win" },
+        { "name": "S. Arya" },
+        { "name": "S. Das" }
+      ]
+
+    }, 
 
     // Match details for U15 Girls Doubles - Semi Final 2
     {
