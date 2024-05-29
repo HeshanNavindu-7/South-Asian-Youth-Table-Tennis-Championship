@@ -5,10 +5,7 @@ import './slideshow.css';
 const images = [
   '/images/Untitled-5.png',
   '/images/aaall.jpeg',
-  '/images/Untitled-1.png',
-  '/images/Untitled-2.png',
-  '/images/Untitled-3.png',
-  '/images/Untitled-4.png',
+ 
 
   '/images/cer (1).jpeg',
   '/images/cer (2).jpeg',
@@ -21,7 +18,9 @@ const images = [
   '/images/cer (9).jpeg',
   '/images/cer (10).jpeg',
   '/images/cer (11).jpeg',
-  '/images/ce (1).jpeg',
+ 
+  '/images/c (1).jpg',
+  '/images/c (2).jpg',
   '/images/ce (2).jpeg',
   '/images/ce (3).jpeg',
   '/images/ce (4).jpeg',
