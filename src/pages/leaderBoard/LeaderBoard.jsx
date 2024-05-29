@@ -55,7 +55,19 @@ const Leaderboard = () => {
             ...country,
             total: country.gold + country.silver + country.bronze,
         }))
-        .sort((a, b) => b.total - a.total);
+        .sort((a, b) => {
+            // First, compare by gold medals
+            if (a.gold !== b.gold) {
+                return b.gold - a.gold;
+            }
+            // If gold medals are equal, compare by silver medals
+            if (a.silver !== b.silver) {
+                return b.silver - a.silver;
+            }
+            // If silver medals are also equal, compare by bronze medals
+            return b.bronze - a.bronze;
+        });
+
 
     return (
         <div className="container mx-auto px-4 py-8">
