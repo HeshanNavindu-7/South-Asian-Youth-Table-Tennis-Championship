@@ -15,7 +15,7 @@ import Kandy from './pages/Kandypage/Kandy';
 import Matches from './pages/Matches/matches';
 import Test from './pages/Matches/test';
 import NewsPage from './pages/NewsPage/NewsPage';
-import Register from './pages/RegisterPage/RegisterPage';
+import LeaderBoard from './pages/leaderBoard/LeaderBoard';
 
 const App = () => {
   return (
@@ -25,7 +25,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/register" element={<LeaderBoard />} />
         <Route path="/kandy" element={<Kandy />} />
         <Route path="/NewsPage" element={<NewsPage />} />
         <Route path="/gallery" element={<Event />} />
