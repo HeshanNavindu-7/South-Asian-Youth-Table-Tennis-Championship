@@ -3410,7 +3410,7 @@ const Matches = () => {
       "score": "3-1",
       "day": "day4",
       "matchType": "Singles",
-      "ageRange": "U19",
+      "ageRange": "Under 19",
       "pair1": [
         { "country": "IND" },
         { "scoreDetails": "8,11,9,6" },
@@ -3433,7 +3433,7 @@ const Matches = () => {
       "score": "3-0",
       "day": "day4",
       "matchType": "Doubles",
-      "ageRange": "Senior",
+      "ageRange": "Under 19",
       "pair1": [
         { "country": "IND" },
         { "scoreDetails": "11,11,11" },
@@ -3445,7 +3445,7 @@ const Matches = () => {
       "pair2": [
         { "country": "SRI" },
         { "scoreDetails": "6,5,6" },
-        { "flag": "/images/teams/flags/sri.png" },
+        { "flag": "/images/teams/flags/Flag_of_Sri_Lanka.svg.png" },
         { "status": "loss" },
         { "name": "Yoshini Jayawardhane" },
         { "name": "Mithuli Shanaya" }
@@ -3456,7 +3456,7 @@ const Matches = () => {
       "title": "Final - India vs Bangladesh",
       "venue": "Final",
       "score": "3-0",
-      "day": "day5",
+      "day": "day4",
       "matchType": "Doubles",
       "ageRange": "Under 15",
       "pair1": [
@@ -3481,7 +3481,7 @@ const Matches = () => {
       "title": "Final - India vs Nepal",
       "venue": "Final",
       "score": "3-0",
-      "day": "day5",
+      "day": "day4",
       "matchType": "Doubles",
       "ageRange": "Under 19",
       "pair1": [
@@ -3495,7 +3495,7 @@ const Matches = () => {
       "pair2": [
         { "country": "NEP" },
         { "scoreDetails": "3,6,5" },
-        { "flag": "/images/teams/flags/nep.png" },
+        { "flag": "/images/teams/flags/Nepal.jpg" },
         { "status": "loss" },
         { "name": "B. Rai" },
         { "name": "E. Thapa" }
@@ -3506,7 +3506,7 @@ const Matches = () => {
       "title": "Final - India vs Pakistan",
       "venue": "Final",
       "score": "3-0",
-      "day": "day5",
+      "day": "day4",
       "matchType": "Doubles",
       "ageRange": "Senior",
       "pair1": [
