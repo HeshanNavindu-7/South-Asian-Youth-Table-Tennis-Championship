@@ -27,7 +27,7 @@ const countries = [
         flag: './images/teams/flags/pak.png',
         gold: 0,
         silver: 1,
-        bronze: 8,
+        bronze: 9,
     },
     {
         name: 'India',
