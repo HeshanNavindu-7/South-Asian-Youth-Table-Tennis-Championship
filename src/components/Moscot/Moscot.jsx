@@ -11,7 +11,7 @@ const Moscot = () => {
   return (
     <div>
 
-    <div className='moscotback overflow-hidden flex flex-col lg:flex-row  justify-center mt-16'>
+    <div className='moscotback overflow-hidden flex flex-col lg:flex-row text-white justify-center mt-16'>
      
       <div className='my-0 text-center lg:ml-0 mt-8 lg:mt-12 lg:text-left' data-aos="fade-right"  data-aos-offset="300"
      data-aos-easing="ease-in-sine">
@@ -37,8 +37,16 @@ const Moscot = () => {
              Download Prospectus Booklet
            </button>
           </a>
+         
 
         </div>
+        <p className='mt-4'>South Asian Youth Table Tennis Championship 2024 <br/>Souvenir is officially out now! 
+</p>
+        <a href="https://drive.google.com/drive/folders/1jgb5LHvFpZX1ihqMyHWd1BF7-AGVfmn3" download>
+           <button className='bg-red-500 text-white py-2  mt-1 px-4 rounded-md shadow-md'>
+             Download Souvenir
+           </button>
+          </a>
       </div>
      
       <div className='w-full lg:w-1/2 mt-6 -my-12 ' data-aos="fade-left"  data-aos-offset="300"
